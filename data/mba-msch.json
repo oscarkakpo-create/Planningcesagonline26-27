@@ -1,0 +1,25 @@
+{
+  "slug": "mba-msch",
+  "program_name": "MBA Management Stratégique du Capital Humain",
+  "program_short": "MBA MSCH",
+  "week_label": "Semaine d’intégration et de rentrée",
+  "week_file_label": "rentree_2026_mba_msch",
+  "updated_label": "13 novembre 2026",
+  "is_new": true,
+  "published_at": "2026-11-13T10:00:00Z",
+  "week_message": "Bienvenue aux participants de la promotion MBA MSCH (Rentrée 2026–2027) ! Retrouvez ici vos cours, plannings et accès aux salles virtuelles.",
+  "information_blocks": [
+    {
+      "title": "Bienvenue à la Rentrée 2026–2027",
+      "text": "Ce portail officiel regroupe l’ensemble des séances de cours, webinaires et accès Moodle de votre promotion.",
+      "link": "https://formations.cesagonline.com/",
+      "link_label": "Accéder à mon espace Moodle"
+    }
+  ],
+  "sessions": [],
+  "upcoming_week_label": "",
+  "upcoming_week_file_label": "",
+  "upcoming_published_at": "",
+  "upcoming_week_message": "",
+  "upcoming_sessions": []
+}
