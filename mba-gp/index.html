@@ -3,61 +3,92 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title id="pageTitle">MBA Gestion de Projets — Agenda FOAD CESAG ONLINE</title>
-  <meta name="theme-color" content="#1D4ED8">
+  <title id="pageTitle">MBA Gestion de Projets — Agenda FOAD CESAG</title>
+  <meta name="theme-color" content="#1B7E44">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <style>
     :root{
-      --green:#1D4ED8;--green2:#1D4ED8;--greenDark:#07301E;--greenSoft:#E9F2ED;
-      --greenLine:#CBDED3;--gold:#C9962A;--goldDark:#755513;--goldSoft:#F7EFDA;
-      --paper:#F6F8F6;--white:#fff;--text:#16241D;--muted:#586A60;--line:#E3E9E5;
-      --red:#B42318;--redSoft:#FFF0EE;--blue:#2563EB;--blueSoft:#EFF6FF;
-      --shadow:0 16px 40px rgba(11,77,46,.08);
-      --serif:"Spectral",Georgia,serif;--sans:"Inter","Segoe UI",Arial,sans-serif;
+      --cesag-green:#1B7E44;
+      --cesag-green-light:#239E57;
+      --cesag-green-dark:#0A3D20;
+      --cesag-green-soft:#EBF6F0;
+      --cesag-green-line:#C8E6D5;
+      
+      --cesag-orange:#F15B2E;
+      --cesag-orange-dark:#C94117;
+      --cesag-orange-soft:#FDEEE9;
+      --cesag-orange-line:#FAC8BA;
+      
+      --paper:#F7FAF8;
+      --white:#fff;
+      --text:#13261B;
+      --muted:#51695A;
+      --line:#DEEAE2;
+      
+      --red:#B42318;
+      --redSoft:#FFF0EE;
+      --shadow:0 16px 40px rgba(27,126,68,.08);
+      --serif:"Spectral",Georgia,serif;
+      --sans:"Inter","Segoe UI",Arial,sans-serif;
     }
     *{box-sizing:border-box}
     body{margin:0;font-family:var(--sans);color:var(--text);background:var(--paper)}
     a{text-decoration:none;color:inherit} button{font:inherit}
     .container{max-width:1160px;margin:auto;padding:0 20px}
     
-    /* Topbar */
-    .topbar{background:var(--green);color:#fff;border-bottom:2px solid var(--gold);padding:11px 0;font-size:13px}
+    /* Topbar Institutionnelle CESAG */
+    .topbar{
+      background:var(--white);color:var(--text);padding:10px 0;
+      border-bottom:3px solid var(--cesag-green);
+      box-shadow:0 2px 10px rgba(0,0,0,.04);
+      position:relative;
+    }
+    .topbar::after{
+      content:"";position:absolute;bottom:-3px;right:0;width:35%;height:3px;
+      background:var(--cesag-orange);
+    }
     .topbar .container{display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap}
-    .brand{font-weight:700;display:flex;align-items:center;gap:8px}
-    .brand .dot{width:7px;height:7px;border-radius:50%;background:var(--gold)}
-    .topnav{display:flex;gap:12px;align-items:center;flex-wrap:wrap}
-    .topnav a{padding:5px 10px;border-radius:6px;border:1px solid transparent;color:rgba(255,255,255,.9);font-weight:600}
-    .topnav a:hover,.topnav a.active{background:rgba(255,255,255,.14);border-color:rgba(255,255,255,.25);color:#fff}
+    .brand-wrap{display:flex;align-items:center;gap:12px}
+    .cesag-logo-img{height:42px;width:auto;display:block}
+    .brand-text b{display:block;font-size:13px;color:var(--cesag-green-dark);font-weight:800}
+    .brand-text span{display:block;font-size:11px;color:var(--muted)}
+
+    .topnav{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+    .topnav a{padding:6px 12px;border-radius:8px;border:1px solid var(--line);background:var(--paper);color:var(--muted);font-weight:700;font-size:12.5px;transition:all .18s}
+    .topnav a:hover,.topnav a.active{background:var(--cesag-green);border-color:var(--cesag-green);color:#fff}
     
     /* Hero */
-    .hero{padding:32px 0 16px}
-    .hero-panel{background:linear-gradient(150deg,#1D4ED8,#07301E);color:#fff;border-radius:28px;padding:42px 44px 36px;box-shadow:var(--shadow);position:relative;overflow:hidden}
-    .hero-panel:before{content:"";position:absolute;left:0;right:0;top:0;height:3px;background:linear-gradient(90deg,transparent,var(--gold),transparent)}
+    .hero{padding:30px 0 16px}
+    .hero-panel{
+      background:linear-gradient(150deg,#1B7E44,var(--cesag-green-dark));color:#fff;
+      border-radius:28px;padding:42px 44px 36px;box-shadow:var(--shadow);position:relative;overflow:hidden;
+    }
+    .hero-panel:before{content:"";position:absolute;left:0;right:0;top:0;height:4px;background:linear-gradient(90deg,var(--cesag-green),var(--cesag-orange))}
     .hero-grid{display:grid;grid-template-columns:1.35fr .65fr;gap:28px;align-items:center;position:relative;z-index:1}
-    .eyebrow{font-size:12px;text-transform:uppercase;letter-spacing:2px;font-weight:800;color:#F1D291;margin-bottom:12px}
+    .eyebrow{font-size:12px;text-transform:uppercase;letter-spacing:2px;font-weight:800;color:#FFE3DA;margin-bottom:12px}
     h1{font-family:var(--serif);font-weight:600;margin:0;font-size:clamp(30px,4.8vw,52px);line-height:1.06}
-    .hero p{margin:14px 0 0;color:rgba(255,255,255,.9);line-height:1.6}
-    .weekbox{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.2);border-radius:18px;padding:20px;backdrop-filter:blur(6px)}
-    .weekbox small{display:block;color:#F1D291;font-weight:700;margin-bottom:6px;letter-spacing:.5px}
+    .hero p{margin:14px 0 0;color:rgba(255,255,255,.94);line-height:1.6}
+    .weekbox{background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.24);border-radius:18px;padding:20px;backdrop-filter:blur(6px)}
+    .weekbox small{display:block;color:#FFE3DA;font-weight:800;margin-bottom:6px;letter-spacing:.6px;font-size:11px;text-transform:uppercase}
     .weekbox strong{display:block;font-size:19px}
-    .weekbox span{display:block;margin-top:6px;font-size:12px;color:rgba(255,255,255,.8)}
-    .newflag{display:inline-block;margin-top:10px;background:var(--gold);color:#fff;font-size:11px;font-weight:800;letter-spacing:.5px;text-transform:uppercase;padding:5px 11px;border-radius:999px}
+    .weekbox span{display:block;margin-top:6px;font-size:12px;color:rgba(255,255,255,.82)}
+    .newflag{display:inline-block;margin-top:10px;background:var(--cesag-orange);color:#fff;font-size:11px;font-weight:800;letter-spacing:.5px;text-transform:uppercase;padding:5px 11px;border-radius:999px}
     
     .toolbar{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px;position:relative;z-index:1}
-    .btn{border:none;border-radius:12px;padding:11px 16px;font-weight:700;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;gap:8px;font-size:13.5px;transition:transform .18s,box-shadow .18s}
+    .btn{border:none;border-radius:12px;padding:11px 16px;font-weight:750;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;gap:8px;font-size:13.5px;transition:transform .18s,box-shadow .18s}
     .btn:hover{transform:translateY(-1px);box-shadow:0 6px 16px rgba(0,0,0,.15)}
-    .btn-gold{background:var(--gold);color:#fff}
-    .btn-light{background:#fff;color:var(--green)}
-    .btn-soft{background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.25);color:#fff}
+    .btn-orange{background:var(--cesag-orange);color:#fff}
+    .btn-light{background:#fff;color:var(--cesag-green-dark)}
+    .btn-soft{background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.26);color:#fff}
     
-    /* Live Status & Timezone Switcher */
+    /* Live Status & Timezone */
     .livebar{display:grid;grid-template-columns:180px 1fr 1fr;gap:12px;margin:16px 0 6px}
-    .live-item{background:#fff;border:1px solid var(--line);border-radius:16px;padding:13px 16px;display:flex;align-items:center;gap:12px;box-shadow:0 3px 12px rgba(11,77,46,.04)}
-    .live-icon{width:34px;height:34px;border-radius:50%;display:grid;place-items:center;background:var(--greenSoft);color:var(--green);font-size:16px;flex:none}
+    .live-item{background:#fff;border:1px solid var(--line);border-radius:16px;padding:13px 16px;display:flex;align-items:center;gap:12px;box-shadow:0 3px 12px rgba(27,126,68,.04)}
+    .live-icon{width:34px;height:34px;border-radius:50%;display:grid;place-items:center;background:var(--cesag-green-soft);color:var(--cesag-green);font-size:16px;flex:none}
     .live-item small{display:block;color:var(--muted);font-size:9.5px;font-weight:800;letter-spacing:.7px;text-transform:uppercase}
-    .live-item strong{display:block;margin-top:2px;color:var(--green);font-size:13.5px}
+    .live-item strong{display:block;margin-top:2px;color:var(--cesag-green-dark);font-size:13.5px}
     .live-clock strong{font-variant-numeric:tabular-nums;font-size:18px}
 
     /* Timezone Converter Bar */
@@ -65,36 +96,36 @@
     .tz-info{display:flex;align-items:center;gap:9px;font-size:13px;font-weight:600;color:var(--muted)}
     .tz-switch{display:inline-flex;background:var(--paper);border:1px solid var(--line);border-radius:999px;padding:3px}
     .tz-btn{border:none;background:transparent;padding:6px 14px;border-radius:999px;font-size:12px;font-weight:700;cursor:pointer;color:var(--muted);transition:all .18s}
-    .tz-btn.active{background:var(--green);color:#fff;box-shadow:0 2px 8px rgba(0,0,0,.15)}
+    .tz-btn.active{background:var(--cesag-green);color:#fff;box-shadow:0 2px 8px rgba(27,126,68,.25)}
 
     /* Quick stats */
     .quick{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:14px 0 24px}
     .quick-card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:16px}
     .quick-card small{display:block;color:var(--muted);margin-bottom:4px;font-size:12px}
-    .quick-card strong{font-size:20px;color:var(--green)}
+    .quick-card strong{font-size:20px;color:var(--cesag-green)}
     
     .section-head{margin:12px 0 14px;display:flex;align-items:baseline;justify-content:space-between;flex-wrap:wrap;gap:12px}
-    .section-head h2{font-family:var(--serif);margin:0;color:var(--green);font-size:28px;font-weight:600}
+    .section-head h2{font-family:var(--serif);margin:0;color:var(--cesag-green-dark);font-size:28px;font-weight:600}
     .filter-pills{display:flex;gap:8px}
     .f-pill{border:1px solid var(--line);background:#fff;color:var(--muted);padding:6px 12px;border-radius:999px;font-size:12px;font-weight:700;cursor:pointer}
-    .f-pill.active{background:var(--green);border-color:var(--green);color:#fff}
+    .f-pill.active{background:var(--cesag-green);border-color:var(--cesag-green);color:#fff}
 
     /* Sessions */
     .agenda{display:grid;gap:16px}
-    .session{background:#fff;border:1px solid var(--line);border-radius:20px;padding:22px;display:grid;grid-template-columns:130px 1fr 200px;gap:20px;align-items:center;position:relative;overflow:hidden;box-shadow:0 4px 16px rgba(11,77,46,.04);transition:transform .2s,box-shadow .2s}
-    .session:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(11,77,46,.08)}
-    .session:before{content:"";position:absolute;left:0;top:0;bottom:0;width:5px;background:var(--green)}
+    .session{background:#fff;border:1px solid var(--line);border-radius:20px;padding:22px;display:grid;grid-template-columns:130px 1fr 200px;gap:20px;align-items:center;position:relative;overflow:hidden;box-shadow:0 4px 16px rgba(27,126,68,.04);transition:transform .2s,box-shadow .2s}
+    .session:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(27,126,68,.08)}
+    .session:before{content:"";position:absolute;left:0;top:0;bottom:0;width:5px;background:var(--cesag-green)}
     .session.exam:before{background:var(--red)}
-    .datebox{background:var(--paper);border:1px solid #E4ECE7;border-radius:15px;padding:14px;text-align:center}
-    .datebox .day{font-size:30px;font-weight:800;color:var(--green);line-height:1}
+    .datebox{background:var(--paper);border:1px solid #E0EDE5;border-radius:15px;padding:14px;text-align:center}
+    .datebox .day{font-size:30px;font-weight:800;color:var(--cesag-green);line-height:1}
     .datebox .month{font-size:11px;text-transform:uppercase;letter-spacing:1px;font-weight:800;color:var(--muted);margin-top:6px}
     .datebox .weekday{font-size:12px;color:var(--muted);margin-top:3px}
     
     .tags{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:8px;align-items:center}
     .tag{padding:4px 9px;border-radius:999px;font-size:10.5px;font-weight:800;text-transform:uppercase;letter-spacing:.5px}
-    .tag-course{background:var(--greenSoft);color:var(--green)}
+    .tag-course{background:var(--cesag-green-soft);color:var(--cesag-green-dark)}
     .tag-exam{background:var(--redSoft);color:var(--red)}
-    .tag-program{background:var(--goldSoft);color:var(--goldDark)}
+    .tag-program{background:var(--cesag-orange-soft);color:var(--cesag-orange-dark)}
     .status-badge{padding:4px 9px;border-radius:999px;font-size:10.5px;font-weight:800;text-transform:uppercase;letter-spacing:.5px;display:inline-flex;align-items:center;gap:6px}
     .status-badge::before{content:"";width:6px;height:6px;border-radius:50%;background:currentColor;flex:none}
     .st-pending{background:#102A43;color:#EAF7EF}
@@ -105,20 +136,19 @@
     .session h3{margin:0;font-size:18px;line-height:1.35}
     .meta{display:flex;gap:14px;flex-wrap:wrap;margin-top:9px;color:var(--muted);font-size:13px}
     .meta b{color:var(--text)}
-    .tz-local-hint{display:inline-block;margin-left:6px;padding:2px 7px;border-radius:4px;background:var(--gold-soft);color:var(--gold-dark);font-size:11px;font-weight:700}
     
     .actions{display:flex;flex-direction:column;gap:8px}
     .action{display:block;text-align:center;padding:10px 12px;border-radius:11px;font-size:12.5px;font-weight:700;border:1px solid transparent;cursor:pointer;transition:transform .18s}
     .action:hover{transform:translateY(-1px)}
-    .moodle{background:var(--green);color:#fff}
-    .room{background:#F3F7F4;color:var(--green);border-color:#D9E5DD}
-    .gcal{background:#EBF3FE;color:#1A73E8;border-color:#D2E3FC}
-    .ics{background:#FFF8E7;color:#765815;border-color:#ECDCB0}
+    .moodle{background:var(--cesag-green);color:#fff}
+    .room{background:var(--cesag-green-soft);color:var(--cesag-green-dark);border-color:var(--cesag-green-line)}
+    .gcal{background:var(--cesag-orange-soft);color:var(--cesag-orange-dark);border-color:var(--cesag-orange-line)}
+    .ics{background:#F5F9F6;color:var(--muted);border-color:var(--line)}
     
-    .weekmsg{margin:0 0 18px;background:linear-gradient(180deg,#FFFCF3,#FFF9EC);border:1px solid #EBDCB4;border-left:5px solid var(--gold);border-radius:16px;padding:14px 18px;color:#5F4B20;font-size:14px;line-height:1.55;font-weight:600}
+    .weekmsg{margin:0 0 18px;background:linear-gradient(180deg,#FFFCF3,var(--cesag-orange-soft));border:1px solid var(--cesag-orange-line);border-left:5px solid var(--cesag-orange);border-radius:16px;padding:14px 18px;color:#5F4B20;font-size:14px;line-height:1.55;font-weight:600}
     .empty{background:#fff;border:1.5px dashed var(--line);border-radius:18px;padding:36px;text-align:center;color:var(--muted);font-size:15px}
 
-    footer{background:var(--greenDark);color:rgba(255,255,255,.78);padding:30px 0;font-size:12.5px;margin-top:48px}
+    footer{background:var(--cesag-green-dark);color:rgba(255,255,255,.8);padding:30px 0;font-size:12.5px;margin-top:48px;border-top:3px solid var(--cesag-orange)}
     footer .container{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
     footer b{color:#fff}
 
@@ -128,13 +158,20 @@
       .session{grid-template-columns:1fr}
       .actions{display:grid;grid-template-columns:repeat(2,1fr)}
       .livebar{grid-template-columns:1fr}
+      .brand-wrap{flex-direction:column;align-items:flex-start;gap:6px}
     }
   </style>
 </head>
 <body>
   <div class="topbar">
     <div class="container">
-      <div class="brand"><span class="dot"></span> CESAG ONLINE · Agenda FOAD 2026–2027</div>
+      <div class="brand-wrap">
+        <img class="cesag-logo-img" src="../assets/logo-cesag.png" alt="Logo officiel CESAG" width="58" height="42" />
+        <div class="brand-text">
+          <b>CESAG ONLINE · FOAD</b>
+          <span>MBA Gestion de Projets</span>
+        </div>
+      </div>
       <nav class="topnav" aria-label="Navigation des cohortes">
         <a href="../">← Accueil Rentrée</a>
         <a href="../mba-ag/" class="">MBA AG</a>
@@ -161,7 +198,7 @@
           </div>
         </div>
         <div class="toolbar">
-          <button class="btn btn-gold" id="downloadWeek">Télécharger l’ICS de la semaine</button>
+          <button class="btn btn-orange" id="downloadWeek">Télécharger l’ICS de la semaine</button>
           <button class="btn btn-light" onclick="window.print()">Exporter en PDF</button>
           <a class="btn btn-soft" id="moodleHome" href="https://formations.cesagonline.com/" target="_blank" rel="noopener">Ouvrir Moodle CESAG ↗</a>
         </div>
@@ -223,8 +260,8 @@
 
   <footer>
     <div class="container">
-      <div><b>CESAG ONLINE</b> · MBA Gestion de Projets</div>
-      <div>Année académique 2026–2027 · Promotion Rentrée</div>
+      <div><b>CESAG</b> · Centre Africain d’Études Supérieures en Gestion · MBA Gestion de Projets</div>
+      <div>Direction de la Formation Ouverte et à Distance (FOAD) · Promotion 2026–2027</div>
     </div>
   </footer>
 
@@ -262,7 +299,6 @@ function previousDayAt20(date){
   return d.toISOString().replace(/[-:]/g,"").replace(".000","");
 }
 
-// Convertisseur Heure GMT vers Heure Locale
 function formatSessionTime(s){
   if(!s.start || !s.end) return "";
   if(!useLocalTime){
@@ -407,7 +443,7 @@ async function load(){
   if(pageData.information_blocks && pageData.information_blocks.length){
     document.getElementById("informationBlocks").innerHTML = pageData.information_blocks.map(info=>`
       <div class="weekmsg">
-        <span style="display:inline-block;padding:2px 8px;border-radius:999px;background:var(--gold);color:#fff;font-size:10px;font-weight:800;text-transform:uppercase;margin-bottom:6px">Information officielle</span><br>
+        <span style="display:inline-block;padding:2px 8px;border-radius:999px;background:var(--cesag-orange);color:#fff;font-size:10px;font-weight:800;text-transform:uppercase;margin-bottom:6px">Information officielle</span><br>
         <b>${escHtml(info.title)}</b><br>
         <span style="white-space:pre-line;font-size:13.5px">${escHtml(info.text)}</span>
         ${info.link?`<br><a class="action moodle" style="display:inline-block;margin-top:10px;padding:8px 14px" href="${escHtml(info.link)}" target="_blank" rel="noopener">${escHtml(info.link_label||"Ouvrir le lien")}</a>`:""}
@@ -422,7 +458,7 @@ async function load(){
   };
 }
 
-// Gestion des filtres
+// Filtres
 document.querySelectorAll(".f-pill").forEach(btn=>{
   btn.addEventListener("click", ()=>{
     document.querySelectorAll(".f-pill").forEach(b=>b.classList.remove("active"));
@@ -432,7 +468,7 @@ document.querySelectorAll(".f-pill").forEach(btn=>{
   });
 });
 
-// Gestion du basculement Fuseau GMT / Local
+// Fuseaux
 const btnGmt = document.getElementById("btnTzGmt");
 const btnLocal = document.getElementById("btnTzLocal");
 const tzLabelText = document.getElementById("tzLabelText");
