@@ -1,0 +1,208 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//CESAG ONLINE//Agenda FOAD 2026-2027//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-TIMEZONE:UTC
+X-WR-CALNAME:CESAG - Tous Programmes MBA (2026-2027)
+X-WR-CALDESC:Agenda Global Rentrée 2026-2027 · MBA AG, MBA GP et MBA MSCH · Semaine du 16 au 22 nov 2026
+COLOR:#1B7E44
+X-APPLE-CALENDAR-COLOR:#1B7E44
+X-OUTLOOK-COLOR:#1B7E44
+BEGIN:VEVENT
+UID:mba-ag-2026-11-17-1800-mbaag-2627-01@cesag-online.com
+DTSTAMP:20261113T155810Z
+DTSTART:20261117T180000Z
+DTEND:20261117T203000Z
+SUMMARY:COURS - MBAAG 9.3.1 - Comptabilité générale 26-27 (MBA AG)
+DESCRIPTION:Programme : MBA Administration et Gestion (Promotion 2026–2027)\nType : Cours\nEnseignant : DR MOUHAMADOU DIA\nDurée : 2h30\nMoodle : https://formations.cesagonline.com/course/view.php?id=1730\nConsignes : Effectuez vos lectures préalables et vos quiz d'auto-évaluation sur Moodle avant chaque séance.\nRemarque : Bonne rentrée ! Pensez à vos lectures préalables et quizz sur Moodle. Le planning global du module sera envoyé en semaine.
+LOCATION:https://formations.cesagonline.com/course/view.php?id=1730
+URL:https://formations.cesagonline.com/course/view.php?id=1730
+CATEGORIES:CESAG FOAD,2026-2027,MBA
+COLOR:#1B7E44
+STATUS:CONFIRMED
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Rappel CESAG - Cours dans 15 minutes : COURS - MBAAG 9.3.1 - Comptabilité générale 26-27 (MBA AG)
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Rappel CESAG - Cours dans 2 heures : COURS - MBAAG 9.3.1 - Comptabilité générale 26-27 (MBA AG)
+END:VALARM
+BEGIN:VALARM
+TRIGGER;VALUE=DATE-TIME:20261116T200000Z
+ACTION:DISPLAY
+DESCRIPTION:Rappel CESAG - Cours demain à 18:00 GMT : COURS - MBAAG 9.3.1 - Comptabilité générale 26-27 (MBA AG)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:mba-gp-2026-11-18-1800-mbagp-2627-01@cesag-online.com
+DTSTAMP:20261113T155810Z
+DTSTART:20261118T180000Z
+DTEND:20261118T203000Z
+SUMMARY:COURS - MBAGP 9.1.2 - Principes et enjeux de l'administration publique 26-27 (MBA GP)
+DESCRIPTION:Programme : MBA Gestion de Projets (Promotion 2026–2027)\nType : Cours\nEnseignant : M. JEROME DANDJINOU\nDurée : 2h30\nMoodle : https://formations.cesagonline.com/course/view.php?id=1778\nConsignes : Effectuez vos lectures préalables et vos quiz d'auto-évaluation sur Moodle avant chaque séance.\nRemarque : Bonne rentrée ! Pensez à vos lectures préalables et quizz sur Moodle. Le planning global du module sera envoyé en semaine.
+LOCATION:https://formations.cesagonline.com/course/view.php?id=1778
+URL:https://formations.cesagonline.com/course/view.php?id=1778
+CATEGORIES:CESAG FOAD,2026-2027,MBA
+COLOR:#1B7E44
+STATUS:CONFIRMED
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Rappel CESAG - Cours dans 15 minutes : COURS - MBAGP 9.1.2 - Principes et enjeux de l'administration publique 26-27 (MBA GP)
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Rappel CESAG - Cours dans 2 heures : COURS - MBAGP 9.1.2 - Principes et enjeux de l'administration publique 26-27 (MBA GP)
+END:VALARM
+BEGIN:VALARM
+TRIGGER;VALUE=DATE-TIME:20261117T200000Z
+ACTION:DISPLAY
+DESCRIPTION:Rappel CESAG - Cours demain à 18:00 GMT : COURS - MBAGP 9.1.2 - Principes et enjeux de l'administration publique 26-27 (MBA GP)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:mba-msch-2026-11-18-1800-mbamsch-2627-01@cesag-online.com
+DTSTAMP:20261113T155810Z
+DTSTART:20261118T180000Z
+DTEND:20261118T203000Z
+SUMMARY:COURS - MBAMSCH 9.1.1 - Comptabilité générale 26-27 (MBA MSCH)
+DESCRIPTION:Programme : MBA Management Stratégique du Capital Humain (Promotion 2026–2027)\nType : Cours\nEnseignant : DR MOUHAMADOU DIA\nDurée : 2h30\nMoodle : https://formations.cesagonline.com/course/view.php?id=1841\nConsignes : Effectuez vos lectures préalables et vos quiz d'auto-évaluation sur Moodle avant chaque séance.\nRemarque : Bonne rentrée ! Pensez à vos lectures préalables et quizz sur Moodle. Le planning global du module sera envoyé en semaine.
+LOCATION:https://formations.cesagonline.com/course/view.php?id=1841
+URL:https://formations.cesagonline.com/course/view.php?id=1841
+CATEGORIES:CESAG FOAD,2026-2027,MBA
+COLOR:#1B7E44
+STATUS:CONFIRMED
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Rappel CESAG - Cours dans 15 minutes : COURS - MBAMSCH 9.1.1 - Comptabilité générale 26-27 (MBA MSCH)
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Rappel CESAG - Cours dans 2 heures : COURS - MBAMSCH 9.1.1 - Comptabilité générale 26-27 (MBA MSCH)
+END:VALARM
+BEGIN:VALARM
+TRIGGER;VALUE=DATE-TIME:20261117T200000Z
+ACTION:DISPLAY
+DESCRIPTION:Rappel CESAG - Cours demain à 18:00 GMT : COURS - MBAMSCH 9.1.1 - Comptabilité générale 26-27 (MBA MSCH)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:mba-ag-2026-11-19-1800-mbaag-2627-02@cesag-online.com
+DTSTAMP:20261113T155810Z
+DTSTART:20261119T180000Z
+DTEND:20261119T203000Z
+SUMMARY:COURS - MBAAG 10.1.2 - Anglais des affaires 26-27 (MBA AG)
+DESCRIPTION:Programme : MBA Administration et Gestion (Promotion 2026–2027)\nType : Cours\nEnseignant : M. IGNACE KPATAKPANI\nDurée : 2h30\nMoodle : https://formations.cesagonline.com/course/view.php?id=1734\nConsignes : Effectuez vos lectures préalables et vos quiz d'auto-évaluation sur Moodle avant chaque séance.\nRemarque : Cours jumelé avec MBA GP. Pensez à vos lectures et quizz préparatoires sur Moodle. (Planning global du module envoyé en semaine).
+LOCATION:https://formations.cesagonline.com/course/view.php?id=1734
+URL:https://formations.cesagonline.com/course/view.php?id=1734
+CATEGORIES:CESAG FOAD,2026-2027,MBA
+COLOR:#1B7E44
+STATUS:CONFIRMED
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Rappel CESAG - Cours dans 15 minutes : COURS - MBAAG 10.1.2 - Anglais des affaires 26-27 (MBA AG)
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Rappel CESAG - Cours dans 2 heures : COURS - MBAAG 10.1.2 - Anglais des affaires 26-27 (MBA AG)
+END:VALARM
+BEGIN:VALARM
+TRIGGER;VALUE=DATE-TIME:20261118T200000Z
+ACTION:DISPLAY
+DESCRIPTION:Rappel CESAG - Cours demain à 18:00 GMT : COURS - MBAAG 10.1.2 - Anglais des affaires 26-27 (MBA AG)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:mba-gp-2026-11-19-1800-mbagp-2627-02@cesag-online.com
+DTSTAMP:20261113T155810Z
+DTSTART:20261119T180000Z
+DTEND:20261119T203000Z
+SUMMARY:COURS - MBAGP 10.6.1 - Anglais de spécialité 26-27 (MBA GP)
+DESCRIPTION:Programme : MBA Gestion de Projets (Promotion 2026–2027)\nType : Cours\nEnseignant : M. IGNACE KPATAKPANI\nDurée : 2h30\nMoodle : https://formations.cesagonline.com/course/view.php?id=1734\nConsignes : Effectuez vos lectures préalables et vos quiz d'auto-évaluation sur Moodle avant chaque séance.\nRemarque : Cours jumelé avec MBA AG. Pensez à vos lectures et quizz préparatoires sur Moodle. (Planning global du module envoyé en semaine).
+LOCATION:https://formations.cesagonline.com/course/view.php?id=1734
+URL:https://formations.cesagonline.com/course/view.php?id=1734
+CATEGORIES:CESAG FOAD,2026-2027,MBA
+COLOR:#1B7E44
+STATUS:CONFIRMED
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Rappel CESAG - Cours dans 15 minutes : COURS - MBAGP 10.6.1 - Anglais de spécialité 26-27 (MBA GP)
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Rappel CESAG - Cours dans 2 heures : COURS - MBAGP 10.6.1 - Anglais de spécialité 26-27 (MBA GP)
+END:VALARM
+BEGIN:VALARM
+TRIGGER;VALUE=DATE-TIME:20261118T200000Z
+ACTION:DISPLAY
+DESCRIPTION:Rappel CESAG - Cours demain à 18:00 GMT : COURS - MBAGP 10.6.1 - Anglais de spécialité 26-27 (MBA GP)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:mba-msch-2026-11-19-1800-mbamsch-2627-02@cesag-online.com
+DTSTAMP:20261113T155810Z
+DTSTART:20261119T180000Z
+DTEND:20261119T203000Z
+SUMMARY:COURS - MBAMSCH 9.3.1 - Conventions internationales sur le travail 26-27 (MBA MSCH)
+DESCRIPTION:Programme : MBA Management Stratégique du Capital Humain (Promotion 2026–2027)\nType : Cours\nEnseignant : M. BABA SOMA KONE\nDurée : 2h30\nMoodle : https://formations.cesagonline.com/course/view.php?id=1842\nConsignes : Effectuez vos lectures préalables et vos quiz d'auto-évaluation sur Moodle avant chaque séance.\nRemarque : Pensez à vos lectures et quizz préparatoires sur Moodle. Le planning global du module sera envoyé en semaine.
+LOCATION:https://formations.cesagonline.com/course/view.php?id=1842
+URL:https://formations.cesagonline.com/course/view.php?id=1842
+CATEGORIES:CESAG FOAD,2026-2027,MBA
+COLOR:#1B7E44
+STATUS:CONFIRMED
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Rappel CESAG - Cours dans 15 minutes : COURS - MBAMSCH 9.3.1 - Conventions internationales sur le travail 26-27 (MBA MSCH)
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Rappel CESAG - Cours dans 2 heures : COURS - MBAMSCH 9.3.1 - Conventions internationales sur le travail 26-27 (MBA MSCH)
+END:VALARM
+BEGIN:VALARM
+TRIGGER;VALUE=DATE-TIME:20261118T200000Z
+ACTION:DISPLAY
+DESCRIPTION:Rappel CESAG - Cours demain à 18:00 GMT : COURS - MBAMSCH 9.3.1 - Conventions internationales sur le travail 26-27 (MBA MSCH)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:mba-ag-2026-11-20-1800-mbaag-2627-03@cesag-online.com
+DTSTAMP:20261113T155810Z
+DTSTART:20261120T180000Z
+DTEND:20261120T203000Z
+SUMMARY:COURS - MBAAG 9.1.1 - Droit des affaires 26-27 (MBA AG)
+DESCRIPTION:Programme : MBA Administration et Gestion (Promotion 2026–2027)\nType : Cours\nEnseignant : DR PIERRE EDOH GABIAM\nDurée : 2h30\nMoodle : https://formations.cesagonline.com/course/view.php?id=1719\nConsignes : Effectuez vos lectures préalables et vos quiz d'auto-évaluation sur Moodle avant chaque séance.\nRemarque : Pensez à vos lectures et quizz préparatoires sur Moodle. Le planning global du module sera envoyé en semaine.
+LOCATION:https://formations.cesagonline.com/course/view.php?id=1719
+URL:https://formations.cesagonline.com/course/view.php?id=1719
+CATEGORIES:CESAG FOAD,2026-2027,MBA
+COLOR:#1B7E44
+STATUS:CONFIRMED
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Rappel CESAG - Cours dans 15 minutes : COURS - MBAAG 9.1.1 - Droit des affaires 26-27 (MBA AG)
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Rappel CESAG - Cours dans 2 heures : COURS - MBAAG 9.1.1 - Droit des affaires 26-27 (MBA AG)
+END:VALARM
+BEGIN:VALARM
+TRIGGER;VALUE=DATE-TIME:20261119T200000Z
+ACTION:DISPLAY
+DESCRIPTION:Rappel CESAG - Cours demain à 18:00 GMT : COURS - MBAAG 9.1.1 - Droit des affaires 26-27 (MBA AG)
+END:VALARM
+END:VEVENT
+END:VCALENDAR

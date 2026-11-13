@@ -1,0 +1,68 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//CESAG ONLINE//Agenda FOAD 2026-2027//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-TIMEZONE:UTC
+X-WR-CALNAME:CESAG - MBA MSCH (2026-2027)
+X-WR-CALDESC:Agenda de la semaine du 16 au 22 novembre 2026 · MBA Management Stratégique du Capital Humain
+COLOR:#7C3AED
+X-APPLE-CALENDAR-COLOR:#7C3AED
+X-OUTLOOK-COLOR:#7C3AED
+BEGIN:VEVENT
+UID:mba-msch-2026-11-18-1800-mbamsch-2627-01@cesag-online.com
+DTSTAMP:20261113T155810Z
+DTSTART:20261118T180000Z
+DTEND:20261118T203000Z
+SUMMARY:COURS - MBAMSCH 9.1.1 - Comptabilité générale 26-27 (MBA MSCH)
+DESCRIPTION:Programme : MBA Management Stratégique du Capital Humain (Promotion 2026–2027)\nType : Cours\nEnseignant : DR MOUHAMADOU DIA\nDurée : 2h30\nMoodle : https://formations.cesagonline.com/course/view.php?id=1841\nConsignes : Effectuez vos lectures préalables et vos quiz d'auto-évaluation sur Moodle avant chaque séance.\nRemarque : Bonne rentrée ! Pensez à vos lectures préalables et quizz sur Moodle. Le planning global du module sera envoyé en semaine.
+LOCATION:https://formations.cesagonline.com/course/view.php?id=1841
+URL:https://formations.cesagonline.com/course/view.php?id=1841
+CATEGORIES:CESAG FOAD,2026-2027,MBA
+COLOR:#1B7E44
+STATUS:CONFIRMED
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Rappel CESAG - Cours dans 15 minutes : COURS - MBAMSCH 9.1.1 - Comptabilité générale 26-27 (MBA MSCH)
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Rappel CESAG - Cours dans 2 heures : COURS - MBAMSCH 9.1.1 - Comptabilité générale 26-27 (MBA MSCH)
+END:VALARM
+BEGIN:VALARM
+TRIGGER;VALUE=DATE-TIME:20261117T200000Z
+ACTION:DISPLAY
+DESCRIPTION:Rappel CESAG - Cours demain à 18:00 GMT : COURS - MBAMSCH 9.1.1 - Comptabilité générale 26-27 (MBA MSCH)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:mba-msch-2026-11-19-1800-mbamsch-2627-02@cesag-online.com
+DTSTAMP:20261113T155810Z
+DTSTART:20261119T180000Z
+DTEND:20261119T203000Z
+SUMMARY:COURS - MBAMSCH 9.3.1 - Conventions internationales sur le travail 26-27 (MBA MSCH)
+DESCRIPTION:Programme : MBA Management Stratégique du Capital Humain (Promotion 2026–2027)\nType : Cours\nEnseignant : M. BABA SOMA KONE\nDurée : 2h30\nMoodle : https://formations.cesagonline.com/course/view.php?id=1842\nConsignes : Effectuez vos lectures préalables et vos quiz d'auto-évaluation sur Moodle avant chaque séance.\nRemarque : Pensez à vos lectures et quizz préparatoires sur Moodle. Le planning global du module sera envoyé en semaine.
+LOCATION:https://formations.cesagonline.com/course/view.php?id=1842
+URL:https://formations.cesagonline.com/course/view.php?id=1842
+CATEGORIES:CESAG FOAD,2026-2027,MBA
+COLOR:#1B7E44
+STATUS:CONFIRMED
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Rappel CESAG - Cours dans 15 minutes : COURS - MBAMSCH 9.3.1 - Conventions internationales sur le travail 26-27 (MBA MSCH)
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Rappel CESAG - Cours dans 2 heures : COURS - MBAMSCH 9.3.1 - Conventions internationales sur le travail 26-27 (MBA MSCH)
+END:VALARM
+BEGIN:VALARM
+TRIGGER;VALUE=DATE-TIME:20261118T200000Z
+ACTION:DISPLAY
+DESCRIPTION:Rappel CESAG - Cours demain à 18:00 GMT : COURS - MBAMSCH 9.3.1 - Conventions internationales sur le travail 26-27 (MBA MSCH)
+END:VALARM
+END:VEVENT
+END:VCALENDAR

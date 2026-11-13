@@ -1,0 +1,68 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//CESAG ONLINE//Agenda FOAD 2026-2027//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-TIMEZONE:UTC
+X-WR-CALNAME:CESAG - MBA GP (2026-2027)
+X-WR-CALDESC:Agenda de la semaine du 16 au 22 novembre 2026 · MBA Gestion de Projets
+COLOR:#2563EB
+X-APPLE-CALENDAR-COLOR:#2563EB
+X-OUTLOOK-COLOR:#2563EB
+BEGIN:VEVENT
+UID:mba-gp-2026-11-18-1800-mbagp-2627-01@cesag-online.com
+DTSTAMP:20261113T155810Z
+DTSTART:20261118T180000Z
+DTEND:20261118T203000Z
+SUMMARY:COURS - MBAGP 9.1.2 - Principes et enjeux de l'administration publique 26-27 (MBA GP)
+DESCRIPTION:Programme : MBA Gestion de Projets (Promotion 2026–2027)\nType : Cours\nEnseignant : M. JEROME DANDJINOU\nDurée : 2h30\nMoodle : https://formations.cesagonline.com/course/view.php?id=1778\nConsignes : Effectuez vos lectures préalables et vos quiz d'auto-évaluation sur Moodle avant chaque séance.\nRemarque : Bonne rentrée ! Pensez à vos lectures préalables et quizz sur Moodle. Le planning global du module sera envoyé en semaine.
+LOCATION:https://formations.cesagonline.com/course/view.php?id=1778
+URL:https://formations.cesagonline.com/course/view.php?id=1778
+CATEGORIES:CESAG FOAD,2026-2027,MBA
+COLOR:#1B7E44
+STATUS:CONFIRMED
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Rappel CESAG - Cours dans 15 minutes : COURS - MBAGP 9.1.2 - Principes et enjeux de l'administration publique 26-27 (MBA GP)
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Rappel CESAG - Cours dans 2 heures : COURS - MBAGP 9.1.2 - Principes et enjeux de l'administration publique 26-27 (MBA GP)
+END:VALARM
+BEGIN:VALARM
+TRIGGER;VALUE=DATE-TIME:20261117T200000Z
+ACTION:DISPLAY
+DESCRIPTION:Rappel CESAG - Cours demain à 18:00 GMT : COURS - MBAGP 9.1.2 - Principes et enjeux de l'administration publique 26-27 (MBA GP)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:mba-gp-2026-11-19-1800-mbagp-2627-02@cesag-online.com
+DTSTAMP:20261113T155810Z
+DTSTART:20261119T180000Z
+DTEND:20261119T203000Z
+SUMMARY:COURS - MBAGP 10.6.1 - Anglais de spécialité 26-27 (MBA GP)
+DESCRIPTION:Programme : MBA Gestion de Projets (Promotion 2026–2027)\nType : Cours\nEnseignant : M. IGNACE KPATAKPANI\nDurée : 2h30\nMoodle : https://formations.cesagonline.com/course/view.php?id=1734\nConsignes : Effectuez vos lectures préalables et vos quiz d'auto-évaluation sur Moodle avant chaque séance.\nRemarque : Cours jumelé avec MBA AG. Pensez à vos lectures et quizz préparatoires sur Moodle. (Planning global du module envoyé en semaine).
+LOCATION:https://formations.cesagonline.com/course/view.php?id=1734
+URL:https://formations.cesagonline.com/course/view.php?id=1734
+CATEGORIES:CESAG FOAD,2026-2027,MBA
+COLOR:#1B7E44
+STATUS:CONFIRMED
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Rappel CESAG - Cours dans 15 minutes : COURS - MBAGP 10.6.1 - Anglais de spécialité 26-27 (MBA GP)
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Rappel CESAG - Cours dans 2 heures : COURS - MBAGP 10.6.1 - Anglais de spécialité 26-27 (MBA GP)
+END:VALARM
+BEGIN:VALARM
+TRIGGER;VALUE=DATE-TIME:20261118T200000Z
+ACTION:DISPLAY
+DESCRIPTION:Rappel CESAG - Cours demain à 18:00 GMT : COURS - MBAGP 10.6.1 - Anglais de spécialité 26-27 (MBA GP)
+END:VALARM
+END:VEVENT
+END:VCALENDAR
