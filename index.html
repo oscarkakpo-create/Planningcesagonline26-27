@@ -306,6 +306,39 @@
       .hero-panel{padding:32px 24px}
       .brand-wrap{flex-direction:column;align-items:flex-start;gap:8px}
     }
+  
+    /* Bannière Officielle Rentrée */
+    .spotlight{
+      position:relative;overflow:hidden;
+      background:linear-gradient(135deg, #FFFFFF 0%, #FFF8F5 100%);
+      border:1.5px solid var(--cesag-orange-line);
+      border-left:6px solid var(--cesag-orange);
+      border-radius:20px;padding:26px 28px;
+      margin:18px 0 28px;
+      box-shadow:var(--shadow-sm);
+    }
+    .spotlight-tag{
+      display:inline-flex;align-items:center;gap:6px;
+      background:var(--cesag-orange);color:#fff;font-size:11px;font-weight:800;
+      letter-spacing:.8px;text-transform:uppercase;padding:4px 12px;border-radius:999px;
+      margin-bottom:10px;
+    }
+    .spotlight h3{
+      margin:0 0 8px;font-family:var(--serif);color:var(--cesag-green-dark);
+      font-size:23px;font-weight:700;letter-spacing:-.2px;
+    }
+    .spotlight p{
+      margin:0 0 14px;color:var(--text);font-size:14.5px;line-height:1.6;
+    }
+    .spotlight-chips{display:flex;flex-wrap:wrap;gap:10px}
+    .spotlight-chip{
+      display:inline-flex;align-items:center;gap:7px;background:#fff;
+      border:1px solid var(--line);padding:7px 14px;border-radius:12px;
+      font-size:13px;color:var(--muted);box-shadow:0 2px 6px rgba(0,0,0,.03);
+    }
+    .spotlight-chip b{color:var(--cesag-green-dark)}
+    .spotlight-chip.orange b{color:var(--cesag-orange-dark)}
+
   </style>
 </head>
 <body>
@@ -409,6 +442,27 @@
         </p>
       </div>
 
+      <!-- Bannière Officielle Bonne Rentrée 2026-2027 -->
+      <section class="spotlight" aria-label="Annonce officielle de rentrée">
+        <div class="spotlight-tag">🎉 Bonne Rentrée Académique 2026–2027</div>
+        <h3>Plannings de la première semaine : du lundi 16 au dimanche 22 novembre 2026</h3>
+        <p>
+          Bienvenue à tous les étudiants des nouveaux programmes MBA ! Vos emplois du temps de rentrée sont officiellement publiés pour <strong>MBA AG</strong>, <strong>MBA GP</strong> et <strong>MBA MSCH</strong>.
+        </p>
+        <div class="spotlight-chips">
+          <span class="spotlight-chip">
+            📖 <span><b>Lectures &amp; Quizz obligatoires :</b> à réaliser sur Moodle avant chaque séance synchrone</span>
+          </span>
+          <span class="spotlight-chip orange">
+            📅 <span><b>Plannings globaux des modules :</b> transmission par courriel au cours de la semaine</span>
+          </span>
+          <span class="spotlight-chip">
+            ⏰ <span><b>Horaire officiel :</b> 18h00–20h30 GMT (heure de Dakar)</span>
+          </span>
+        </div>
+      </section>
+
+
       <div class="program-grid">
         <!-- MBA AG -->
         <a class="program-card ag" href="./mba-ag/" aria-label="Accéder au programme MBA Administration et Gestion">
@@ -416,7 +470,7 @@
           <div class="pc-top">
             <div class="pill">Promotion 2026–2027</div>
             <h3>MBA Administration et Gestion (AG)</h3>
-            <p>Planning hebdomadaire de rentrée, séances de cours, accès Moodle, salles virtuelles et synchronisation d’agenda.</p>
+            <p><strong>Semaine du 16 au 22 nov. 2026 :</strong> 3 séances programmées (Comptabilité générale, Anglais des affaires, Droit des affaires).</p>
           </div>
           <div class="program-action">
             Accéder à mon planning
@@ -430,7 +484,7 @@
           <div class="pc-top">
             <div class="pill">Promotion 2026–2027</div>
             <h3>MBA Gestion de Projets (GP)</h3>
-            <p>Planning hebdomadaire de rentrée, séances de cours, accès Moodle, salles virtuelles et synchronisation d’agenda.</p>
+            <p><strong>Semaine du 16 au 22 nov. 2026 :</strong> 2 séances programmées (Principes de l’administration publique, Anglais de spécialité).</p>
           </div>
           <div class="program-action">
             Accéder à mon planning
@@ -444,7 +498,7 @@
           <div class="pc-top">
             <div class="pill">Promotion 2026–2027</div>
             <h3>MBA Capital Humain (MSCH)</h3>
-            <p>Planning hebdomadaire de rentrée, séances de cours, accès Moodle, salles virtuelles et synchronisation d’agenda.</p>
+            <p><strong>Semaine du 16 au 22 nov. 2026 :</strong> 2 séances programmées (Comptabilité générale, Conventions internationales du travail).</p>
           </div>
           <div class="program-action">
             Accéder à mon planning
