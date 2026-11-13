@@ -9,7 +9,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
 
   <style>
     :root{
@@ -30,7 +30,7 @@
       --shadow-sm:0 4px 16px rgba(11,77,46,.05);
       --shadow-md:0 16px 40px rgba(11,77,46,.09);
       --shadow-lg:0 30px 70px rgba(7,48,30,.16);
-      --radius:20px;
+      --radius:22px;
       --serif:"Spectral",Georgia,"Times New Roman",serif;
       --sans:"Inter","Segoe UI",Arial,sans-serif;
       --ease:cubic-bezier(.2,.7,.2,1);
@@ -43,8 +43,8 @@
       font-family:var(--sans);
       color:var(--text);
       background:
-        radial-gradient(1100px 520px at 100% -8%,rgba(201,150,42,.07),transparent 62%),
-        radial-gradient(900px 520px at -8% 108%,rgba(11,77,46,.06),transparent 60%),
+        radial-gradient(1100px 520px at 100% -8%,rgba(201,150,42,.08),transparent 62%),
+        radial-gradient(900px 520px at -8% 108%,rgba(11,77,46,.07),transparent 60%),
         var(--paper);
       background-attachment:fixed;
       -webkit-font-smoothing:antialiased;
@@ -71,40 +71,41 @@
 
     /* Topbar */
     .topbar{
-      background:var(--green);color:#fff;font-size:13px;padding:11px 0;
+      background:var(--green);color:#fff;font-size:13px;padding:12px 0;
       border-bottom:2px solid var(--gold);
     }
     .topbar .container{position:relative;display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;align-items:center}
     .brandline{font-weight:700;letter-spacing:.2px;display:flex;align-items:center;gap:9px}
-    .brandline .dot{width:7px;height:7px;border-radius:50%;background:var(--gold);flex:none}
-    .topbar .note{color:rgba(255,255,255,.9);font-weight:600}
+    .brandline .dot{width:8px;height:8px;border-radius:50%;background:var(--gold);flex:none;box-shadow:0 0 0 3px rgba(201,150,42,.3)}
+    .topbar .note{color:rgba(255,255,255,.94);font-weight:600;display:flex;align-items:center;gap:8px}
+    .badge-promo{background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.25);padding:3px 9px;border-radius:999px;font-size:11.5px;letter-spacing:.3px}
 
     /* Hero */
-    .hero{padding:36px 0 18px}
+    .hero{padding:34px 0 16px}
     .hero-panel{
       position:relative;overflow:hidden;color:#fff;border-radius:30px;
-      padding:52px 50px 44px;box-shadow:var(--shadow-lg);
+      padding:50px 48px 42px;box-shadow:var(--shadow-lg);
       background:
-        radial-gradient(120% 140% at 100% 0%,rgba(201,150,42,.22),transparent 45%),
+        radial-gradient(120% 140% at 100% 0%,rgba(201,150,42,.24),transparent 45%),
         linear-gradient(150deg,var(--green-2) 0%,var(--green) 42%,var(--green-dark) 100%);
     }
     .hero-panel::before{
-      content:"";position:absolute;left:0;right:0;top:0;height:3px;
+      content:"";position:absolute;left:0;right:0;top:0;height:4px;
       background:linear-gradient(90deg,transparent,var(--gold),transparent);
     }
-    .hero-content{position:relative;z-index:1;max-width:820px}
+    .hero-content{position:relative;z-index:1;max-width:840px}
     .eyebrow{
       display:inline-flex;align-items:center;gap:9px;
-      text-transform:uppercase;letter-spacing:2px;font-weight:700;
+      text-transform:uppercase;letter-spacing:2px;font-weight:800;
       color:#F1D291;font-size:12px;margin:0 0 16px;
     }
     .eyebrow::before{content:"";width:26px;height:2px;background:var(--gold);border-radius:2px}
     h1{
       font-family:var(--serif);font-weight:600;
-      margin:0;font-size:clamp(34px,5.2vw,56px);line-height:1.06;letter-spacing:-.5px;
+      margin:0;font-size:clamp(32px,5.2vw,54px);line-height:1.06;letter-spacing:-.5px;
     }
     .hero p.lead{
-      margin:18px 0 0;max-width:700px;line-height:1.66;
+      margin:18px 0 0;max-width:720px;line-height:1.68;
       color:rgba(255,255,255,.92);font-size:16.5px;
     }
     .hero-meta{
@@ -112,16 +113,30 @@
     }
     .hero-meta span{
       display:inline-flex;align-items:center;gap:7px;
-      background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.18);
-      color:rgba(255,255,255,.94);font-size:12.5px;font-weight:600;
-      padding:7px 13px;border-radius:999px;backdrop-filter:blur(4px);
+      background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.2);
+      color:rgba(255,255,255,.96);font-size:12.5px;font-weight:600;
+      padding:7px 14px;border-radius:999px;backdrop-filter:blur(4px);
     }
     .hero-meta span::before{
       content:"";width:6px;height:6px;border-radius:50%;background:var(--gold);flex:none;
     }
 
+    /* Live Bar / Timezone Indicator */
+    .site-live{
+      margin:22px 0 8px;padding:16px 22px;background:var(--white);
+      border:1px solid var(--line);border-radius:18px;box-shadow:var(--shadow-sm);
+      display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;
+    }
+    .site-live-head{display:flex;align-items:center;gap:10px;font-size:14px;font-weight:750;color:var(--green)}
+    .live-pulse{width:10px;height:10px;border-radius:50%;background:#10B981;box-shadow:0 0 0 0 rgba(16,185,129,.7);animation:pulse 2s infinite}
+    @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(16,185,129,.7)}70%{box-shadow:0 0 0 10px rgba(16,185,129,0)}100%{box-shadow:0 0 0 0 rgba(16,185,129,0)}}
+    .clock-group{display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+    .clock-badge{font-size:13.5px;font-weight:700;color:var(--muted);background:var(--paper);padding:6px 14px;border-radius:999px;border:1px solid var(--line)}
+    .clock-badge strong{color:var(--green);font-family:ui-monospace,"Cascadia Mono",monospace;font-size:15px}
+    .tz-detected{font-size:12px;color:var(--gold-dark);background:var(--gold-soft);padding:5px 12px;border-radius:999px;font-weight:700}
+
     /* Guide 3 étapes */
-    .guide{margin:24px 0 6px;display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .guide{margin:22px 0 6px;display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
     .guide-card{
       position:relative;background:var(--white);border:1px solid var(--line);
       border-radius:16px;padding:20px;box-shadow:var(--shadow-sm);
@@ -136,20 +151,8 @@
     .guide-card b{display:block;margin-bottom:5px;color:var(--green);font-size:15px;font-weight:700}
     .guide-card p{margin:0;color:var(--muted);font-size:13.5px;line-height:1.55}
 
-    /* Live Bar */
-    .site-live{
-      margin:24px 0 10px;padding:16px 20px;background:var(--white);
-      border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow-sm);
-      display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;
-    }
-    .site-live-head{display:flex;align-items:center;gap:10px;font-size:13.5px;font-weight:700;color:var(--green)}
-    .live-pulse{width:10px;height:10px;border-radius:50%;background:#10B981;box-shadow:0 0 0 0 rgba(16,185,129,.7);animation:pulse 2s infinite}
-    @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(16,185,129,.7)}70%{box-shadow:0 0 0 10px rgba(16,185,129,0)}100%{box-shadow:0 0 0 0 rgba(16,185,129,0)}}
-    .clock-badge{font-size:14px;font-weight:700;color:var(--muted);background:var(--paper);padding:6px 14px;border-radius:999px;border:1px solid var(--line)}
-    .clock-badge strong{color:var(--green);font-family:ui-monospace,monospace;font-size:15px}
-
     /* Grille Programmes */
-    main{padding:30px 0 56px}
+    main{padding:26px 0 54px}
     .section-head{margin:8px 0 24px;text-align:center}
     .section-head h2{
       font-family:var(--serif);font-weight:600;
@@ -163,7 +166,7 @@
       position:relative;overflow:hidden;isolation:isolate;
       background:var(--white);border:1px solid var(--line);
       border-radius:var(--radius);padding:28px 24px 22px;
-      min-height:240px;display:flex;flex-direction:column;justify-content:space-between;
+      min-height:245px;display:flex;flex-direction:column;justify-content:space-between;
       box-shadow:var(--shadow-sm);cursor:pointer;
       transition:transform .28s var(--ease),box-shadow .28s var(--ease),border-color .28s var(--ease);
     }
@@ -205,7 +208,7 @@
       position:relative;z-index:1;margin-top:24px;
       display:flex;align-items:center;justify-content:space-between;gap:12px;
       font-weight:700;color:#fff;font-size:14.5px;
-      background:var(--green);padding:13px 18px;border-radius:13px;
+      background:var(--green);padding:13px 18px;border-radius:14px;
       box-shadow:0 8px 20px rgba(11,77,46,.16);
       transition:box-shadow .28s var(--ease),transform .28s var(--ease);
     }
@@ -219,14 +222,39 @@
     }
     .program-card:hover .arrow{transform:translateX(5px)}
 
+    /* Boîte à outils de rentrée */
+    .toolbox{
+      margin-top:42px;
+      background:var(--white);
+      border:1px solid var(--line);
+      border-radius:24px;
+      padding:32px 30px;
+      box-shadow:var(--shadow-sm);
+    }
+    .toolbox-head{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-bottom:22px}
+    .toolbox-head h3{font-family:var(--serif);margin:0;font-size:24px;color:var(--green)}
+    .toolbox-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .tool-box-item{
+      background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:20px;
+      display:flex;flex-direction:column;justify-content:space-between;gap:12px;
+    }
+    .tool-box-item h4{margin:0;font-size:16px;color:var(--green)}
+    .tool-box-item p{margin:0;font-size:13.5px;color:var(--muted);line-height:1.5}
+    .tool-box-item .btn-tool{
+      display:inline-flex;align-items:center;gap:7px;color:var(--green);font-weight:700;font-size:13px;
+      border-bottom:1.5px solid transparent;width:max-content;padding-bottom:2px;
+    }
+    .tool-box-item .btn-tool:hover{border-bottom-color:var(--gold);color:var(--gold-dark)}
+
     /* Footer */
-    footer{background:var(--green-dark);color:rgba(255,255,255,.78);padding:32px 0;font-size:13px;margin-top:40px}
+    footer{background:var(--green-dark);color:rgba(255,255,255,.8);padding:32px 0;font-size:13px;margin-top:48px}
     footer .container{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;align-items:center}
     footer b{color:#fff}
 
     @media(max-width:900px){
       .program-grid{grid-template-columns:1fr}
       .guide{grid-template-columns:1fr}
+      .toolbox-grid{grid-template-columns:1fr}
       .hero-panel{padding:32px 24px}
     }
   </style>
@@ -237,7 +265,10 @@
   <div class="topbar">
     <div class="container">
       <div class="brandline"><span class="dot"></span> CESAG ONLINE · Direction de la Formation Ouverte et à Distance</div>
-      <div class="note">Promotion 2026–2027 · Rentrée Officielle</div>
+      <div class="note">
+        <span class="badge-promo">Promotion 2026–2027</span>
+        <span>Rentrée Officielle</span>
+      </div>
     </div>
   </div>
 
@@ -263,8 +294,11 @@
           <span class="live-pulse" aria-hidden="true"></span>
           <span>Espaces de cours de la nouvelle promotion actifs</span>
         </div>
-        <div class="clock-badge">
-          Heure GMT officielle : <strong id="homeGmtClock">--:--:--</strong>
+        <div class="clock-group">
+          <div class="clock-badge">
+            Heure GMT officielle (Dakar) : <strong id="homeGmtClock">--:--:--</strong>
+          </div>
+          <div class="tz-detected" id="tzNotice">Détection du fuseau…</div>
         </div>
       </section>
 
@@ -282,7 +316,7 @@
         <div class="guide-card">
           <span class="num">3</span>
           <b>Synchronisez votre agenda</b>
-          <p>Téléchargez le calendrier ICS sur votre téléphone ou exportez en PDF.</p>
+          <p>Ajoutez les séances à votre agenda Google/Apple en 1 clic ou exportez en PDF.</p>
         </div>
       </section>
     </div>
@@ -304,7 +338,7 @@
           <div class="pc-top">
             <div class="pill">Promotion 2026–2027</div>
             <h3>MBA Administration et Gestion (AG)</h3>
-            <p>Planning hebdomadaire de rentrée, séances de cours, accès Moodle, salles virtuelles et calendrier ICS.</p>
+            <p>Planning hebdomadaire de rentrée, séances de cours, accès Moodle, salles virtuelles et synchronisation d’agenda.</p>
           </div>
           <div class="program-action">
             Accéder à mon planning
@@ -318,7 +352,7 @@
           <div class="pc-top">
             <div class="pill">Promotion 2026–2027</div>
             <h3>MBA Gestion de Projets (GP)</h3>
-            <p>Planning hebdomadaire de rentrée, séances de cours, accès Moodle, salles virtuelles et calendrier ICS.</p>
+            <p>Planning hebdomadaire de rentrée, séances de cours, accès Moodle, salles virtuelles et synchronisation d’agenda.</p>
           </div>
           <div class="program-action">
             Accéder à mon planning
@@ -332,7 +366,7 @@
           <div class="pc-top">
             <div class="pill">Promotion 2026–2027</div>
             <h3>MBA Capital Humain (MSCH)</h3>
-            <p>Planning hebdomadaire de rentrée, séances de cours, accès Moodle, salles virtuelles et calendrier ICS.</p>
+            <p>Planning hebdomadaire de rentrée, séances de cours, accès Moodle, salles virtuelles et synchronisation d’agenda.</p>
           </div>
           <div class="program-action">
             Accéder à mon planning
@@ -340,6 +374,31 @@
           </div>
         </a>
       </div>
+
+      <!-- Kit de rentrée & boîte à outils -->
+      <section class="toolbox" aria-labelledby="toolbox-title">
+        <div class="toolbox-head">
+          <h3 id="toolbox-title">Kit de Rentrée &amp; Ressources Essentielles</h3>
+          <span class="badge-promo" style="color:var(--green);border-color:var(--green-line);background:var(--green-soft)">Nouveaux Étudiants</span>
+        </div>
+        <div class="toolbox-grid">
+          <div class="tool-box-item">
+            <h4>Plateforme Moodle FOAD</h4>
+            <p>Accédez à votre tableau de bord étudiant, téléchargez vos supports de cours et réalisez vos évaluations.</p>
+            <a class="btn-tool" href="https://formations.cesagonline.com/" target="_blank" rel="noopener">Ouvrir Moodle CESAG →</a>
+          </div>
+          <div class="tool-box-item">
+            <h4>Salles de Classe BigBlueButton</h4>
+            <p>Vérifiez votre équipement (microphone, caméra et navigateur recommandé Chrome/Edge) avant votre premier webinaire.</p>
+            <span class="btn-tool" style="cursor:default">Test audio intégré à chaque connexion ✓</span>
+          </div>
+          <div class="tool-box-item">
+            <h4>Fuseau Horaire &amp; Ponctualité</h4>
+            <p>Tous les cours sont affichés en heure <strong>GMT (heure de Dakar)</strong>. Le convertisseur automatique ajuste l'horaire selon votre pays.</p>
+            <span class="btn-tool" style="cursor:default">Synchronisation automatique active ✓</span>
+          </div>
+        </div>
+      </section>
     </div>
   </main>
 
@@ -357,6 +416,19 @@
     }
     updateClock();
     setInterval(updateClock, 1000);
+
+    // Détection du fuseau horaire local de l'étudiant
+    (function detectTimezone(){
+      const offsetMinutes = -new Date().getTimezoneOffset();
+      const offsetHours = offsetMinutes / 60;
+      const el = document.getElementById('tzNotice');
+      if(offsetHours === 0){
+        el.textContent = "Votre pays est à l’heure GMT (Sénégal, Togo, Burkina Faso, etc.)";
+      } else {
+        const sign = offsetHours > 0 ? "+" : "";
+        el.textContent = `Votre pays est en UTC${sign}${offsetHours} (ex. Bénin/Niger : GMT+1)`;
+      }
+    })();
   </script>
 </body>
 </html>

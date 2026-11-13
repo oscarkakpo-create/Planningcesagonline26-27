@@ -3,17 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title id="pageTitle">Agenda FOAD — CESAG ONLINE</title>
-  <meta name="theme-color" content="#0B4D2E">
+  <title id="pageTitle">MBA Management Stratégique du Capital Humain — Agenda FOAD CESAG ONLINE</title>
+  <meta name="theme-color" content="#B45309">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <style>
     :root{
-      --green:#0B4D2E;--green2:#0E5E39;--greenDark:#07301E;--greenSoft:#E9F2ED;
+      --green:#B45309;--green2:#B45309;--greenDark:#07301E;--greenSoft:#E9F2ED;
       --greenLine:#CBDED3;--gold:#C9962A;--goldDark:#755513;--goldSoft:#F7EFDA;
       --paper:#F6F8F6;--white:#fff;--text:#16241D;--muted:#586A60;--line:#E3E9E5;
-      --red:#B42318;--redSoft:#FFF0EE;--blue:#4052A8;--blueSoft:#EEF1FF;
+      --red:#B42318;--redSoft:#FFF0EE;--blue:#2563EB;--blueSoft:#EFF6FF;
       --shadow:0 16px 40px rgba(11,77,46,.08);
       --serif:"Spectral",Georgia,serif;--sans:"Inter","Segoe UI",Arial,sans-serif;
     }
@@ -21,74 +21,125 @@
     body{margin:0;font-family:var(--sans);color:var(--text);background:var(--paper)}
     a{text-decoration:none;color:inherit} button{font:inherit}
     .container{max-width:1160px;margin:auto;padding:0 20px}
+    
+    /* Topbar */
     .topbar{background:var(--green);color:#fff;border-bottom:2px solid var(--gold);padding:11px 0;font-size:13px}
     .topbar .container{display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap}
-    .brand{font-weight:700}.back{font-weight:600;color:rgba(255,255,255,.9)}
-    .topnav{display:flex;gap:16px;align-items:center;flex-wrap:wrap}.topnav a{padding:6px 0;border-bottom:1px solid transparent}.topnav a:hover,.topnav a:focus-visible{border-bottom-color:var(--gold);outline:none}
-    .hero{padding:34px 0 18px}
-    .hero-panel{background:linear-gradient(150deg,var(--green2),var(--green) 45%,var(--greenDark));color:#fff;border-radius:30px;padding:44px 46px 38px;box-shadow:var(--shadow);position:relative;overflow:hidden}
+    .brand{font-weight:700;display:flex;align-items:center;gap:8px}
+    .brand .dot{width:7px;height:7px;border-radius:50%;background:var(--gold)}
+    .topnav{display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+    .topnav a{padding:5px 10px;border-radius:6px;border:1px solid transparent;color:rgba(255,255,255,.9);font-weight:600}
+    .topnav a:hover,.topnav a.active{background:rgba(255,255,255,.14);border-color:rgba(255,255,255,.25);color:#fff}
+    
+    /* Hero */
+    .hero{padding:32px 0 16px}
+    .hero-panel{background:linear-gradient(150deg,#B45309,#07301E);color:#fff;border-radius:28px;padding:42px 44px 36px;box-shadow:var(--shadow);position:relative;overflow:hidden}
     .hero-panel:before{content:"";position:absolute;left:0;right:0;top:0;height:3px;background:linear-gradient(90deg,transparent,var(--gold),transparent)}
     .hero-grid{display:grid;grid-template-columns:1.35fr .65fr;gap:28px;align-items:center;position:relative;z-index:1}
-    .eyebrow{font-size:12px;text-transform:uppercase;letter-spacing:2px;font-weight:700;color:#F1D291;margin-bottom:12px}
-    h1{font-family:var(--serif);font-weight:600;margin:0;font-size:clamp(34px,5vw,56px);line-height:1.04}
-    .hero p{margin:14px 0 0;color:rgba(255,255,255,.88);line-height:1.6}
-    .weekbox{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.18);border-radius:18px;padding:20px}
-    .weekbox small{display:block;color:#F1D291;font-weight:700;margin-bottom:6px}.weekbox strong{display:block;font-size:20px}.weekbox span{display:block;margin-top:6px;font-size:12px;color:rgba(255,255,255,.74)}
+    .eyebrow{font-size:12px;text-transform:uppercase;letter-spacing:2px;font-weight:800;color:#F1D291;margin-bottom:12px}
+    h1{font-family:var(--serif);font-weight:600;margin:0;font-size:clamp(30px,4.8vw,52px);line-height:1.06}
+    .hero p{margin:14px 0 0;color:rgba(255,255,255,.9);line-height:1.6}
+    .weekbox{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.2);border-radius:18px;padding:20px;backdrop-filter:blur(6px)}
+    .weekbox small{display:block;color:#F1D291;font-weight:700;margin-bottom:6px;letter-spacing:.5px}
+    .weekbox strong{display:block;font-size:19px}
+    .weekbox span{display:block;margin-top:6px;font-size:12px;color:rgba(255,255,255,.8)}
     .newflag{display:inline-block;margin-top:10px;background:var(--gold);color:#fff;font-size:11px;font-weight:800;letter-spacing:.5px;text-transform:uppercase;padding:5px 11px;border-radius:999px}
-    .toolbar{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px;position:relative;z-index:1}
-    .btn{border:none;border-radius:13px;padding:12px 15px;font-weight:700;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;gap:8px}
-    .btn-gold{background:var(--gold);color:#fff}.btn-light{background:#fff;color:var(--green)}.btn-soft{background:var(--greenSoft);color:var(--green)}
-    main{padding:10px 0 48px}
-    .quick{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:14px 0 26px}
-    .quick-card{background:#fff;border:1px solid var(--line);border-radius:17px;padding:17px}.quick-card small{display:block;color:var(--muted);margin-bottom:4px}.quick-card strong{font-size:20px;color:var(--green)}
-    .section-head{margin:8px 0 14px}.section-head h2{font-family:var(--serif);margin:0;color:var(--green);font-size:29px;font-weight:600}.section-head p{margin:5px 0 0;color:var(--muted);font-size:13.5px}
+    
+    .toolbar{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px;position:relative;z-index:1}
+    .btn{border:none;border-radius:12px;padding:11px 16px;font-weight:700;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;gap:8px;font-size:13.5px;transition:transform .18s,box-shadow .18s}
+    .btn:hover{transform:translateY(-1px);box-shadow:0 6px 16px rgba(0,0,0,.15)}
+    .btn-gold{background:var(--gold);color:#fff}
+    .btn-light{background:#fff;color:var(--green)}
+    .btn-soft{background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.25);color:#fff}
+    
+    /* Live Status & Timezone Switcher */
+    .livebar{display:grid;grid-template-columns:180px 1fr 1fr;gap:12px;margin:16px 0 6px}
+    .live-item{background:#fff;border:1px solid var(--line);border-radius:16px;padding:13px 16px;display:flex;align-items:center;gap:12px;box-shadow:0 3px 12px rgba(11,77,46,.04)}
+    .live-icon{width:34px;height:34px;border-radius:50%;display:grid;place-items:center;background:var(--greenSoft);color:var(--green);font-size:16px;flex:none}
+    .live-item small{display:block;color:var(--muted);font-size:9.5px;font-weight:800;letter-spacing:.7px;text-transform:uppercase}
+    .live-item strong{display:block;margin-top:2px;color:var(--green);font-size:13.5px}
+    .live-clock strong{font-variant-numeric:tabular-nums;font-size:18px}
+
+    /* Timezone Converter Bar */
+    .tz-bar{margin:16px 0 20px;background:#fff;border:1px solid var(--line);border-radius:14px;padding:12px 18px;display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap}
+    .tz-info{display:flex;align-items:center;gap:9px;font-size:13px;font-weight:600;color:var(--muted)}
+    .tz-switch{display:inline-flex;background:var(--paper);border:1px solid var(--line);border-radius:999px;padding:3px}
+    .tz-btn{border:none;background:transparent;padding:6px 14px;border-radius:999px;font-size:12px;font-weight:700;cursor:pointer;color:var(--muted);transition:all .18s}
+    .tz-btn.active{background:var(--green);color:#fff;box-shadow:0 2px 8px rgba(0,0,0,.15)}
+
+    /* Quick stats */
+    .quick{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:14px 0 24px}
+    .quick-card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:16px}
+    .quick-card small{display:block;color:var(--muted);margin-bottom:4px;font-size:12px}
+    .quick-card strong{font-size:20px;color:var(--green)}
+    
+    .section-head{margin:12px 0 14px;display:flex;align-items:baseline;justify-content:space-between;flex-wrap:wrap;gap:12px}
+    .section-head h2{font-family:var(--serif);margin:0;color:var(--green);font-size:28px;font-weight:600}
+    .filter-pills{display:flex;gap:8px}
+    .f-pill{border:1px solid var(--line);background:#fff;color:var(--muted);padding:6px 12px;border-radius:999px;font-size:12px;font-weight:700;cursor:pointer}
+    .f-pill.active{background:var(--green);border-color:var(--green);color:#fff}
+
+    /* Sessions */
     .agenda{display:grid;gap:16px}
-    .session{background:#fff;border:1px solid var(--line);border-radius:20px;padding:20px;display:grid;grid-template-columns:130px 1fr 195px;gap:20px;align-items:center;position:relative;overflow:hidden;box-shadow:0 4px 16px rgba(11,77,46,.04)}
-    .session:before{content:"";position:absolute;left:0;top:0;bottom:0;width:5px;background:var(--green)}.session.exam{border:2px solid #E2A7A1;background:linear-gradient(105deg,#FFF8F6 0,#fff 58%);box-shadow:0 12px 30px rgba(180,35,24,.12)}.session.exam:before{width:7px;background:var(--red)}
-    .session.is-cancelled{opacity:.72}.session.is-cancelled:before{background:var(--red)}.session.is-cancelled h3{text-decoration:line-through;text-decoration-color:rgba(180,35,24,.6)}
-    .session.is-rescheduled:before{background:#D9822B}.session.is-advanced:before{background:var(--blue)}.session.is-confirmed:before{background:var(--green)}
-    .datebox{background:var(--paper);border-radius:15px;padding:14px;text-align:center}.datebox .day{font-size:32px;font-weight:800;color:var(--green);line-height:1}.exam .datebox .day{color:var(--red)}.datebox .month{font-size:11px;text-transform:uppercase;letter-spacing:1px;font-weight:800;color:var(--muted);margin-top:6px}.datebox .weekday{font-size:12px;color:var(--muted);margin-top:3px}
-    .tags{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:8px;align-items:center}.tag{padding:5px 9px;border-radius:999px;font-size:10.5px;font-weight:800;text-transform:uppercase;letter-spacing:.5px}.tag-course{background:var(--greenSoft);color:var(--green)}.tag-exam{background:var(--redSoft);color:var(--red)}.tag-program{background:var(--goldSoft);color:var(--goldDark)}
-    .status-badge{padding:5px 10px;border-radius:999px;font-size:10.5px;font-weight:800;text-transform:uppercase;letter-spacing:.5px;display:inline-flex;align-items:center;gap:6px}
-    .status-badge::before{content:"";width:7px;height:7px;border-radius:50%;background:currentColor;flex:none}
-    .st-pending{background:#102A43;color:#EAF7EF;border:1px solid #294E68;border-radius:5px;font-family:ui-monospace,"Cascadia Mono",Consolas,monospace;letter-spacing:1.15px;box-shadow:inset 0 0 0 1px rgba(255,255,255,.06),0 2px 5px rgba(16,42,67,.18)}
-    .st-pending::before{color:#58D68D;box-shadow:0 0 0 3px rgba(88,214,141,.13)}
+    .session{background:#fff;border:1px solid var(--line);border-radius:20px;padding:22px;display:grid;grid-template-columns:130px 1fr 200px;gap:20px;align-items:center;position:relative;overflow:hidden;box-shadow:0 4px 16px rgba(11,77,46,.04);transition:transform .2s,box-shadow .2s}
+    .session:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(11,77,46,.08)}
+    .session:before{content:"";position:absolute;left:0;top:0;bottom:0;width:5px;background:var(--green)}
+    .session.exam:before{background:var(--red)}
+    .datebox{background:var(--paper);border:1px solid #E4ECE7;border-radius:15px;padding:14px;text-align:center}
+    .datebox .day{font-size:30px;font-weight:800;color:var(--green);line-height:1}
+    .datebox .month{font-size:11px;text-transform:uppercase;letter-spacing:1px;font-weight:800;color:var(--muted);margin-top:6px}
+    .datebox .weekday{font-size:12px;color:var(--muted);margin-top:3px}
+    
+    .tags{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:8px;align-items:center}
+    .tag{padding:4px 9px;border-radius:999px;font-size:10.5px;font-weight:800;text-transform:uppercase;letter-spacing:.5px}
+    .tag-course{background:var(--greenSoft);color:var(--green)}
+    .tag-exam{background:var(--redSoft);color:var(--red)}
+    .tag-program{background:var(--goldSoft);color:var(--goldDark)}
+    .status-badge{padding:4px 9px;border-radius:999px;font-size:10.5px;font-weight:800;text-transform:uppercase;letter-spacing:.5px;display:inline-flex;align-items:center;gap:6px}
+    .status-badge::before{content:"";width:6px;height:6px;border-radius:50%;background:currentColor;flex:none}
+    .st-pending{background:#102A43;color:#EAF7EF}
     .st-confirmed{background:#E4F3EA;color:#166534}
-    .st-advanced{background:var(--blueSoft);color:var(--blue)}
     .st-rescheduled{background:#FCEDDD;color:#9A4A0F}
     .st-cancelled{background:var(--redSoft);color:var(--red)}
-    .session h3{margin:0;font-size:18px;line-height:1.35;overflow-wrap:break-word}.meta{display:flex;gap:14px;flex-wrap:wrap;margin-top:9px;color:var(--muted);font-size:13px}.meta b{color:var(--text)}
-    .updated-line{margin-top:7px;color:var(--muted);font-size:11.5px;display:flex;align-items:center;gap:6px}.updated-line::before{content:"";width:5px;height:5px;border-radius:50%;background:var(--greenLine);flex:none}
-    .actions{display:flex;flex-direction:column;gap:8px}.action{display:block;text-align:center;padding:10px 12px;border-radius:11px;font-size:12.5px;font-weight:700;border:1px solid transparent;cursor:pointer}.moodle{background:var(--green);color:#fff}.room{background:#F3F7F4;color:var(--green);border-color:#D9E5DD}.copy-room{background:#fff;color:#496158;border-color:#D9E5DD}.teams{background:var(--blueSoft);color:var(--blue);border-color:#DDE2FF}.ics{background:#FFF8E7;color:#765815;border-color:#ECDCB0}
-    .cancel-note{font-size:12px;color:var(--red);font-weight:700;text-align:center;padding:8px}
-    .notice{margin-top:24px;background:#FFF9EC;border:1px solid #EBDCB4;border-left:5px solid var(--gold);border-radius:18px;padding:18px 20px;color:#5F4B20;font-size:13.5px;line-height:1.6}
+    
+    .session h3{margin:0;font-size:18px;line-height:1.35}
+    .meta{display:flex;gap:14px;flex-wrap:wrap;margin-top:9px;color:var(--muted);font-size:13px}
+    .meta b{color:var(--text)}
+    .tz-local-hint{display:inline-block;margin-left:6px;padding:2px 7px;border-radius:4px;background:var(--gold-soft);color:var(--gold-dark);font-size:11px;font-weight:700}
+    
+    .actions{display:flex;flex-direction:column;gap:8px}
+    .action{display:block;text-align:center;padding:10px 12px;border-radius:11px;font-size:12.5px;font-weight:700;border:1px solid transparent;cursor:pointer;transition:transform .18s}
+    .action:hover{transform:translateY(-1px)}
+    .moodle{background:var(--green);color:#fff}
+    .room{background:#F3F7F4;color:var(--green);border-color:#D9E5DD}
+    .gcal{background:#EBF3FE;color:#1A73E8;border-color:#D2E3FC}
+    .ics{background:#FFF8E7;color:#765815;border-color:#ECDCB0}
+    
     .weekmsg{margin:0 0 18px;background:linear-gradient(180deg,#FFFCF3,#FFF9EC);border:1px solid #EBDCB4;border-left:5px solid var(--gold);border-radius:16px;padding:14px 18px;color:#5F4B20;font-size:14px;line-height:1.55;font-weight:600}
-    .hero-panel:after{content:"";position:absolute;width:180px;height:180px;border:1px solid rgba(255,255,255,.12);border-radius:42% 58% 64% 36%;right:-62px;bottom:-78px;transform:rotate(18deg);pointer-events:none}
-    .quick-card,.session,.action{transition:transform .2s ease,box-shadow .2s ease,border-color .2s ease}
-    .quick-card{position:relative;overflow:hidden}.quick-card:after{content:"";position:absolute;right:-20px;bottom:-24px;width:62px;height:62px;border-radius:50%;background:rgba(201,150,42,.08)}
-    .quick-card:hover{transform:translateY(-2px);border-color:#C9D9CF;box-shadow:0 9px 24px rgba(11,77,46,.07)}
-    .session:hover{transform:translateY(-2px);border-color:#C5D8CB;box-shadow:0 12px 30px rgba(11,77,46,.09)}
-    .datebox{border:1px solid #E4ECE7;box-shadow:inset 0 1px 0 #fff}.exam .datebox{background:linear-gradient(180deg,#FFF8F6,#FFF1EE);border-color:#F1D5D0}
-    .action:hover{transform:translateY(-1px);box-shadow:0 6px 15px rgba(11,77,46,.12)}
-    .action:focus-visible{outline:2px solid var(--green);outline-offset:2px}
-    .info-kicker{display:inline-flex;margin-bottom:8px;padding:4px 9px;border-radius:999px;background:rgba(201,150,42,.13);color:var(--goldDark);font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:.65px}.status-legend{display:flex;align-items:center;gap:10px;margin:10px 0 18px;color:var(--muted);font-size:12.5px}.status-legend .status-badge{flex:none}
-    @media(prefers-reduced-motion:reduce){.quick-card,.session,.action{transition:none}.quick-card:hover,.session:hover,.action:hover{transform:none}}
-    .livebar{display:grid;grid-template-columns:180px 1fr 1fr;gap:12px;margin:14px 0 4px}.live-item{background:#fff;border:1px solid var(--line);border-radius:15px;padding:13px 16px;display:flex;align-items:center;gap:12px;box-shadow:0 3px 12px rgba(11,77,46,.04)}.live-icon{width:34px;height:34px;border-radius:50%;display:grid;place-items:center;background:var(--greenSoft);color:var(--green);font-size:16px;flex:none}.live-item small{display:block;color:var(--muted);font-size:9.5px;font-weight:800;letter-spacing:.7px;text-transform:uppercase}.live-item strong{display:block;margin-top:2px;color:var(--green);font-size:13.5px}.live-clock strong{font-variant-numeric:tabular-nums;font-size:18px}.today-badge{padding:5px 9px;border-radius:999px;background:#E8F1FF;color:#245B9E;font-size:10.5px;font-weight:800;text-transform:uppercase;letter-spacing:.5px}.session.is-today{border-color:#9BBCE0;box-shadow:0 8px 24px rgba(36,91,158,.10)}.session.is-today:before{background:#315B8A}.live-item.alert-hot{background:#FFF7E8;border-color:#E9C66F}.live-item.alert-hot .live-icon{background:#FBE8B8;color:#805D0B}.live-item.alert-live{background:#EAF6EF;border-color:#9BC6AA}.live-item.alert-live .live-icon{background:#CFE9D9;color:#166534}
-    .live-item.alert-hot,.live-item.alert-live{background:var(--redSoft)!important;border-color:#E2A7A1!important;color:var(--red)!important}.live-item.alert-hot .live-icon,.live-item.alert-live .live-icon{background:#F7D8D4!important;color:var(--red)!important}.live-item.alert-hot strong,.live-item.alert-live strong{color:var(--red)!important}
-    .notice:has(.recordings-list){margin-top:24px;background:linear-gradient(145deg,#0B4D2E 0%,#0E5E39 65%,#174F37 100%);border:0;border-radius:24px;padding:24px;color:#fff;position:relative;overflow:hidden;box-shadow:0 16px 34px rgba(11,77,46,.16)}.notice:has(.recordings-list):before{content:"REPLAYS TEAMS";display:inline-flex;align-items:center;gap:7px;color:#F7D98D;font-size:10px;font-weight:800;letter-spacing:1.2px;text-transform:uppercase;margin-bottom:8px}.notice:has(.recordings-list) b{display:block;font-family:var(--serif);font-size:26px;line-height:1.15;color:#fff;margin-bottom:5px}.notice:has(.recordings-list)>span{display:block;color:rgba(255,255,255,.78);font-size:13px}.recordings-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:12px;margin-top:20px}.recording-link{display:flex;flex-direction:column;justify-content:flex-end;gap:10px;min-height:122px;background:#fff;color:var(--green);border:1px solid rgba(255,255,255,.8);border-radius:17px;padding:16px;box-shadow:0 8px 18px rgba(0,0,0,.08);font-size:13px;line-height:1.4;transition:transform .2s ease,box-shadow .2s ease,border-color .2s ease}.recording-link:before{content:"▶";display:grid;place-items:center;width:32px;height:32px;border-radius:10px;background:#E9F2ED;color:var(--green);font-size:13px}.recording-link:after{content:"Ouvrir l’enregistrement  ↗";font-size:11.5px;font-weight:800;color:var(--green);margin-top:auto}.recording-link:hover{background:#fff;border-color:#F1D291;transform:translateY(-3px);box-shadow:0 14px 26px rgba(0,0,0,.16)}
-    .empty{display:none;background:#fff;border:1px dashed #CBD5CF;border-radius:18px;padding:28px;text-align:center;color:var(--muted)}
-    footer{background:var(--greenDark);color:rgba(255,255,255,.78);padding:28px 0;font-size:12.5px}footer .container{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}footer b{color:#fff}
-    @media(max-width:900px){.hero-grid{grid-template-columns:1fr}.quick{grid-template-columns:1fr}.session{grid-template-columns:105px 1fr}.actions{grid-column:1/-1;display:grid;grid-template-columns:repeat(2,1fr)}}
-    @media(max-width:620px){.container{padding:0 16px}.topbar .container{flex-wrap:nowrap}.brand{font-size:12px;white-space:nowrap}.topnav{gap:10px;flex-wrap:nowrap}.topnav .back{font-size:11.5px}.hero{padding-top:20px}.hero-panel{border-radius:24px;padding:30px 22px}.livebar{grid-template-columns:1fr}.session{grid-template-columns:1fr}.datebox{text-align:left;display:flex;gap:8px;align-items:baseline}.datebox .day{font-size:26px}.actions{grid-template-columns:1fr}.toolbar .btn{width:100%}.status-legend{align-items:flex-start}}
-    @media print{body{background:#fff}.topbar,.toolbar,.actions,.notice,footer{display:none!important}.container{max-width:none;padding:0}.hero{padding:0 0 16px}.hero-panel{box-shadow:none;border-radius:0;padding:18px 0;background:#fff!important;color:#000;border-bottom:2px solid var(--green)}.hero p,.weekbox span,.weekbox small{color:#555}.weekbox{border:1px solid #ddd;background:#fff}.quick{grid-template-columns:repeat(3,1fr)}.session{box-shadow:none;break-inside:avoid}}
+    .empty{background:#fff;border:1.5px dashed var(--line);border-radius:18px;padding:36px;text-align:center;color:var(--muted);font-size:15px}
+
+    footer{background:var(--greenDark);color:rgba(255,255,255,.78);padding:30px 0;font-size:12.5px;margin-top:48px}
+    footer .container{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+    footer b{color:#fff}
+
+    @media(max-width:900px){
+      .hero-grid{grid-template-columns:1fr}
+      .quick{grid-template-columns:1fr}
+      .session{grid-template-columns:1fr}
+      .actions{display:grid;grid-template-columns:repeat(2,1fr)}
+      .livebar{grid-template-columns:1fr}
+    }
   </style>
 </head>
 <body>
   <div class="topbar">
     <div class="container">
-      <div class="brand">CESAG ONLINE · Agenda FOAD — Promotion 2026–2027</div>
-      <nav class="topnav" aria-label="Navigation principale">
-        <a class="back" href="../">← Programmes Rentrée 2026–2027</a>
+      <div class="brand"><span class="dot"></span> CESAG ONLINE · Agenda FOAD 2026–2027</div>
+      <nav class="topnav" aria-label="Navigation des cohortes">
+        <a href="../">← Accueil Rentrée</a>
+        <a href="../mba-ag/" class="">MBA AG</a>
+        <a href="../mba-gp/" class="">MBA GP</a>
+        <a href="../mba-msch/" class="active">MBA MSCH</a>
       </nav>
     </div>
   </div>
@@ -98,21 +149,21 @@
       <section class="hero-panel">
         <div class="hero-grid">
           <div>
-            <div class="eyebrow" id="programEyebrow"></div>
+            <div class="eyebrow" id="programEyebrow">MBA Management Stratégique du Capital Humain</div>
             <h1>Agenda de la semaine</h1>
-            <p>Consultez vos cours et examens, rejoignez directement vos espaces de formation et ajoutez la semaine à votre calendrier.</p>
+            <p>Retrouvez vos cours programmés, rejoignez vos salles virtuelles BigBlueButton et synchronisez votre agenda personnel.</p>
           </div>
           <div class="weekbox">
             <small>SEMAINE AFFICHÉE</small>
             <strong id="weekLabel">—</strong>
-            <span id="updatedLabel">Horaires en GMT</span>
-            <span id="newFlag" class="newflag" style="display:none">Nouveau planning</span>
+            <span id="updatedLabel">Horaires officiels en GMT</span>
+            <span id="newFlag" class="newflag" style="display:none">Planning Rentrée</span>
           </div>
         </div>
         <div class="toolbar">
           <button class="btn btn-gold" id="downloadWeek">Télécharger l’ICS de la semaine</button>
-          <button class="btn btn-light" onclick="window.print()">Exporter le planning en PDF</button>
-          <a class="btn btn-soft" id="moodleHome" href="https://formations.cesagonline.com/" target="_blank" rel="noopener">Ouvrir Moodle</a>
+          <button class="btn btn-light" onclick="window.print()">Exporter en PDF</button>
+          <a class="btn btn-soft" id="moodleHome" href="https://formations.cesagonline.com/" target="_blank" rel="noopener">Ouvrir Moodle CESAG ↗</a>
         </div>
       </section>
     </div>
@@ -120,45 +171,59 @@
 
   <main>
     <div class="container">
-      <section class="livebar" aria-label="Informations en temps réel">
-        <div class="live-item live-clock"><span class="live-icon" aria-hidden="true">◷</span><div><small>Heure GMT</small><strong id="gmtClock">--:--:--</strong></div></div>
-        <div class="live-item"><span class="live-icon" aria-hidden="true">→</span><div><small>Prochaine activité</small><strong id="nextSession">Chargement du planning…</strong></div></div>
-        <div class="live-item" id="classAlertBox"><span class="live-icon" aria-hidden="true">!</span><div><small>Alerte de la classe</small><strong id="classAlert">Analyse en cours…</strong></div></div>
+      <section class="livebar" aria-label="Informations en direct">
+        <div class="live-item live-clock">
+          <span class="live-icon" aria-hidden="true">◷</span>
+          <div><small>Heure GMT (Dakar)</small><strong id="gmtClock">--:--:--</strong></div>
+        </div>
+        <div class="live-item">
+          <span class="live-icon" aria-hidden="true">→</span>
+          <div><small>Prochaine activité</small><strong id="nextSession">Chargement du planning…</strong></div>
+        </div>
+        <div class="live-item" id="classAlertBox">
+          <span class="live-icon" aria-hidden="true">!</span>
+          <div><small>Statut de la cohorte</small><strong id="classAlert">Semaine d’intégration</strong></div>
+        </div>
+      </section>
+
+      <!-- Sélecteur de Fuseau Horaire -->
+      <section class="tz-bar" aria-label="Convertisseur de fuseau">
+        <div class="tz-info">
+          <span>🌍 <strong>Affichage des horaires :</strong></span>
+          <span id="tzLabelText">Heure officielle GMT (Dakar)</span>
+        </div>
+        <div class="tz-switch">
+          <button class="tz-btn active" id="btnTzGmt" type="button">Heure GMT</button>
+          <button class="tz-btn" id="btnTzLocal" type="button">Mon heure locale</button>
+        </div>
       </section>
 
       <section class="quick">
-        <div class="quick-card"><small>Séances cette semaine</small><strong id="countSessions">0</strong></div>
-        <div class="quick-card"><small>Examens</small><strong id="countExams">0</strong></div>
-        <div class="quick-card"><small>Programme</small><strong id="programShort" style="font-size:16px">—</strong></div>
+        <div class="quick-card"><small>Séances programmées</small><strong id="countSessions">0</strong></div>
+        <div class="quick-card"><small>Évaluations &amp; Examens</small><strong id="countExams">0</strong></div>
+        <div class="quick-card"><small>Programme</small><strong id="programShort" style="font-size:16px">MBA MSCH</strong></div>
       </section>
+
+      <div id="informationBlocks"></div>
+      <div id="weekMsg" class="weekmsg" style="display:none"></div>
 
       <div class="section-head">
         <h2>Planning hebdomadaire</h2>
-        <p>Les séances sont présentées par ordre chronologique.</p>
-      </div>
-      <div class="status-legend" aria-label="Signification du statut programmé">
-        <span class="status-badge st-pending">Programmé</span>
-        <span>La séance figure au planning et passe automatiquement à « Confirmée » à 15h00 GMT le jour J, sauf action manuelle.</span>
+        <div class="filter-pills" id="filterPills">
+          <button class="f-pill active" data-filter="all" type="button">Toutes</button>
+          <button class="f-pill" data-filter="cours" type="button">Cours</button>
+          <button class="f-pill" data-filter="examen" type="button">Examens</button>
+        </div>
       </div>
 
-      <div class="weekmsg" id="weekMsg" style="display:none"></div>
-      <div id="informationBlocks"></div><div id="recordingsBlock"></div>
-      <section class="agenda" id="agenda"></section>
-      <section id="upcomingBlock" style="display:none;margin-top:28px"><div class="section-head"><h2>Semaine à venir</h2><p id="upcomingLabel"></p></div><div class="agenda" id="upcomingAgenda"></div></section>
-      <section id="pastBlock" style="display:none;margin-top:28px;opacity:.72"><div class="section-head"><h2>Séances passées</h2><p>Les séances de la semaine précédente restent consultables à titre de rappel.</p></div><div class="agenda" id="pastAgenda"></div></section>
-      <div class="empty" id="empty">Aucune séance n’est programmée pour cette semaine.</div>
-
-      <div class="notice">
-        <b>À retenir :</b> l’ICS global contient uniquement les séances maintenues cette semaine
-        (les séances annulées, reportées ou avancées sont exclues du calendrier).
-        Chaque événement comprend trois rappels : la veille à 20h00 GMT, deux heures avant et quinze minutes avant.
-      </div>
+      <div class="agenda" id="agenda"></div>
+      <div class="empty" id="empty">Aucune séance n’est programmée pour le moment. Consultez le message d’information ci-dessus.</div>
     </div>
   </main>
 
   <footer>
     <div class="container">
-      <div><b>CESAG ONLINE</b> · <span id="footerProgram"></span></div>
+      <div><b>CESAG ONLINE</b> · MBA Management Stratégique du Capital Humain</div>
       <div>Année académique 2026–2027 · Promotion Rentrée</div>
     </div>
   </footer>
@@ -166,13 +231,15 @@
 <script>
 const DATA_FILE = "../data/mba-msch.json";
 let pageData = null;
+let currentFilter = "all";
+let useLocalTime = false;
 
 const months = ["janvier","février","mars","avril","mai","juin","juillet","août","septembre","octobre","novembre","décembre"];
 const weekdays = ["dimanche","lundi","mardi","mercredi","jeudi","vendredi","samedi"];
-
 const STATUS_LABELS={pending:"Programmé",confirmed:"Confirmée",advanced:"Avancée",rescheduled:"Reportée",cancelled:"Annulée"};
 const STATUS_CLASS={pending:"st-pending",confirmed:"st-confirmed",advanced:"st-advanced",rescheduled:"st-rescheduled",cancelled:"st-cancelled"};
 const ICS_EXCLUDED=["cancelled","rescheduled","advanced"];
+
 function normStatus(s){const v=String(s&&s.status||"pending").toLowerCase();return STATUS_LABELS[v]?v:"pending";}
 function displayStatus(s,now=new Date()){
   const status=normStatus(s);
@@ -181,34 +248,7 @@ function displayStatus(s,now=new Date()){
   return now>=automaticConfirmation?"confirmed":"pending";
 }
 function icsIncluded(s){return !ICS_EXCLUDED.includes(normStatus(s));}
-function fmtUpdated(v){
-  if(!v) return "";
-  if(/^\d{4}-\d{2}-\d{2}T/.test(v)){ const d=new Date(v);
-    if(!isNaN(d)) return `${d.getUTCDate()} ${months[d.getUTCMonth()]} ${d.getUTCFullYear()} à ${String(d.getUTCHours()).padStart(2,"0")}h${String(d.getUTCMinutes()).padStart(2,"0")} GMT`;
-  }
-  return String(v); // chaîne déjà lisible (ex. « 21 août 2026 à 09h30 »)
-}
 
-function simplifyTitle(title){
-  // Le badge programme affiche déjà "MBA GP AUF" etc. : on retire ce préfixe redondant à l'affichage,
-  // sans toucher aux données JSON (utile pour export ICS et cockpit).
-  if(!title) return title;
-  const label=(pageData&&pageData.program_short)||"";
-  if(!label) return title;
-  const escaped=label.replace(/[.*+?^${}()|[\]\\]/g,"\\$&");
-  const prefixRe=new RegExp("^"+escaped+"\\s*(?:[\u2013-]\\s*)?");
-  if(prefixRe.test(title)){
-    const stripped=title.replace(prefixRe,"").trim();
-    if(stripped) return stripped;
-  }
-  const compact=label.replace(/[^A-Za-z]/g,"").toUpperCase();
-  const codeMatch=compact?title.match(/^([A-Za-z]+)(\d{2,4})\s*[\u2013-]\s*/):null;
-  if(codeMatch&&codeMatch[1].toUpperCase()===compact){
-    const stripped=title.slice(codeMatch[0].length).trim();
-    if(stripped) return stripped;
-  }
-  return title;
-}
 function escHtml(v=""){
   return String(v).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 }
@@ -221,10 +261,41 @@ function previousDayAt20(date){
   d.setUTCDate(d.getUTCDate()-1); d.setUTCHours(20,0,0,0);
   return d.toISOString().replace(/[-:]/g,"").replace(".000","");
 }
+
+// Convertisseur Heure GMT vers Heure Locale
+function formatSessionTime(s){
+  if(!s.start || !s.end) return "";
+  if(!useLocalTime){
+    return `${s.start}–${s.end} GMT`;
+  }
+  try{
+    const dStart = new Date(`${s.date}T${s.start}:00Z`);
+    const dEnd = new Date(`${s.date}T${s.end}:00Z`);
+    const locStart = dStart.toLocaleTimeString([], {hour:'2-digit', minute:'2-digit', hour12:false});
+    const locEnd = dEnd.toLocaleTimeString([], {hour:'2-digit', minute:'2-digit', hour12:false});
+    return `${locStart}–${locEnd} (heure locale)`;
+  }catch(e){
+    return `${s.start}–${s.end} GMT`;
+  }
+}
+
+function googleCalUrl(s){
+  try{
+    const startIso = s.date.replace(/-/g, '') + 'T' + s.start.replace(':', '') + '00Z';
+    const endIso = s.date.replace(/-/g, '') + 'T' + s.end.replace(':', '') + '00Z';
+    const title = encodeURIComponent(`${s.type.toUpperCase()} - ${s.title} (${pageData.program_short})`);
+    const details = encodeURIComponent(`Programme : ${pageData.program_name}\nEnseignant : ${s.teacher}\nMoodle : ${s.moodle || ''}\nSalle : ${s.room || ''}\n${s.notes || ''}`);
+    const location = encodeURIComponent(s.room || s.moodle || 'CESAG ONLINE');
+    return `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${title}&dates=${startIso}/${endIso}&details=${details}&location=${location}`;
+  }catch(e){
+    return '#';
+  }
+}
+
 function makeICS(items, filename){
   items = (items||[]).filter(icsIncluded);
   if(!items.length) return;
-  const lines=["BEGIN:VCALENDAR","VERSION:2.0","PRODID:-//CESAG ONLINE//Agenda FOAD//FR","CALSCALE:GREGORIAN","METHOD:PUBLISH","X-WR-TIMEZONE:UTC"];
+  const lines=["BEGIN:VCALENDAR","VERSION:2.0","PRODID:-//CESAG ONLINE//Agenda FOAD 2026-2027//FR","CALSCALE:GREGORIAN","METHOD:PUBLISH","X-WR-TIMEZONE:UTC"];
   items.forEach((s,i)=>{
     const desc=[
       `Programme : ${pageData.program_name}`,
@@ -233,7 +304,6 @@ function makeICS(items, filename){
       s.duration?`Durée : ${s.duration}`:"",
       s.moodle?`Moodle : ${s.moodle}`:"",
       s.room?`Salle virtuelle : ${s.room}`:"",
-      s.teams?`Surveillance Teams : ${s.teams}`:"",
       s.notes?`Information : ${s.notes}`:""
     ].filter(Boolean).join("\n");
     lines.push(
@@ -256,44 +326,17 @@ function makeICS(items, filename){
   const a=document.createElement("a");a.href=url;a.download=filename;document.body.appendChild(a);a.click();a.remove();
   setTimeout(()=>URL.revokeObjectURL(url),500);
 }
-function gmtDateKey(d=new Date()){return d.toISOString().slice(0,10);}
-function updateLiveStatus(){
-  const now=new Date();
-  document.getElementById("gmtClock").textContent=now.toLocaleTimeString("fr-FR",{timeZone:"UTC",hour:"2-digit",minute:"2-digit",second:"2-digit",hour12:false});
-  if(!pageData) return;
-  const timed=(pageData.displaySessions||[]).filter(icsIncluded).map(s=>({s,at:new Date(`${s.date}T${s.start}:00Z`),end:new Date(`${s.date}T${s.end}:00Z`)})).sort((a,b)=>a.at-b.at);
-  const next=timed.find(x=>x.at>now);
-  document.getElementById("nextSession").textContent=next
-    ? `${weekdays[next.at.getUTCDay()]} ${next.at.getUTCDate()} ${months[next.at.getUTCMonth()]} à ${next.s.start} GMT — ${simplifyTitle(next.s.title)}`
-    : "Aucune activité à venir dans ce planning";
-  const active=timed.find(x=>x.at<=now&&x.end>now);
-  const soon=timed.find(x=>x.at>now&&x.at-now<=7200000);
-  const box=document.getElementById("classAlertBox");
-  box.classList.remove("alert-hot","alert-live");
-  if(active){
-    box.classList.add("alert-live");
-    document.getElementById("classAlert").textContent=`En cours maintenant — ${simplifyTitle(active.s.title)}`;
-  }else if(soon){
-    box.classList.add("alert-hot");
-    const minutes=Math.ceil((soon.at-now)/60000);
-    document.getElementById("classAlert").textContent=`Début dans ${minutes} min — préparez vos accès`;
-  }else{
-    document.getElementById("classAlert").textContent="Aucune alerte urgente";
-  }
-}
-setInterval(updateLiveStatus,1000);
 
 function card(s, index){
-  const d = new Date(s.date+"T00:00:00Z");
-  const exam = String(s.type).toLowerCase()==="examen";
-  const rawStatus = normStatus(s);
   const st = displayStatus(s);
-  const autoConfirmed = rawStatus==="pending"&&st==="confirmed";
-  const cancelled = st==="cancelled";
+  const exam = String(s.type).toLowerCase() === "examen";
+  const cancelled = st === "cancelled";
   const showLinks = !cancelled;
   const inIcs = icsIncluded(s);
+  const d = new Date(s.date + "T00:00:00Z");
+
   return `
-    <article class="session ${exam?"exam":""} is-${st} ${s.date===gmtDateKey()?"is-today":""}">
+    <article class="session ${exam?'exam':''} ${cancelled?'is-cancelled':''}">
       <div class="datebox">
         <div class="day">${String(d.getUTCDate()).padStart(2,"0")}</div>
         <div class="month">${months[d.getUTCMonth()]}</div>
@@ -301,99 +344,127 @@ function card(s, index){
       </div>
       <div>
         <div class="tags">
-          <span class="tag ${exam?"tag-exam":"tag-course"}">${escHtml(s.type)}</span>
+          <span class="tag ${exam?'tag-exam':'tag-course'}">${escHtml(s.type)}</span>
           <span class="tag tag-program">${escHtml(pageData.program_short)}</span>
           <span class="status-badge ${STATUS_CLASS[st]}">${STATUS_LABELS[st]}</span>
-          ${s.date===gmtDateKey()?'<span class="today-badge">Aujourd’hui</span>':""}
         </div>
-        <h3>${escHtml(simplifyTitle(s.title))}</h3>
+        <h3>${escHtml(s.title)}</h3>
         <div class="meta">
-          <span><b>Horaire :</b> ${escHtml(s.start)}–${escHtml(s.end)} GMT</span>
+          <span><b>Horaire :</b> ${formatSessionTime(s)}</span>
           ${s.duration?`<span><b>Durée :</b> ${escHtml(s.duration)}</span>`:""}
           <span><b>Enseignant :</b> ${escHtml(s.teacher)}</span>
         </div>
         ${s.notes?`<div class="meta"><span><b>Information :</b> ${escHtml(s.notes)}</span></div>`:""}
-        ${s.updated_at?`<div class="updated-line">Dernière mise à jour : ${escHtml(fmtUpdated(s.updated_at))}</div>`:""}
-        ${autoConfirmed?'<div class="updated-line">Confirmation automatique à 15h00 GMT le jour du cours</div>':""}
       </div>
       <div class="actions">
-        ${showLinks && s.teams?`<a class="action teams" href="${escHtml(s.teams)}" target="_blank" rel="noopener">Rejoindre le cours sur Teams</a>`:""}
-        ${showLinks && s.moodle?`<a class="action moodle" href="${escHtml(s.moodle)}" target="_blank" rel="noopener">${exam?"Accéder à l’examen":"Accéder à Moodle"}</a>`:""}
         ${showLinks && s.room?`<a class="action room" href="${escHtml(s.room)}" target="_blank" rel="noopener">Rejoindre la salle BigBlueButton</a>`:""}
-        ${showLinks && s.teams?`<a class="action teams" href="${escHtml(s.teams)}" target="_blank" rel="noopener">Surveillance Teams</a>`:""}
-        ${inIcs?`<button class="action ics" onclick="downloadSingle(${index})">Ajouter cette séance</button>`:""}
-        ${cancelled?`<div class="cancel-note">Séance annulée</div>`:""}
+        ${showLinks && s.moodle?`<a class="action moodle" href="${escHtml(s.moodle)}" target="_blank" rel="noopener">Accéder à Moodle</a>`:""}
+        ${inIcs?`<a class="action gcal" href="${googleCalUrl(s)}" target="_blank" rel="noopener">Ajouter à Google Agenda</a>`:""}
+        ${inIcs?`<button class="action ics" onclick="downloadSingle(${index})">Télécharger l’ICS</button>`:""}
+        ${cancelled?`<div class="cancel-note" style="color:var(--red);font-weight:700">Séance annulée</div>`:""}
       </div>
     </article>`;
 }
-async function copyRoom(i,button){
-  const url=pageData&&pageData.sessions&&pageData.sessions[i]&&pageData.sessions[i].room;
-  if(!url) return;
-  const original=button.textContent;
-  try{
-    await navigator.clipboard.writeText(url);
-    button.textContent="Lien copié ✓";
-  }catch(err){
-    const area=document.createElement("textarea");area.value=url;area.style.position="fixed";area.style.opacity="0";document.body.appendChild(area);area.select();document.execCommand("copy");area.remove();
-    button.textContent="Lien copié ✓";
-  }
-  setTimeout(()=>button.textContent=original,1800);
-}
+
 function downloadSingle(i){
-  const s=pageData.displaySessions[i];
+  const s = pageData.displaySessions[i];
   if(!s || !icsIncluded(s)) return;
-  makeICS([s],`CESAG_${pageData.slug}_${s.date}_${s.type}.ics`);
+  makeICS([s], `CESAG_${pageData.slug}_${s.date}_${s.type}.ics`);
 }
-async function load(){
-  const [res, recordingsRes] = await Promise.all([fetch(DATA_FILE,{cache:"no-store"}),fetch("../data/recordings.json",{cache:"no-store"})]);
-  pageData = await res.json();
-  const allRecordings = await recordingsRes.json();
-  pageData.recordings = allRecordings.filter(r=>r.program_slug===pageData.slug);
-  pageData.sessions = (pageData.sessions||[]).sort((a,b)=>(a.date+a.start).localeCompare(b.date+b.start));
-  pageData.upcoming_sessions = (pageData.upcoming_sessions||[]).sort((a,b)=>(a.date+a.start).localeCompare(b.date+b.start));
-  const switchDate = "2027-01-01";
-  const showUpcoming = gmtDateKey() >= switchDate && pageData.upcoming_sessions.length > 0;
-  pageData.displaySessions = showUpcoming ? pageData.upcoming_sessions : pageData.sessions;
-  document.title = `${pageData.program_name} — Agenda FOAD CESAG ONLINE`;
-  document.getElementById("programEyebrow").textContent=pageData.program_name;
-  document.getElementById("programShort").textContent=pageData.program_short;
-  document.getElementById("footerProgram").textContent=pageData.program_name;
-  document.getElementById("weekLabel").textContent=(showUpcoming ? pageData.upcoming_week_label : pageData.week_label) || "—";
-  document.getElementById("updatedLabel").textContent=`Horaires en GMT · Mise à jour : ${pageData.updated_label || "—"}`;
-  document.getElementById("newFlag").style.display=pageData.is_new?"inline-block":"none";
-  const wm=document.getElementById("weekMsg"); const activeWeekMessage=showUpcoming ? pageData.upcoming_week_message : pageData.week_message; if(activeWeekMessage){ wm.textContent=activeWeekMessage; wm.style.display="block"; } else { wm.style.display="none"; }
-  document.getElementById("informationBlocks").innerHTML=(pageData.information_blocks||[]).map(info=>`
-    <div class="weekmsg">
-      <span class="info-kicker">Information importante</span><br>
-      <b>${escHtml(info.title)}</b><br>
-      <span style="white-space:pre-line">${escHtml(info.text)}</span>
-      ${info.link?`<a class="action moodle" style="margin-top:12px" href="${escHtml(info.link)}" target="_blank" rel="noopener">${escHtml(info.link_label||"Accéder au lien")}</a>`:""}
-    </div>`).join("");
-  document.getElementById("recordingsBlock").innerHTML=`<div class="notice"><span class="info-kicker">Replays Teams</span><br><b>Enregistrements des séances</b><br><span>Les replays restent disponibles pendant un mois.</span>${pageData.recordings.length?`<div class="recordings-list">${pageData.recordings.map(r=>`<a class="action recording-link" href="${escHtml(r.url)}" target="_blank" rel="noopener">▶ ${escHtml(r.module)} · ${escHtml(r.label)}</a>`).join("")}</div>`:`<div style="margin-top:10px">Aucun enregistrement référencé pour le moment.</div>`}</div>`;
-  document.getElementById("countSessions").textContent=pageData.displaySessions.length;
-  document.getElementById("countExams").textContent=pageData.displaySessions.filter(s=>String(s.type).toLowerCase()==="examen").length;
-  document.getElementById("agenda").innerHTML=pageData.displaySessions.map(card).join("");
-  const upcomingBlock=document.getElementById("upcomingBlock");
-  const pastBlock=document.getElementById("pastBlock");
-  if(showUpcoming){
-    pastBlock.style.display=pageData.sessions.length?"block":"none";
-    document.getElementById("pastAgenda").innerHTML=pageData.sessions.map(card).join("");
-  }else if(pageData.upcoming_sessions.length){
-    upcomingBlock.style.display="block";
-    document.getElementById("upcomingLabel").textContent=`${pageData.upcoming_week_label} · Semaine à venir`;
-    document.getElementById("upcomingAgenda").innerHTML=pageData.upcoming_sessions.map(card).join("");
+
+function renderAgenda(){
+  let list = pageData.displaySessions || [];
+  if(currentFilter === "cours") list = list.filter(s=>String(s.type).toLowerCase() !== "examen");
+  if(currentFilter === "examen") list = list.filter(s=>String(s.type).toLowerCase() === "examen");
+  
+  const container = document.getElementById("agenda");
+  const empty = document.getElementById("empty");
+  if(!list.length){
+    container.innerHTML = "";
+    empty.style.display = "block";
+  } else {
+    empty.style.display = "none";
+    container.innerHTML = list.map(card).join("");
   }
-  updateLiveStatus();
-  document.getElementById("empty").style.display=pageData.displaySessions.length?"none":"block";
-  document.getElementById("downloadWeek").onclick=()=>{
-    const items=pageData.displaySessions.filter(icsIncluded);
-    if(items.length) makeICS(items,`Agenda_${pageData.slug}_${showUpcoming?(pageData.upcoming_week_file_label||"semaine"):pageData.week_file_label || "semaine"}.ics`);
+}
+
+async function load(){
+  const res = await fetch(DATA_FILE, {cache:"no-store"});
+  pageData = await res.json();
+  pageData.displaySessions = (pageData.sessions||[]).sort((a,b)=>(a.date+a.start).localeCompare(b.date+b.start));
+
+  document.getElementById("weekLabel").textContent = pageData.week_label || "Semaine de rentrée";
+  document.getElementById("updatedLabel").textContent = `Mise à jour : ${pageData.updated_label || "13 novembre 2026"}`;
+  document.getElementById("countSessions").textContent = pageData.displaySessions.length;
+  document.getElementById("countExams").textContent = pageData.displaySessions.filter(s=>String(s.type).toLowerCase()==="examen").length;
+
+  if(pageData.week_message){
+    const wm = document.getElementById("weekMsg");
+    wm.textContent = pageData.week_message;
+    wm.style.display = "block";
+  }
+
+  if(pageData.information_blocks && pageData.information_blocks.length){
+    document.getElementById("informationBlocks").innerHTML = pageData.information_blocks.map(info=>`
+      <div class="weekmsg">
+        <span style="display:inline-block;padding:2px 8px;border-radius:999px;background:var(--gold);color:#fff;font-size:10px;font-weight:800;text-transform:uppercase;margin-bottom:6px">Information officielle</span><br>
+        <b>${escHtml(info.title)}</b><br>
+        <span style="white-space:pre-line;font-size:13.5px">${escHtml(info.text)}</span>
+        ${info.link?`<br><a class="action moodle" style="display:inline-block;margin-top:10px;padding:8px 14px" href="${escHtml(info.link)}" target="_blank" rel="noopener">${escHtml(info.link_label||"Ouvrir le lien")}</a>`:""}
+      </div>`).join("");
+  }
+
+  renderAgenda();
+
+  document.getElementById("downloadWeek").onclick = () => {
+    const items = pageData.displaySessions.filter(icsIncluded);
+    if(items.length) makeICS(items, `Agenda_${pageData.slug}_${pageData.week_file_label || "semaine"}.ics`);
   };
 }
+
+// Gestion des filtres
+document.querySelectorAll(".f-pill").forEach(btn=>{
+  btn.addEventListener("click", ()=>{
+    document.querySelectorAll(".f-pill").forEach(b=>b.classList.remove("active"));
+    btn.classList.add("active");
+    currentFilter = btn.getAttribute("data-filter");
+    renderAgenda();
+  });
+});
+
+// Gestion du basculement Fuseau GMT / Local
+const btnGmt = document.getElementById("btnTzGmt");
+const btnLocal = document.getElementById("btnTzLocal");
+const tzLabelText = document.getElementById("tzLabelText");
+
+btnGmt.addEventListener("click", ()=>{
+  btnGmt.classList.add("active");
+  btnLocal.classList.remove("active");
+  useLocalTime = false;
+  tzLabelText.textContent = "Heure officielle GMT (Dakar)";
+  renderAgenda();
+});
+
+btnLocal.addEventListener("click", ()=>{
+  btnLocal.classList.add("active");
+  btnGmt.classList.remove("active");
+  useLocalTime = true;
+  const offsetHours = -new Date().getTimezoneOffset() / 60;
+  const sign = offsetHours >= 0 ? "+" : "";
+  tzLabelText.textContent = `Votre heure locale (UTC${sign}${offsetHours})`;
+  renderAgenda();
+});
+
+function updateClock(){
+  const now = new Date();
+  document.getElementById('gmtClock').textContent = now.toLocaleTimeString('fr-FR', {timeZone: 'UTC', hour:'2-digit', minute:'2-digit', second:'2-digit', hour12: false});
+}
+updateClock();
+setInterval(updateClock, 1000);
+
 load().catch(err=>{
   console.error(err);
-  document.getElementById("empty").style.display="block";
-  document.getElementById("empty").textContent="Le planning n’a pas pu être chargé.";
+  document.getElementById("empty").textContent = "Impossible de charger les données du planning.";
 });
 </script>
 </body>
