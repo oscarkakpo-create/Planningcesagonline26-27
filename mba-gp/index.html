@@ -55,24 +55,43 @@
     .brand-text b{display:block;font-size:13px;color:var(--cesag-green-dark);font-weight:800}
     .brand-text span{display:block;font-size:11px;color:var(--muted)}
 
-    .topnav{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
-    .topnav a{padding:6px 12px;border-radius:8px;border:1px solid var(--line);background:var(--paper);color:var(--muted);font-weight:700;font-size:12.5px;transition:all .18s}
+    .topbar-right{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+    .btn-qr{
+      display:inline-flex;align-items:center;gap:6px;background:var(--paper);border:1px solid var(--line);
+      padding:5px 10px;border-radius:999px;font-size:12px;font-weight:700;color:var(--muted);cursor:pointer;
+      transition:all .18s;
+    }
+    .btn-qr:hover{background:var(--cesag-green-soft);border-color:var(--cesag-green);color:var(--cesag-green-dark)}
+
+    .topnav{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+    .topnav a{padding:5px 10px;border-radius:8px;border:1px solid var(--line);background:var(--paper);color:var(--muted);font-weight:700;font-size:12px;transition:all .18s}
     .topnav a:hover,.topnav a.active{background:var(--cesag-green);border-color:var(--cesag-green);color:#fff}
     
+    /* Ticker Panafricain */
+    .panafrica-bar{
+      background:linear-gradient(90deg,var(--cesag-green-dark),#114D2A);
+      color:#fff;padding:7px 0;font-size:11.5px;overflow:hidden;border-bottom:1px solid rgba(255,255,255,.1);
+    }
+    .panafrica-inner{display:flex;align-items:center;gap:18px;overflow-x:auto;scrollbar-width:none;white-space:nowrap}
+    .panafrica-inner::-webkit-scrollbar{display:none}
+    .p-tag{display:inline-flex;align-items:center;gap:5px;font-weight:800;color:var(--cesag-orange);text-transform:uppercase;font-size:10px;letter-spacing:.5px}
+    .city-item{display:inline-flex;align-items:center;gap:5px;color:rgba(255,255,255,.9);font-weight:600}
+    .city-item strong{color:#fff;font-family:ui-monospace,"Cascadia Mono",monospace;font-size:12px}
+
     /* Hero */
-    .hero{padding:30px 0 16px}
+    .hero{padding:28px 0 16px}
     .hero-panel{
       background:linear-gradient(150deg,#1B7E44,var(--cesag-green-dark));color:#fff;
-      border-radius:28px;padding:42px 44px 36px;box-shadow:var(--shadow);position:relative;overflow:hidden;
+      border-radius:28px;padding:40px 42px 34px;box-shadow:var(--shadow);position:relative;overflow:hidden;
     }
     .hero-panel:before{content:"";position:absolute;left:0;right:0;top:0;height:4px;background:linear-gradient(90deg,var(--cesag-green),var(--cesag-orange))}
-    .hero-grid{display:grid;grid-template-columns:1.35fr .65fr;gap:28px;align-items:center;position:relative;z-index:1}
+    .hero-grid{display:grid;grid-template-columns:1.35fr .65fr;gap:26px;align-items:center;position:relative;z-index:1}
     .eyebrow{font-size:12px;text-transform:uppercase;letter-spacing:2px;font-weight:800;color:#FFE3DA;margin-bottom:12px}
-    h1{font-family:var(--serif);font-weight:600;margin:0;font-size:clamp(30px,4.8vw,52px);line-height:1.06}
-    .hero p{margin:14px 0 0;color:rgba(255,255,255,.94);line-height:1.6}
+    h1{font-family:var(--serif);font-weight:600;margin:0;font-size:clamp(28px,4.5vw,48px);line-height:1.06}
+    .hero p{margin:12px 0 0;color:rgba(255,255,255,.94);line-height:1.6}
     .weekbox{background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.24);border-radius:18px;padding:20px;backdrop-filter:blur(6px)}
     .weekbox small{display:block;color:#FFE3DA;font-weight:800;margin-bottom:6px;letter-spacing:.6px;font-size:11px;text-transform:uppercase}
-    .weekbox strong{display:block;font-size:19px}
+    .weekbox strong{display:block;font-size:18px}
     .weekbox span{display:block;margin-top:6px;font-size:12px;color:rgba(255,255,255,.82)}
     .newflag{display:inline-block;margin-top:10px;background:var(--cesag-orange);color:#fff;font-size:11px;font-weight:800;letter-spacing:.5px;text-transform:uppercase;padding:5px 11px;border-radius:999px}
     
@@ -148,6 +167,22 @@
     .weekmsg{margin:0 0 18px;background:linear-gradient(180deg,#FFFCF3,var(--cesag-orange-soft));border:1px solid var(--cesag-orange-line);border-left:5px solid var(--cesag-orange);border-radius:16px;padding:14px 18px;color:#5F4B20;font-size:14px;line-height:1.55;font-weight:600}
     .empty{background:#fff;border:1.5px dashed var(--line);border-radius:18px;padding:36px;text-align:center;color:var(--muted);font-size:15px}
 
+    /* Modal QR Code */
+    .modal-backdrop{
+      position:fixed;inset:0;background:rgba(10,61,32,.55);backdrop-filter:blur(4px);
+      display:grid;place-items:center;z-index:999;padding:20px;opacity:0;pointer-events:none;transition:opacity .25s ease;
+    }
+    .modal-backdrop.is-open{opacity:1;pointer-events:auto}
+    .modal-card{
+      background:#fff;border-radius:24px;padding:32px;max-width:380px;width:100%;text-align:center;
+      box-shadow:var(--shadow);border:1px solid var(--line);
+    }
+    .modal-card h3{margin:0 0 8px;color:var(--cesag-green-dark);font-family:var(--serif);font-size:22px}
+    .modal-card p{margin:0 0 20px;color:var(--muted);font-size:13.5px}
+    .qr-frame{background:var(--paper);padding:14px;border-radius:18px;border:1px solid var(--line);display:inline-block;margin-bottom:20px}
+    .qr-frame img{display:block;border-radius:10px}
+    .btn-close{border:none;background:var(--cesag-green);color:#fff;padding:10px 24px;border-radius:12px;font-weight:700;cursor:pointer}
+
     footer{background:var(--cesag-green-dark);color:rgba(255,255,255,.8);padding:30px 0;font-size:12.5px;margin-top:48px;border-top:3px solid var(--cesag-orange)}
     footer .container{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
     footer b{color:#fff}
@@ -163,6 +198,21 @@
   </style>
 </head>
 <body>
+  <!-- Bandeau Panafricain des Capitales -->
+  <aside class="panafrica-bar" aria-label="Heure dans les capitales de l'espace CESAG">
+    <div class="container panafrica-inner">
+      <span class="p-tag">🌍 Horloge Capitales :</span>
+      <span class="city-item">🇸🇳 Dakar <strong id="t-sn">--:--</strong></span>
+      <span class="city-item">🇨🇮 Abidjan <strong id="t-ci">--:--</strong></span>
+      <span class="city-item">🇧🇫 Ouaga <strong id="t-bf">--:--</strong></span>
+      <span class="city-item">🇹🇬 Lomé <strong id="t-tg">--:--</strong></span>
+      <span class="city-item">🇲🇱 Bamako <strong id="t-ml">--:--</strong></span>
+      <span class="city-item">🇧🇯 Cotonou <strong id="t-bj">--:--</strong></span>
+      <span class="city-item">🇳🇪 Niamey <strong id="t-ne">--:--</strong></span>
+      <span class="city-item">🇨🇲 Yaoundé <strong id="t-cm">--:--</strong></span>
+    </div>
+  </aside>
+
   <div class="topbar">
     <div class="container">
       <div class="brand-wrap">
@@ -172,12 +222,18 @@
           <span>MBA Gestion de Projets</span>
         </div>
       </div>
-      <nav class="topnav" aria-label="Navigation des cohortes">
-        <a href="../">← Accueil Rentrée</a>
-        <a href="../mba-ag/" class="">MBA AG</a>
-        <a href="../mba-gp/" class="active">MBA GP</a>
-        <a href="../mba-msch/" class="">MBA MSCH</a>
-      </nav>
+      <div class="topbar-right">
+        <button class="btn-qr" id="openQrBtn" type="button" aria-label="Ouvrir sur mon smartphone">
+          <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+          Version Mobile
+        </button>
+        <nav class="topnav" aria-label="Navigation des cohortes">
+          <a href="../">← Accueil Rentrée</a>
+          <a href="../mba-ag/" class="">MBA AG</a>
+          <a href="../mba-gp/" class="active">MBA GP</a>
+          <a href="../mba-msch/" class="">MBA MSCH</a>
+        </nav>
+      </div>
     </div>
   </div>
 
@@ -257,6 +313,19 @@
       <div class="empty" id="empty">Aucune séance n’est programmée pour le moment. Consultez le message d’information ci-dessus.</div>
     </div>
   </main>
+
+  <!-- Modal QR Code -->
+  <div class="modal-backdrop" id="qrModal" aria-hidden="true">
+    <div class="modal-card">
+      <h3>Scanner ce Planning</h3>
+      <p>Ouvrez l’appareil photo de votre téléphone pour accéder instantanément au planning MBA GP.</p>
+      <div class="qr-frame">
+        <img id="qrImg" src="" alt="QR Code d'accès mobile" width="200" height="200" />
+      </div>
+      <br>
+      <button class="btn-close" id="closeQrBtn" type="button">Fermer</button>
+    </div>
+  </div>
 
   <footer>
     <div class="container">
@@ -458,6 +527,27 @@ async function load(){
   };
 }
 
+// QR Code Modal
+const qrModal = document.getElementById('qrModal');
+const openQrBtn = document.getElementById('openQrBtn');
+const closeQrBtn = document.getElementById('closeQrBtn');
+const qrImg = document.getElementById('qrImg');
+
+openQrBtn.addEventListener('click', ()=>{
+  qrImg.src = `https://api.qrserver.com/v1/create-qr-code/?size=200x200&margin=10&data=${encodeURIComponent(window.location.href)}`;
+  qrModal.classList.add('is-open');
+  qrModal.setAttribute('aria-hidden', 'false');
+});
+
+closeQrBtn.addEventListener('click', ()=>{
+  qrModal.classList.remove('is-open');
+  qrModal.setAttribute('aria-hidden', 'true');
+});
+
+qrModal.addEventListener('click', (e)=>{
+  if(e.target === qrModal) closeQrBtn.click();
+});
+
 // Filtres
 document.querySelectorAll(".f-pill").forEach(btn=>{
   btn.addEventListener("click", ()=>{
@@ -491,12 +581,29 @@ btnLocal.addEventListener("click", ()=>{
   renderAgenda();
 });
 
-function updateClock(){
+function updateClocks(){
   const now = new Date();
   document.getElementById('gmtClock').textContent = now.toLocaleTimeString('fr-FR', {timeZone: 'UTC', hour:'2-digit', minute:'2-digit', second:'2-digit', hour12: false});
+  
+  const fmtTime = (offset) => {
+    const d = new Date(now.getTime() + offset * 3600000);
+    return d.toLocaleTimeString('fr-FR', {timeZone: 'UTC', hour:'2-digit', minute:'2-digit', second:'2-digit', hour12: false});
+  };
+  
+  const gmt0 = fmtTime(0);
+  document.getElementById('t-sn').textContent = gmt0;
+  document.getElementById('t-ci').textContent = gmt0;
+  document.getElementById('t-bf').textContent = gmt0;
+  document.getElementById('t-tg').textContent = gmt0;
+  document.getElementById('t-ml').textContent = gmt0;
+  
+  const gmt1 = fmtTime(1);
+  document.getElementById('t-bj').textContent = gmt1;
+  document.getElementById('t-ne').textContent = gmt1;
+  document.getElementById('t-cm').textContent = gmt1;
 }
-updateClock();
-setInterval(updateClock, 1000);
+updateClocks();
+setInterval(updateClocks, 1000);
 
 load().catch(err=>{
   console.error(err);

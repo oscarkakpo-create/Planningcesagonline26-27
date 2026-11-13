@@ -3,33 +3,36 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Agenda FOAD — Promotion 2026–2027 · CESAG ONLINE</title>
-  <meta name="description" content="Portail officiel de la Rentrée 2026–2027 : plannings hebdomadaires, accès Moodle et salles virtuelles pour MBA AG, MBA GP et MBA MSCH." />
-  <meta name="theme-color" content="#0B4D2E" />
+  <title>Agenda FOAD — Promotion 2026–2027 · CESAG</title>
+  <meta name="description" content="Portail officiel des plannings de cours FOAD CESAG : Promotion 2026–2027 (MBA AG, MBA GP, MBA MSCH)." />
+  <meta name="theme-color" content="#1B7E44" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
 
   <style>
     :root{
-      --green:#0B4D2E;
-      --green-2:#0E5E39;
-      --green-dark:#07301E;
-      --green-soft:#E9F2ED;
-      --green-line:#CBDED3;
-      --gold:#C9962A;
-      --gold-2:#B98520;
-      --gold-dark:#755513;
-      --gold-soft:#F7EFDA;
-      --paper:#F6F8F6;
+      --cesag-green:#1B7E44;
+      --cesag-green-light:#239E57;
+      --cesag-green-dark:#0A3D20;
+      --cesag-green-soft:#EBF6F0;
+      --cesag-green-line:#C8E6D5;
+      
+      --cesag-orange:#F15B2E;
+      --cesag-orange-dark:#C94117;
+      --cesag-orange-soft:#FDEEE9;
+      --cesag-orange-line:#FAC8BA;
+      
+      --paper:#F7FAF8;
       --white:#FFFFFF;
-      --text:#16241D;
-      --muted:#586A60;
-      --line:#E3E9E5;
-      --shadow-sm:0 4px 16px rgba(11,77,46,.05);
-      --shadow-md:0 16px 40px rgba(11,77,46,.09);
-      --shadow-lg:0 30px 70px rgba(7,48,30,.16);
+      --text:#13261B;
+      --muted:#51695A;
+      --line:#DEEAE2;
+      
+      --shadow-sm:0 4px 16px rgba(27,126,68,.06);
+      --shadow-md:0 16px 40px rgba(27,126,68,.10);
+      --shadow-lg:0 30px 70px rgba(10,61,32,.18);
       --radius:22px;
       --serif:"Spectral",Georgia,"Times New Roman",serif;
       --sans:"Inter","Segoe UI",Arial,sans-serif;
@@ -43,8 +46,8 @@
       font-family:var(--sans);
       color:var(--text);
       background:
-        radial-gradient(1100px 520px at 100% -8%,rgba(201,150,42,.08),transparent 62%),
-        radial-gradient(900px 520px at -8% 108%,rgba(11,77,46,.07),transparent 60%),
+        radial-gradient(1100px 520px at 100% -8%,rgba(241,91,46,.07),transparent 62%),
+        radial-gradient(900px 520px at -8% 108%,rgba(27,126,68,.08),transparent 60%),
         var(--paper);
       background-attachment:fixed;
       -webkit-font-smoothing:antialiased;
@@ -52,7 +55,7 @@
     }
     body::before{
       content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;
-      background-image:radial-gradient(rgba(11,77,46,.05) 1px,transparent 1px);
+      background-image:radial-gradient(rgba(27,126,68,.05) 1px,transparent 1px);
       background-size:26px 26px;
       -webkit-mask-image:linear-gradient(180deg,rgba(0,0,0,.5),transparent 55%);
               mask-image:linear-gradient(180deg,rgba(0,0,0,.5),transparent 55%);
@@ -63,77 +66,110 @@
 
     .skip-link{
       position:absolute;left:-999px;top:0;z-index:100;
-      background:var(--green);color:#fff;padding:12px 18px;border-radius:0 0 12px 0;
+      background:var(--cesag-green);color:#fff;padding:12px 18px;border-radius:0 0 12px 0;
       font-weight:700;
     }
     .skip-link:focus{left:0}
-    :focus-visible{outline:3px solid var(--gold);outline-offset:3px;border-radius:8px}
+    :focus-visible{outline:3px solid var(--cesag-orange);outline-offset:3px;border-radius:8px}
 
-    /* Topbar */
+    /* Topbar Institutionnelle CESAG */
     .topbar{
-      background:var(--green);color:#fff;font-size:13px;padding:12px 0;
-      border-bottom:2px solid var(--gold);
+      background:var(--white);color:var(--text);font-size:13px;padding:12px 0;
+      border-bottom:3px solid var(--cesag-green);
+      box-shadow:0 2px 10px rgba(0,0,0,.04);
+      position:relative;
     }
-    .topbar .container{position:relative;display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;align-items:center}
-    .brandline{font-weight:700;letter-spacing:.2px;display:flex;align-items:center;gap:9px}
-    .brandline .dot{width:8px;height:8px;border-radius:50%;background:var(--gold);flex:none;box-shadow:0 0 0 3px rgba(201,150,42,.3)}
-    .topbar .note{color:rgba(255,255,255,.94);font-weight:600;display:flex;align-items:center;gap:8px}
-    .badge-promo{background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.25);padding:3px 9px;border-radius:999px;font-size:11.5px;letter-spacing:.3px}
+    .topbar::after{
+      content:"";position:absolute;bottom:-3px;right:0;width:35%;height:3px;
+      background:var(--cesag-orange);
+    }
+    .topbar .container{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;align-items:center}
+    .brand-wrap{display:flex;align-items:center;gap:14px}
+    .cesag-logo-img{height:46px;width:auto;display:block}
+    .brand-text b{display:block;font-size:14px;color:var(--cesag-green-dark);letter-spacing:.2px;font-weight:800}
+    .brand-text span{display:block;font-size:11.5px;color:var(--muted);letter-spacing:.1px}
+    
+    .topbar-actions{display:flex;align-items:center;gap:10px}
+    .btn-qr{
+      display:inline-flex;align-items:center;gap:7px;background:var(--paper);border:1px solid var(--line);
+      padding:6px 12px;border-radius:999px;font-size:12px;font-weight:700;color:var(--muted);cursor:pointer;
+      transition:all .18s;
+    }
+    .btn-qr:hover{background:var(--cesag-green-soft);border-color:var(--cesag-green);color:var(--cesag-green-dark)}
+    .badge-promo{
+      background:var(--cesag-orange-soft);color:var(--cesag-orange-dark);border:1px solid var(--cesag-orange-line);
+      padding:4px 11px;border-radius:999px;font-size:11.5px;font-weight:800;letter-spacing:.4px;text-transform:uppercase;
+    }
 
-    /* Hero */
-    .hero{padding:34px 0 16px}
+    /* Ticker Panafricain des Capitales */
+    .panafrica-bar{
+      background:linear-gradient(90deg,var(--cesag-green-dark),#114D2A);
+      color:#fff;padding:8px 0;font-size:12px;overflow:hidden;border-bottom:1px solid rgba(255,255,255,.1);
+    }
+    .panafrica-inner{display:flex;align-items:center;gap:20px;overflow-x:auto;scrollbar-width:none;white-space:nowrap}
+    .panafrica-inner::-webkit-scrollbar{display:none}
+    .p-tag{display:inline-flex;align-items:center;gap:6px;font-weight:800;color:var(--cesag-orange);text-transform:uppercase;font-size:10.5px;letter-spacing:.6px}
+    .city-item{display:inline-flex;align-items:center;gap:6px;color:rgba(255,255,255,.9);font-weight:600}
+    .city-item strong{color:#fff;font-family:ui-monospace,"Cascadia Mono",monospace;font-size:12.5px}
+
+    /* Hero CESAG */
+    .hero{padding:30px 0 16px}
     .hero-panel{
       position:relative;overflow:hidden;color:#fff;border-radius:30px;
-      padding:50px 48px 42px;box-shadow:var(--shadow-lg);
+      padding:48px 48px 40px;box-shadow:var(--shadow-lg);
       background:
-        radial-gradient(120% 140% at 100% 0%,rgba(201,150,42,.24),transparent 45%),
-        linear-gradient(150deg,var(--green-2) 0%,var(--green) 42%,var(--green-dark) 100%);
+        radial-gradient(120% 140% at 100% 0%,rgba(241,91,46,.26),transparent 45%),
+        linear-gradient(150deg,var(--cesag-green-light) 0%,var(--cesag-green) 42%,var(--cesag-green-dark) 100%);
     }
     .hero-panel::before{
       content:"";position:absolute;left:0;right:0;top:0;height:4px;
-      background:linear-gradient(90deg,transparent,var(--gold),transparent);
+      background:linear-gradient(90deg,var(--cesag-green),var(--cesag-orange));
     }
     .hero-content{position:relative;z-index:1;max-width:840px}
     .eyebrow{
       display:inline-flex;align-items:center;gap:9px;
       text-transform:uppercase;letter-spacing:2px;font-weight:800;
-      color:#F1D291;font-size:12px;margin:0 0 16px;
+      color:#FFE3DA;font-size:12px;margin:0 0 16px;
     }
-    .eyebrow::before{content:"";width:26px;height:2px;background:var(--gold);border-radius:2px}
+    .eyebrow::before{content:"";width:26px;height:2px;background:var(--cesag-orange);border-radius:2px}
     h1{
       font-family:var(--serif);font-weight:600;
       margin:0;font-size:clamp(32px,5.2vw,54px);line-height:1.06;letter-spacing:-.5px;
     }
     .hero p.lead{
       margin:18px 0 0;max-width:720px;line-height:1.68;
-      color:rgba(255,255,255,.92);font-size:16.5px;
+      color:rgba(255,255,255,.94);font-size:16.5px;
     }
     .hero-meta{
       position:relative;z-index:1;display:flex;flex-wrap:wrap;gap:9px;margin-top:24px;
     }
     .hero-meta span{
       display:inline-flex;align-items:center;gap:7px;
-      background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.2);
-      color:rgba(255,255,255,.96);font-size:12.5px;font-weight:600;
+      background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.24);
+      color:rgba(255,255,255,.98);font-size:12.5px;font-weight:600;
       padding:7px 14px;border-radius:999px;backdrop-filter:blur(4px);
     }
     .hero-meta span::before{
-      content:"";width:6px;height:6px;border-radius:50%;background:var(--gold);flex:none;
+      content:"";width:6px;height:6px;border-radius:50%;background:var(--cesag-orange);flex:none;
     }
 
-    /* Live Bar / Timezone Indicator */
+    /* Live Bar & Campus Weather Widget (Open-Meteo API) */
     .site-live{
       margin:22px 0 8px;padding:16px 22px;background:var(--white);
       border:1px solid var(--line);border-radius:18px;box-shadow:var(--shadow-sm);
       display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;
     }
-    .site-live-head{display:flex;align-items:center;gap:10px;font-size:14px;font-weight:750;color:var(--green)}
-    .live-pulse{width:10px;height:10px;border-radius:50%;background:#10B981;box-shadow:0 0 0 0 rgba(16,185,129,.7);animation:pulse 2s infinite}
-    @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(16,185,129,.7)}70%{box-shadow:0 0 0 10px rgba(16,185,129,0)}100%{box-shadow:0 0 0 0 rgba(16,185,129,0)}}
-    .clock-group{display:flex;gap:12px;align-items:center;flex-wrap:wrap}
-    .clock-badge{font-size:13.5px;font-weight:700;color:var(--muted);background:var(--paper);padding:6px 14px;border-radius:999px;border:1px solid var(--line)}
-    .clock-badge strong{color:var(--green);font-family:ui-monospace,"Cascadia Mono",monospace;font-size:15px}
-    .tz-detected{font-size:12px;color:var(--gold-dark);background:var(--gold-soft);padding:5px 12px;border-radius:999px;font-weight:700}
+    .site-live-head{display:flex;align-items:center;gap:10px;font-size:14px;font-weight:750;color:var(--cesag-green-dark)}
+    .live-pulse{width:10px;height:10px;border-radius:50%;background:var(--cesag-green-light);box-shadow:0 0 0 0 rgba(35,158,87,.7);animation:pulse 2s infinite}
+    @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(35,158,87,.7)}70%{box-shadow:0 0 0 10px rgba(35,158,87,0)}100%{box-shadow:0 0 0 0 rgba(35,158,87,0)}}
+    .live-widgets{display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+    .weather-badge{
+      display:inline-flex;align-items:center;gap:8px;padding:6px 14px;border-radius:999px;
+      background:var(--cesag-green-soft);border:1px solid var(--cesag-green-line);color:var(--cesag-green-dark);
+      font-size:13px;font-weight:700;
+    }
+    .clock-badge{font-size:13px;font-weight:700;color:var(--muted);background:var(--paper);padding:6px 14px;border-radius:999px;border:1px solid var(--line)}
+    .clock-badge strong{color:var(--cesag-green);font-family:ui-monospace,"Cascadia Mono",monospace;font-size:14.5px}
 
     /* Guide 3 étapes */
     .guide{margin:22px 0 6px;display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
@@ -145,10 +181,10 @@
     .guide-card:hover{transform:translateY(-3px);box-shadow:var(--shadow-md)}
     .guide-card .num{
       display:inline-grid;place-items:center;width:34px;height:34px;border-radius:50%;
-      background:var(--green);color:#fff;font-weight:700;font-size:15px;margin-bottom:12px;
-      box-shadow:0 0 0 4px var(--green-soft);
+      background:var(--cesag-green);color:#fff;font-weight:800;font-size:15px;margin-bottom:12px;
+      box-shadow:0 0 0 4px var(--cesag-green-soft);
     }
-    .guide-card b{display:block;margin-bottom:5px;color:var(--green);font-size:15px;font-weight:700}
+    .guide-card b{display:block;margin-bottom:5px;color:var(--cesag-green-dark);font-size:15px;font-weight:750}
     .guide-card p{margin:0;color:var(--muted);font-size:13.5px;line-height:1.55}
 
     /* Grille Programmes */
@@ -156,7 +192,7 @@
     .section-head{margin:8px 0 24px;text-align:center}
     .section-head h2{
       font-family:var(--serif);font-weight:600;
-      margin:0;color:var(--green);font-size:clamp(26px,3.4vw,34px);letter-spacing:-.3px;
+      margin:0;color:var(--cesag-green-dark);font-size:clamp(26px,3.4vw,34px);letter-spacing:-.3px;
     }
     .section-head p{margin:10px auto 0;color:var(--muted);font-size:14.5px;max-width:660px;line-height:1.6}
 
@@ -173,47 +209,47 @@
     .program-card:hover{
       transform:translateY(-6px);
       box-shadow:var(--shadow-md);
-      border-color:var(--green-line);
+      border-color:var(--cesag-green-line);
     }
     .program-card::before{
       content:"";position:absolute;left:0;top:0;bottom:0;width:5px;z-index:2;
-      background:linear-gradient(var(--green),var(--green-2));
+      background:linear-gradient(var(--cesag-green),var(--cesag-green-light));
       transition:width .28s var(--ease);
     }
     .program-card:hover::before{width:8px}
-    .program-card.gp::before{background:linear-gradient(#2563EB,#1D4ED8)}
-    .program-card.msch::before{background:linear-gradient(var(--gold),var(--gold-2))}
+    .program-card.gp::before{background:linear-gradient(#1D4ED8,#2563EB)}
+    .program-card.msch::before{background:linear-gradient(var(--cesag-orange),#F58462)}
 
     .program-card .wm{
       position:absolute;top:-10px;right:10px;z-index:0;
       font-family:var(--serif);font-weight:700;font-size:110px;line-height:1;
-      letter-spacing:-4px;color:var(--green);opacity:.045;
+      letter-spacing:-4px;color:var(--cesag-green);opacity:.05;
       pointer-events:none;user-select:none;
     }
-    .program-card.gp .wm{color:#2563EB}
-    .program-card.msch .wm{color:var(--gold)}
+    .program-card.gp .wm{color:#1D4ED8;opacity:.04}
+    .program-card.msch .wm{color:var(--cesag-orange);opacity:.05}
 
     .pc-top{position:relative;z-index:1}
     .pill{
       display:inline-flex;align-items:center;width:max-content;border-radius:999px;
-      background:var(--green-soft);color:var(--green);padding:5px 12px;
+      background:var(--cesag-green-soft);color:var(--cesag-green-dark);padding:5px 12px;
       font-size:11px;font-weight:800;letter-spacing:.6px;text-transform:uppercase;margin-bottom:14px;
     }
     .gp .pill{background:#EFF6FF;color:#1D4ED8}
-    .msch .pill{background:var(--gold-soft);color:var(--gold-dark)}
-    .program-card h3{margin:0;font-size:22px;line-height:1.24;color:var(--text);font-weight:700}
+    .msch .pill{background:var(--cesag-orange-soft);color:var(--cesag-orange-dark)}
+    .program-card h3{margin:0;font-size:22px;line-height:1.24;color:var(--text);font-weight:750}
     .program-card p{margin:10px 0 0;color:var(--muted);line-height:1.52;font-size:14px}
 
     .program-action{
       position:relative;z-index:1;margin-top:24px;
       display:flex;align-items:center;justify-content:space-between;gap:12px;
       font-weight:700;color:#fff;font-size:14.5px;
-      background:var(--green);padding:13px 18px;border-radius:14px;
-      box-shadow:0 8px 20px rgba(11,77,46,.16);
+      background:var(--cesag-green);padding:13px 18px;border-radius:14px;
+      box-shadow:0 8px 20px rgba(27,126,68,.18);
       transition:box-shadow .28s var(--ease),transform .28s var(--ease);
     }
     .gp .program-action{background:#1D4ED8;box-shadow:0 8px 20px rgba(29,78,216,.2)}
-    .msch .program-action{background:var(--gold);box-shadow:0 8px 20px rgba(201,150,42,.2)}
+    .msch .program-action{background:var(--cesag-orange);box-shadow:0 8px 20px rgba(241,91,46,.25)}
     .program-card:hover .program-action{transform:translateY(-1px)}
     .program-action .arrow{
       display:inline-grid;place-items:center;width:32px;height:32px;border-radius:50%;
@@ -222,32 +258,44 @@
     }
     .program-card:hover .arrow{transform:translateX(5px)}
 
-    /* Boîte à outils de rentrée */
+    /* Boîte à outils */
     .toolbox{
-      margin-top:42px;
-      background:var(--white);
-      border:1px solid var(--line);
-      border-radius:24px;
-      padding:32px 30px;
-      box-shadow:var(--shadow-sm);
+      margin-top:42px;background:var(--white);border:1px solid var(--line);
+      border-radius:24px;padding:32px 30px;box-shadow:var(--shadow-sm);
     }
     .toolbox-head{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-bottom:22px}
-    .toolbox-head h3{font-family:var(--serif);margin:0;font-size:24px;color:var(--green)}
+    .toolbox-head h3{font-family:var(--serif);margin:0;font-size:24px;color:var(--cesag-green-dark)}
     .toolbox-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
     .tool-box-item{
       background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:20px;
       display:flex;flex-direction:column;justify-content:space-between;gap:12px;
     }
-    .tool-box-item h4{margin:0;font-size:16px;color:var(--green)}
+    .tool-box-item h4{margin:0;font-size:16px;color:var(--cesag-green-dark)}
     .tool-box-item p{margin:0;font-size:13.5px;color:var(--muted);line-height:1.5}
     .tool-box-item .btn-tool{
-      display:inline-flex;align-items:center;gap:7px;color:var(--green);font-weight:700;font-size:13px;
+      display:inline-flex;align-items:center;gap:7px;color:var(--cesag-green);font-weight:750;font-size:13px;
       border-bottom:1.5px solid transparent;width:max-content;padding-bottom:2px;
     }
-    .tool-box-item .btn-tool:hover{border-bottom-color:var(--gold);color:var(--gold-dark)}
+    .tool-box-item .btn-tool:hover{border-bottom-color:var(--cesag-orange);color:var(--cesag-orange-dark)}
 
-    /* Footer */
-    footer{background:var(--green-dark);color:rgba(255,255,255,.8);padding:32px 0;font-size:13px;margin-top:48px}
+    /* Modal QR Code */
+    .modal-backdrop{
+      position:fixed;inset:0;background:rgba(10,61,32,.55);backdrop-filter:blur(4px);
+      display:grid;place-items:center;z-index:999;padding:20px;opacity:0;pointer-events:none;transition:opacity .25s ease;
+    }
+    .modal-backdrop.is-open{opacity:1;pointer-events:auto}
+    .modal-card{
+      background:#fff;border-radius:24px;padding:32px;max-width:380px;width:100%;text-align:center;
+      box-shadow:var(--shadow-lg);border:1px solid var(--line);
+    }
+    .modal-card h3{margin:0 0 8px;color:var(--cesag-green-dark);font-family:var(--serif);font-size:22px}
+    .modal-card p{margin:0 0 20px;color:var(--muted);font-size:13.5px}
+    .qr-frame{background:var(--paper);padding:14px;border-radius:18px;border:1px solid var(--line);display:inline-block;margin-bottom:20px}
+    .qr-frame img{display:block;border-radius:10px}
+    .btn-close{border:none;background:var(--cesag-green);color:#fff;padding:10px 24px;border-radius:12px;font-weight:700;cursor:pointer}
+
+    /* Footer CESAG */
+    footer{background:var(--cesag-green-dark);color:rgba(255,255,255,.8);padding:32px 0;font-size:13px;margin-top:48px;border-top:3px solid var(--cesag-orange)}
     footer .container{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;align-items:center}
     footer b{color:#fff}
 
@@ -256,18 +304,43 @@
       .guide{grid-template-columns:1fr}
       .toolbox-grid{grid-template-columns:1fr}
       .hero-panel{padding:32px 24px}
+      .brand-wrap{flex-direction:column;align-items:flex-start;gap:8px}
     }
   </style>
 </head>
 <body>
   <a class="skip-link" href="#programmes">Aller aux programmes</a>
 
+  <!-- Bandeau Panafricain des Capitales -->
+  <aside class="panafrica-bar" aria-label="Heure dans les capitales de l'espace CESAG">
+    <div class="container panafrica-inner" id="panafricaTicker">
+      <span class="p-tag">🌍 Espace Panafricain :</span>
+      <span class="city-item">🇸🇳 Dakar <strong id="t-sn">--:--</strong></span>
+      <span class="city-item">🇨🇮 Abidjan <strong id="t-ci">--:--</strong></span>
+      <span class="city-item">🇧🇫 Ouaga <strong id="t-bf">--:--</strong></span>
+      <span class="city-item">🇹🇬 Lomé <strong id="t-tg">--:--</strong></span>
+      <span class="city-item">🇲🇱 Bamako <strong id="t-ml">--:--</strong></span>
+      <span class="city-item">🇧🇯 Cotonou <strong id="t-bj">--:--</strong></span>
+      <span class="city-item">🇳🇪 Niamey <strong id="t-ne">--:--</strong></span>
+      <span class="city-item">🇨🇲 Yaoundé <strong id="t-cm">--:--</strong></span>
+    </div>
+  </aside>
+
   <div class="topbar">
     <div class="container">
-      <div class="brandline"><span class="dot"></span> CESAG ONLINE · Direction de la Formation Ouverte et à Distance</div>
-      <div class="note">
+      <div class="brand-wrap">
+        <img class="cesag-logo-img" src="assets/logo-cesag.png" alt="Logo officiel CESAG" width="65" height="46" />
+        <div class="brand-text">
+          <b>CESAG ONLINE · FOAD</b>
+          <span>Centre Africain d’Études Supérieures en Gestion · Dakar</span>
+        </div>
+      </div>
+      <div class="topbar-actions">
+        <button class="btn-qr" id="openQrBtn" type="button" aria-label="Ouvrir sur mon smartphone">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+          Version Mobile
+        </button>
         <span class="badge-promo">Promotion 2026–2027</span>
-        <span>Rentrée Officielle</span>
       </div>
     </div>
   </div>
@@ -289,16 +362,21 @@
         </div>
       </section>
 
+      <!-- Live Bar avec API Météo Open-Meteo & Horloge GMT -->
       <section class="site-live" aria-label="Informations générales">
         <div class="site-live-head">
           <span class="live-pulse" aria-hidden="true"></span>
           <span>Espaces de cours de la nouvelle promotion actifs</span>
         </div>
-        <div class="clock-group">
-          <div class="clock-badge">
-            Heure GMT officielle (Dakar) : <strong id="homeGmtClock">--:--:--</strong>
+        <div class="live-widgets">
+          <!-- API Open-Meteo Dakar -->
+          <div class="weather-badge" id="campusWeatherBadge" title="Données météo réelles du Campus CESAG Dakar (Open-Meteo API)">
+            <span>📍 Campus Dakar :</span>
+            <span id="campusWeatherText">Chargement météo…</span>
           </div>
-          <div class="tz-detected" id="tzNotice">Détection du fuseau…</div>
+          <div class="clock-badge">
+            Heure GMT (Dakar) : <strong id="homeGmtClock">--:--:--</strong>
+          </div>
         </div>
       </section>
 
@@ -375,11 +453,11 @@
         </a>
       </div>
 
-      <!-- Kit de rentrée & boîte à outils -->
+      <!-- Kit de rentrée -->
       <section class="toolbox" aria-labelledby="toolbox-title">
         <div class="toolbox-head">
           <h3 id="toolbox-title">Kit de Rentrée &amp; Ressources Essentielles</h3>
-          <span class="badge-promo" style="color:var(--green);border-color:var(--green-line);background:var(--green-soft)">Nouveaux Étudiants</span>
+          <span class="badge-promo">Nouveaux Étudiants</span>
         </div>
         <div class="toolbox-grid">
           <div class="tool-box-item">
@@ -402,33 +480,90 @@
     </div>
   </main>
 
+  <!-- Modal QR Code -->
+  <div class="modal-backdrop" id="qrModal" aria-hidden="true">
+    <div class="modal-card">
+      <h3>Scanner sur Smartphone</h3>
+      <p>Ouvrez l’appareil photo de votre téléphone pour afficher l'agenda mobile directement.</p>
+      <div class="qr-frame">
+        <img id="qrImg" src="" alt="QR Code d'accès mobile" width="200" height="200" />
+      </div>
+      <br>
+      <button class="btn-close" id="closeQrBtn" type="button">Fermer</button>
+    </div>
+  </div>
+
   <footer>
     <div class="container">
-      <div><b>CESAG ONLINE</b> · Centre Africain d’Études Supérieures en Gestion</div>
-      <div>Année académique 2026–2027 · Promotion Rentrée</div>
+      <div><b>CESAG</b> · Centre Africain d’Études Supérieures en Gestion · Dakar</div>
+      <div>Direction de la Formation Ouverte et à Distance (FOAD) · Promotion 2026–2027</div>
     </div>
   </footer>
 
   <script>
-    function updateClock(){
+    // 1. Horloge GMT et Ticker Panafricain
+    function updateClocks(){
       const now = new Date();
       document.getElementById('homeGmtClock').textContent = now.toLocaleTimeString('fr-FR', {timeZone: 'UTC', hour:'2-digit', minute:'2-digit', second:'2-digit', hour12: false});
+      
+      const fmtTime = (offset) => {
+        const d = new Date(now.getTime() + offset * 3600000);
+        return d.toLocaleTimeString('fr-FR', {timeZone: 'UTC', hour:'2-digit', minute:'2-digit', hour12: false});
+      };
+      
+      // GMT+0
+      const gmt0 = fmtTime(0);
+      document.getElementById('t-sn').textContent = gmt0;
+      document.getElementById('t-ci').textContent = gmt0;
+      document.getElementById('t-bf').textContent = gmt0;
+      document.getElementById('t-tg').textContent = gmt0;
+      document.getElementById('t-ml').textContent = gmt0;
+      
+      // GMT+1
+      const gmt1 = fmtTime(1);
+      document.getElementById('t-bj').textContent = gmt1;
+      document.getElementById('t-ne').textContent = gmt1;
+      document.getElementById('t-cm').textContent = gmt1;
     }
-    updateClock();
-    setInterval(updateClock, 1000);
+    updateClocks();
+    setInterval(updateClocks, 1000);
 
-    // Détection du fuseau horaire local de l'étudiant
-    (function detectTimezone(){
-      const offsetMinutes = -new Date().getTimezoneOffset();
-      const offsetHours = offsetMinutes / 60;
-      const el = document.getElementById('tzNotice');
-      if(offsetHours === 0){
-        el.textContent = "Votre pays est à l’heure GMT (Sénégal, Togo, Burkina Faso, etc.)";
-      } else {
-        const sign = offsetHours > 0 ? "+" : "";
-        el.textContent = `Votre pays est en UTC${sign}${offsetHours} (ex. Bénin/Niger : GMT+1)`;
+    // 2. API Open-Meteo pour le Campus CESAG Dakar (Lat 14.69, Lon -17.44)
+    async function loadCampusWeather(){
+      try{
+        const r = await fetch('https://api.open-meteo.com/v1/forecast?latitude=14.6928&longitude=-17.4467&current=temperature_2m,weather_code&timezone=GMT');
+        const data = await r.json();
+        const temp = Math.round(data.current.temperature_2m);
+        const code = data.current.weather_code;
+        const icon = code === 0 ? '☀️ Ensoleillé' : (code <= 3 ? '⛅ Éclaircies' : '☁️ Nuageux');
+        document.getElementById('campusWeatherText').textContent = `${temp}°C · ${icon}`;
+      }catch(e){
+        document.getElementById('campusWeatherText').textContent = "Dakar, Sénégal";
       }
-    })();
+    }
+    loadCampusWeather();
+
+    // 3. API QR Server pour QR Code Mobile
+    const qrModal = document.getElementById('qrModal');
+    const openQrBtn = document.getElementById('openQrBtn');
+    const closeQrBtn = document.getElementById('closeQrBtn');
+    const qrImg = document.getElementById('qrImg');
+
+    openQrBtn.addEventListener('click', ()=>{
+      const url = window.location.href;
+      qrImg.src = `https://api.qrserver.com/v1/create-qr-code/?size=200x200&margin=10&data=${encodeURIComponent(url)}`;
+      qrModal.classList.add('is-open');
+      qrModal.setAttribute('aria-hidden', 'false');
+    });
+
+    closeQrBtn.addEventListener('click', ()=>{
+      qrModal.classList.remove('is-open');
+      qrModal.setAttribute('aria-hidden', 'true');
+    });
+
+    qrModal.addEventListener('click', (e)=>{
+      if(e.target === qrModal) closeQrBtn.click();
+    });
   </script>
 </body>
 </html>
