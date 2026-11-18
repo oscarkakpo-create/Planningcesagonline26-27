@@ -11,7 +11,7 @@ X-APPLE-CALENDAR-COLOR:#1B7E44
 X-OUTLOOK-COLOR:#1B7E44
 BEGIN:VEVENT
 UID:mba-ag-2026-11-17-1800-mbaag-2627-01@cesag-online.com
-DTSTAMP:20261118T080053Z
+DTSTAMP:20261118T121517Z
 DTSTART:20261117T180000Z
 DTEND:20261117T203000Z
 SUMMARY:COURS - MBAAG 9.3.1 - Comptabilité générale 26-27 (MBA AG)
@@ -38,36 +38,8 @@ DESCRIPTION:Rappel CESAG ONLINE - Cours demain à 18:00 GMT : COURS - MBAAG 9.3.
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:mba-gp-2026-11-18-1800-mbagp-2627-01@cesag-online.com
-DTSTAMP:20261118T080053Z
-DTSTART:20261118T180000Z
-DTEND:20261118T203000Z
-SUMMARY:COURS - MBAGP 9.1.2 - Principes et enjeux de l'administration publique 26-27 (MBA GP)
-DESCRIPTION:Programme : MBA Gestion de Projets (Promotion 2026–2027)\nInstitution : CESAG ONLINE — Direction des Programmes Executive et Campus Numériques\nType : Cours\nEnseignant : M. JEROME DANDJINOU\nDurée : 2h30\nMoodle : https://formations.cesagonline.com/course/view.php?id=1778\nConsignes : Effectuez vos lectures préalables et vos quiz d'auto-évaluation sur Moodle avant chaque séance.\nRemarque : Bonne rentrée ! Pensez à vos lectures préalables et quizz sur Moodle. Le planning global du module sera envoyé en semaine.
-LOCATION:https://formations.cesagonline.com/course/view.php?id=1778
-URL:https://formations.cesagonline.com/course/view.php?id=1778
-CATEGORIES:CESAG ONLINE,2026-2027,MBA
-COLOR:#1B7E44
-STATUS:CONFIRMED
-BEGIN:VALARM
-TRIGGER:-PT15M
-ACTION:DISPLAY
-DESCRIPTION:Rappel CESAG ONLINE - Cours dans 15 minutes : COURS - MBAGP 9.1.2 - Principes et enjeux de l'administration publique 26-27 (MBA GP)
-END:VALARM
-BEGIN:VALARM
-TRIGGER:-PT2H
-ACTION:DISPLAY
-DESCRIPTION:Rappel CESAG ONLINE - Cours dans 2 heures : COURS - MBAGP 9.1.2 - Principes et enjeux de l'administration publique 26-27 (MBA GP)
-END:VALARM
-BEGIN:VALARM
-TRIGGER;VALUE=DATE-TIME:20261117T200000Z
-ACTION:DISPLAY
-DESCRIPTION:Rappel CESAG ONLINE - Cours demain à 18:00 GMT : COURS - MBAGP 9.1.2 - Principes et enjeux de l'administration publique 26-27 (MBA GP)
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
 UID:mba-msch-2026-11-18-1800-mbamsch-2627-01@cesag-online.com
-DTSTAMP:20261118T080053Z
+DTSTAMP:20261118T121517Z
 DTSTART:20261118T180000Z
 DTEND:20261118T203000Z
 SUMMARY:COURS - MBAMSCH 9.1.1 - Comptabilité générale 26-27 (MBA MSCH)
@@ -95,11 +67,11 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:mba-ag-2026-11-19-1800-mbaag-2627-02@cesag-online.com
-DTSTAMP:20261118T080053Z
+DTSTAMP:20261118T121517Z
 DTSTART:20261119T180000Z
 DTEND:20261119T203000Z
 SUMMARY:COURS - MBAAG 10.1.2 - Anglais des affaires 26-27 (MBA AG)
-DESCRIPTION:Programme : MBA Administration et Gestion (Promotion 2026–2027)\nInstitution : CESAG ONLINE — Direction des Programmes Executive et Campus Numériques\nType : Cours\nEnseignant : M. IGNACE KPATAKPANI\nDurée : 2h30\nMoodle : https://formations.cesagonline.com/course/view.php?id=1734\nConsignes : Effectuez vos lectures préalables et vos quiz d'auto-évaluation sur Moodle avant chaque séance.\nRemarque : Cours jumelé avec MBA GP. Pensez à vos lectures et quizz préparatoires sur Moodle. (Planning global du module envoyé en semaine).
+DESCRIPTION:Programme : MBA Administration et Gestion (Promotion 2026–2027)\nInstitution : CESAG ONLINE — Direction des Programmes Executive et Campus Numériques\nType : Cours\nEnseignant : M. IGNACE KPATAKPANI\nDurée : 2h30\nMoodle : https://formations.cesagonline.com/course/view.php?id=1734\nConsignes : Effectuez vos lectures préalables et vos quiz d'auto-évaluation sur Moodle avant chaque séance.\nRemarque : Séance d'anglais maintenue pour MBA AG ce jeudi de 18h00 à 20h30 GMT.
 LOCATION:https://formations.cesagonline.com/course/view.php?id=1734
 URL:https://formations.cesagonline.com/course/view.php?id=1734
 CATEGORIES:CESAG ONLINE,2026-2027,MBA
@@ -122,36 +94,36 @@ DESCRIPTION:Rappel CESAG ONLINE - Cours demain à 18:00 GMT : COURS - MBAAG 10.1
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:mba-gp-2026-11-19-1800-mbagp-2627-02@cesag-online.com
-DTSTAMP:20261118T080053Z
+UID:mba-gp-2026-11-19-1800-mbagp-2627-01-jeudi@cesag-online.com
+DTSTAMP:20261118T121517Z
 DTSTART:20261119T180000Z
 DTEND:20261119T203000Z
-SUMMARY:COURS - MBAGP 10.6.1 - Anglais de spécialité 26-27 (MBA GP)
-DESCRIPTION:Programme : MBA Gestion de Projets (Promotion 2026–2027)\nInstitution : CESAG ONLINE — Direction des Programmes Executive et Campus Numériques\nType : Cours\nEnseignant : M. IGNACE KPATAKPANI\nDurée : 2h30\nMoodle : https://formations.cesagonline.com/course/view.php?id=1734\nConsignes : Effectuez vos lectures préalables et vos quiz d'auto-évaluation sur Moodle avant chaque séance.\nRemarque : Cours jumelé avec MBA AG. Pensez à vos lectures et quizz préparatoires sur Moodle. (Planning global du module envoyé en semaine).
-LOCATION:https://formations.cesagonline.com/course/view.php?id=1734
-URL:https://formations.cesagonline.com/course/view.php?id=1734
+SUMMARY:COURS - MBAGP 9.1.2 - Principes et enjeux de l'administration publique 26-27 (MBA GP)
+DESCRIPTION:Programme : MBA Gestion de Projets (Promotion 2026–2027)\nInstitution : CESAG ONLINE — Direction des Programmes Executive et Campus Numériques\nType : Cours\nEnseignant : M. JEROME DANDJINOU\nDurée : 2h30\nMoodle : https://formations.cesagonline.com/course/view.php?id=1778\nConsignes : Effectuez vos lectures préalables et vos quiz d'auto-évaluation sur Moodle avant chaque séance.\nRemarque : Séance reportée du mercredi 18/11. Cours maintenu ce jeudi de 18h00 à 20h30 GMT.
+LOCATION:https://formations.cesagonline.com/course/view.php?id=1778
+URL:https://formations.cesagonline.com/course/view.php?id=1778
 CATEGORIES:CESAG ONLINE,2026-2027,MBA
 COLOR:#1B7E44
 STATUS:CONFIRMED
 BEGIN:VALARM
 TRIGGER:-PT15M
 ACTION:DISPLAY
-DESCRIPTION:Rappel CESAG ONLINE - Cours dans 15 minutes : COURS - MBAGP 10.6.1 - Anglais de spécialité 26-27 (MBA GP)
+DESCRIPTION:Rappel CESAG ONLINE - Cours dans 15 minutes : COURS - MBAGP 9.1.2 - Principes et enjeux de l'administration publique 26-27 (MBA GP)
 END:VALARM
 BEGIN:VALARM
 TRIGGER:-PT2H
 ACTION:DISPLAY
-DESCRIPTION:Rappel CESAG ONLINE - Cours dans 2 heures : COURS - MBAGP 10.6.1 - Anglais de spécialité 26-27 (MBA GP)
+DESCRIPTION:Rappel CESAG ONLINE - Cours dans 2 heures : COURS - MBAGP 9.1.2 - Principes et enjeux de l'administration publique 26-27 (MBA GP)
 END:VALARM
 BEGIN:VALARM
 TRIGGER;VALUE=DATE-TIME:20261118T200000Z
 ACTION:DISPLAY
-DESCRIPTION:Rappel CESAG ONLINE - Cours demain à 18:00 GMT : COURS - MBAGP 10.6.1 - Anglais de spécialité 26-27 (MBA GP)
+DESCRIPTION:Rappel CESAG ONLINE - Cours demain à 18:00 GMT : COURS - MBAGP 9.1.2 - Principes et enjeux de l'administration publique 26-27 (MBA GP)
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:mba-msch-2026-11-19-1800-mbamsch-2627-02@cesag-online.com
-DTSTAMP:20261118T080053Z
+DTSTAMP:20261118T121517Z
 DTSTART:20261119T180000Z
 DTEND:20261119T203000Z
 SUMMARY:COURS - MBAMSCH 9.3.1 - Conventions internationales sur le travail 26-27 (MBA MSCH)
@@ -179,7 +151,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:mba-ag-2026-11-20-1800-mbaag-2627-03@cesag-online.com
-DTSTAMP:20261118T080053Z
+DTSTAMP:20261118T121517Z
 DTSTART:20261120T180000Z
 DTEND:20261120T203000Z
 SUMMARY:COURS - MBAAG 9.1.1 - Droit des affaires 26-27 (MBA AG)

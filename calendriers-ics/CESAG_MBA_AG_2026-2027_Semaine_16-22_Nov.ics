@@ -11,7 +11,7 @@ X-APPLE-CALENDAR-COLOR:#F15B2E
 X-OUTLOOK-COLOR:#F15B2E
 BEGIN:VEVENT
 UID:mba-ag-2026-11-17-1800-mbaag-2627-01@cesag-online.com
-DTSTAMP:20261118T080053Z
+DTSTAMP:20261118T121517Z
 DTSTART:20261117T180000Z
 DTEND:20261117T203000Z
 SUMMARY:COURS - MBAAG 9.3.1 - Comptabilité générale 26-27 (MBA AG)
@@ -39,11 +39,11 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:mba-ag-2026-11-19-1800-mbaag-2627-02@cesag-online.com
-DTSTAMP:20261118T080053Z
+DTSTAMP:20261118T121517Z
 DTSTART:20261119T180000Z
 DTEND:20261119T203000Z
 SUMMARY:COURS - MBAAG 10.1.2 - Anglais des affaires 26-27 (MBA AG)
-DESCRIPTION:Programme : MBA Administration et Gestion (Promotion 2026–2027)\nInstitution : CESAG ONLINE — Direction des Programmes Executive et Campus Numériques\nType : Cours\nEnseignant : M. IGNACE KPATAKPANI\nDurée : 2h30\nMoodle : https://formations.cesagonline.com/course/view.php?id=1734\nConsignes : Effectuez vos lectures préalables et vos quiz d'auto-évaluation sur Moodle avant chaque séance.\nRemarque : Cours jumelé avec MBA GP. Pensez à vos lectures et quizz préparatoires sur Moodle. (Planning global du module envoyé en semaine).
+DESCRIPTION:Programme : MBA Administration et Gestion (Promotion 2026–2027)\nInstitution : CESAG ONLINE — Direction des Programmes Executive et Campus Numériques\nType : Cours\nEnseignant : M. IGNACE KPATAKPANI\nDurée : 2h30\nMoodle : https://formations.cesagonline.com/course/view.php?id=1734\nConsignes : Effectuez vos lectures préalables et vos quiz d'auto-évaluation sur Moodle avant chaque séance.\nRemarque : Séance d'anglais maintenue pour MBA AG ce jeudi de 18h00 à 20h30 GMT.
 LOCATION:https://formations.cesagonline.com/course/view.php?id=1734
 URL:https://formations.cesagonline.com/course/view.php?id=1734
 CATEGORIES:CESAG ONLINE,2026-2027,MBA
@@ -67,7 +67,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:mba-ag-2026-11-20-1800-mbaag-2627-03@cesag-online.com
-DTSTAMP:20261118T080053Z
+DTSTAMP:20261118T121517Z
 DTSTART:20261120T180000Z
 DTEND:20261120T203000Z
 SUMMARY:COURS - MBAAG 9.1.1 - Droit des affaires 26-27 (MBA AG)

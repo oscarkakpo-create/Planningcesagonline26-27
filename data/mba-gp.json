@@ -5,11 +5,17 @@
   "cohort": "Promotion 2026–2027",
   "week_label": "Semaine du 16 au 22 novembre 2026",
   "week_file_label": "semaine_16_22_nov_2026_mba_gp",
-  "updated_label": "13 novembre 2026",
+  "updated_label": "18 novembre 2026",
   "is_new": true,
-  "published_at": "2026-11-13T14:30:00Z",
-  "week_message": "🎓 BONNE RENTRÉE 2026–2027 ! Bienvenue dans votre formation MBA Gestion de Projets. Pensez à réaliser vos lectures préalables et vos quiz d'auto-évaluation sur Moodle avant chaque rencontre. Les plannings globaux de ces modules vous seront envoyés en semaine.",
+  "published_at": "2026-11-18T12:15:00Z",
+  "week_message": "⚠️ MISE À JOUR : Le cours de Principes et enjeux de l'administration publique prévu ce mercredi 18/11 est reporté au jeudi 19/11 (18h00–20h30 GMT). Par conséquent, les auditeurs de MBA GP n'ont pas cours d'anglais cette semaine.",
   "information_blocks": [
+    {
+      "title": "⚠️ Report : Principes et enjeux de l'administration publique à Jeudi 19/11",
+      "text": "La séance de « Principes et enjeux de l'administration publique » avec M. JEROME DANDJINOU initialement prévue ce mercredi 18 novembre est reportée à demain jeudi 19 novembre 2026 de 18h00 à 20h30 GMT.\n\n👉 Par conséquent, les auditeurs de MBA GP n'auront pas cours d'anglais de spécialité cette semaine (séance remplacée par le cours d'Administration publique).",
+      "link": "https://formations.cesagonline.com/course/view.php?id=1778",
+      "link_label": "Accéder à l'espace du cours Moodle"
+    },
     {
       "title": "🎉 Bonne Rentrée 2026–2027 & Bienvenue dans votre parcours !",
       "text": "La Direction des Programmes Executive et Campus Numériques et l'équipe pédagogique du CESAG vous souhaitent la plus chaleureuse bienvenue.\n\n📌 Recommandations et consignes importantes :\n• Lectures & Quizz préalables : Connectez-vous sur votre espace Moodle avant chaque séance pour consulter les supports obligatoires et effectuer vos quiz préparatoires.\n• Plannings globaux des modules : Les calendriers prévisionnels complets pour l'ensemble des modules du semestre vous seront envoyés par courriel en cours de semaine.\n• Ponctualité : Toutes les séances démarrent à 18h00 GMT précises en salle de classe virtuelle.",
@@ -19,8 +25,22 @@
   ],
   "sessions": [
     {
-      "id": "mbagp-2627-01",
+      "id": "mbagp-2627-01-mercredi",
       "date": "2026-11-18",
+      "start": "18:00",
+      "end": "20:30",
+      "duration": "2h30",
+      "type": "Cours",
+      "title": "MBAGP 9.1.2 - Principes et enjeux de l'administration publique 26-27",
+      "teacher": "M. JEROME DANDJINOU",
+      "status": "rescheduled",
+      "moodle": "https://formations.cesagonline.com/course/view.php?id=1778",
+      "room": "",
+      "notes": "⚠️ SÉANCE REPORTÉE : Cours reporté à demain jeudi 19/11 de 18h00 à 20h30 GMT."
+    },
+    {
+      "id": "mbagp-2627-01-jeudi",
+      "date": "2026-11-19",
       "start": "18:00",
       "end": "20:30",
       "duration": "2h30",
@@ -30,10 +50,10 @@
       "status": "confirmed",
       "moodle": "https://formations.cesagonline.com/course/view.php?id=1778",
       "room": "",
-      "notes": "Bonne rentrée ! Pensez à vos lectures préalables et quizz sur Moodle. Le planning global du module sera envoyé en semaine."
+      "notes": "Séance reportée du mercredi 18/11. Cours maintenu ce jeudi de 18h00 à 20h30 GMT."
     },
     {
-      "id": "mbagp-2627-02",
+      "id": "mbagp-2627-02-anglais",
       "date": "2026-11-19",
       "start": "18:00",
       "end": "20:30",
@@ -41,10 +61,10 @@
       "type": "Cours",
       "title": "MBAGP 10.6.1 - Anglais de spécialité 26-27",
       "teacher": "M. IGNACE KPATAKPANI",
-      "status": "confirmed",
+      "status": "cancelled",
       "moodle": "https://formations.cesagonline.com/course/view.php?id=1734",
       "room": "",
-      "notes": "Cours jumelé avec MBA AG. Pensez à vos lectures et quizz préparatoires sur Moodle. (Planning global du module envoyé en semaine)."
+      "notes": "⚠️ PAS DE COURS D'ANGLAIS POUR MBA GP : Séance annulée cette semaine pour MBA GP (remplacée par Principes et enjeux de l'administration publique)."
     }
   ],
   "upcoming_week_label": "",
