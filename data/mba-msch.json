@@ -3,16 +3,16 @@
   "program_name": "MBA Management Stratégique du Capital Humain",
   "program_short": "MBA MSCH",
   "cohort": "Promotion 2026–2027",
-  "week_label": "Semaine du 23 au 29 nov. 2026 & Planning des 4 prochaines semaines",
+  "week_label": "Semaine du 23 au 29 nov. 2026 (Séances 2) & Planning des 4 prochaines semaines",
   "week_file_label": "planning_4_prochaines_semaines_mba_msch",
   "updated_label": "20 novembre 2026",
   "is_new": true,
-  "published_at": "2026-11-20T17:10:00Z",
-  "week_message": "📌 CALENDRIER DES 4 PROCHAINES SEMAINES : Comptabilité générale avec Dr Mouhamadou DIA tous les mardis (18h00–20h30 GMT) et Conventions internationales sur le travail avec M. Baba Soma KONE tous les jeudis (18h00–20h30 GMT) jusqu'au 17 décembre 2026. Veillez impérativement à vérifier vos travaux donnés, à compléter vos quiz d'auto-évaluation et à participer activement aux forums de discussion sur Moodle avant chaque séance.",
+  "published_at": "2026-11-20T17:18:00Z",
+  "week_message": "📌 SEMAINE DU 23 AU 29 NOV. (DEUXIÈMES SÉANCES) & CALENDRIER SUR 4 SEMAINES : Deuxième séance pour vos deux modules cette semaine (mardi 24/11 en Comptabilité générale avec Dr Mouhamadou DIA et jeudi 26/11 en Conventions du travail avec M. Baba Soma KONE de 18h00 à 20h30 GMT), suivies des séances 3, 4 et 5 tous les mardis et jeudis jusqu'au 17 décembre 2026. Assurez-vous de vérifier vos travaux donnés, de compléter vos quiz d'auto-évaluation et d'échanger sur les forums Moodle.",
   "information_blocks": [
     {
-      "title": "📌 Rythme officiel des 4 prochaines semaines (24 nov. → 17 déc. 2026)",
-      "text": "Chers auditeurs de MBA MSCH,\n\nLe calendrier de vos regroupements synchrones est fixé pour les 4 prochaines semaines comme suit :\n• TOUS LES MARDIS (18h00–20h30 GMT) : Cours de « Comptabilité générale » avec Dr Mouhamadou DIA.\n  Dates : 24 novembre, 1er décembre, 8 décembre et 15 décembre 2026.\n\n• TOUS LES JEUDIS (18h00–20h30 GMT) : Cours de « Conventions internationales sur le travail » avec M. Baba Soma KONE.\n  Dates : 26 novembre, 3 décembre, 10 décembre et 17 décembre 2026.\n\n📝 Consignes de travail obligatoires :\n1. Travaux & Exercices : Assurez-vous de vérifier et finaliser les travaux donnés par les professeurs sur Moodle.\n2. Quiz d'auto-évaluation : Réalisez vos quiz préparatoires obligatoires avant chaque cours en direct.\n3. Forums de discussion : Participez activement aux échanges sur chaque module.\n4. Ponctualité : Début impératif des cours à 18h00 GMT précises.",
+      "title": "📌 Rythme officiel des 4 prochaines semaines (Séances 2, 3, 4 et 5)",
+      "text": "Chers auditeurs de MBA MSCH,\n\nAprès la tenue des premières séances les 18 et 19 novembre, le calendrier des séances 2 à 5 est fixé pour les 4 prochaines semaines :\n\n• TOUS LES MARDIS (18h00–20h30 GMT) : Cours de « Comptabilité générale » avec Dr Mouhamadou DIA.\n  - Séance 2 : Mardi 24 novembre 2026\n  - Séance 3 : Mardi 1er décembre 2026\n  - Séance 4 : Mardi 8 décembre 2026\n  - Séance 5 : Mardi 15 décembre 2026 (Clôture du module)\n\n• TOUS LES JEUDIS (18h00–20h30 GMT) : Cours de « Conventions internationales sur le travail » avec M. Baba Soma KONE.\n  - Séance 2 : Jeudi 26 novembre 2026\n  - Séance 3 : Jeudi 3 décembre 2026\n  - Séance 4 : Jeudi 10 décembre 2026\n  - Séance 5 : Jeudi 17 décembre 2026 (Clôture du module)\n\n📝 Consignes de travail obligatoires :\n1. Travaux & Exercices : Assurez-vous de vérifier et finaliser les travaux donnés par les professeurs sur Moodle.\n2. Quiz d'auto-évaluation : Réalisez vos quiz préparatoires obligatoires avant chaque cours en direct.\n3. Forums de discussion : Participez activement aux échanges sur chaque module.\n4. Ponctualité : Début impératif des cours à 18h00 GMT précises.",
       "link": "https://formations.cesagonline.com/",
       "link_label": "Accéder à la plateforme Moodle CESAG"
     }
@@ -30,7 +30,7 @@
       "status": "confirmed",
       "moodle": "https://formations.cesagonline.com/course/view.php?id=1841",
       "room": "",
-      "notes": "Séance 1/4 - Comptabilité générale. Assurez-vous de vérifier les exercices et travaux donnés, de compléter vos quiz d'auto-évaluation et d'échanger sur le forum Moodle."
+      "notes": "Deuxième séance (Séance 2/5). Assurez-vous de vérifier les exercices et travaux donnés, de compléter vos quiz d'auto-évaluation et d'échanger sur le forum Moodle."
     },
     {
       "id": "mbamsch-2627-w2-jeudi",
@@ -44,7 +44,7 @@
       "status": "confirmed",
       "moodle": "https://formations.cesagonline.com/course/view.php?id=1842",
       "room": "",
-      "notes": "Séance 1/4 - Conventions internationales sur le travail. Pensez à vérifier les travaux donnés, à réaliser vos lectures préalables, vos quiz et à intervenir sur le forum Moodle."
+      "notes": "Deuxième séance (Séance 2/5). Pensez à vérifier les travaux donnés, à réaliser vos lectures préalables, vos quiz et à intervenir sur le forum Moodle."
     },
     {
       "id": "mbamsch-2627-w3-mardi",
@@ -58,7 +58,7 @@
       "status": "confirmed",
       "moodle": "https://formations.cesagonline.com/course/view.php?id=1841",
       "room": "",
-      "notes": "Séance 2/4 - Comptabilité générale. Vérifiez vos travaux, exercices et quiz sur Moodle."
+      "notes": "Troisième séance (Séance 3/5). Vérifiez vos travaux, exercices et quiz sur Moodle."
     },
     {
       "id": "mbamsch-2627-w3-jeudi",
@@ -72,7 +72,7 @@
       "status": "confirmed",
       "moodle": "https://formations.cesagonline.com/course/view.php?id=1842",
       "room": "",
-      "notes": "Séance 2/4 - Conventions internationales sur le travail. Lectures préalables, devoirs et forum Moodle."
+      "notes": "Troisième séance (Séance 3/5). Lectures préalables, devoirs et forum Moodle."
     },
     {
       "id": "mbamsch-2627-w4-mardi",
@@ -86,7 +86,7 @@
       "status": "confirmed",
       "moodle": "https://formations.cesagonline.com/course/view.php?id=1841",
       "room": "",
-      "notes": "Séance 3/4 - Comptabilité générale. Vérifiez vos travaux, exercices et quiz sur Moodle."
+      "notes": "Quatrième séance (Séance 4/5). Vérifiez vos travaux, exercices et quiz sur Moodle."
     },
     {
       "id": "mbamsch-2627-w4-jeudi",
@@ -100,7 +100,7 @@
       "status": "confirmed",
       "moodle": "https://formations.cesagonline.com/course/view.php?id=1842",
       "room": "",
-      "notes": "Séance 3/4 - Conventions internationales sur le travail. Lectures préalables, devoirs et forum Moodle."
+      "notes": "Quatrième séance (Séance 4/5). Lectures préalables, devoirs et forum Moodle."
     },
     {
       "id": "mbamsch-2627-w5-mardi",
@@ -114,7 +114,7 @@
       "status": "confirmed",
       "moodle": "https://formations.cesagonline.com/course/view.php?id=1841",
       "room": "",
-      "notes": "Séance 4/4 - Comptabilité générale. Séance de clôture du module."
+      "notes": "Cinquième et dernière séance (Séance 5/5). Clôture du module."
     },
     {
       "id": "mbamsch-2627-w5-jeudi",
@@ -128,7 +128,7 @@
       "status": "confirmed",
       "moodle": "https://formations.cesagonline.com/course/view.php?id=1842",
       "room": "",
-      "notes": "Séance 4/4 - Conventions internationales sur le travail. Séance de clôture du module."
+      "notes": "Cinquième et dernière séance (Séance 5/5). Clôture du module."
     }
   ],
   "past_sessions": [
@@ -143,7 +143,8 @@
       "title": "MBAMSCH 9.1.1 - Comptabilité générale 26-27",
       "teacher": "DR MOUHAMADOU DIA",
       "status": "completed",
-      "moodle": "https://formations.cesagonline.com/course/view.php?id=1841"
+      "moodle": "https://formations.cesagonline.com/course/view.php?id=1841",
+      "notes": "Première séance (Séance 1/5)"
     },
     {
       "week_label": "Semaine du 16 au 22 novembre 2026",
@@ -156,7 +157,8 @@
       "title": "MBAMSCH 9.3.1 - Conventions internationales sur le travail 26-27",
       "teacher": "M. BABA SOMA KONE",
       "status": "completed",
-      "moodle": "https://formations.cesagonline.com/course/view.php?id=1842"
+      "moodle": "https://formations.cesagonline.com/course/view.php?id=1842",
+      "notes": "Première séance (Séance 1/5)"
     }
   ],
   "upcoming_week_label": "",
