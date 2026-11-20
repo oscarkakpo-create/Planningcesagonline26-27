@@ -3,38 +3,24 @@
   "program_name": "MBA Management Stratégique du Capital Humain",
   "program_short": "MBA MSCH",
   "cohort": "Promotion 2026–2027",
-  "week_label": "Semaine du 16 au 22 novembre 2026",
-  "week_file_label": "semaine_16_22_nov_2026_mba_msch",
-  "updated_label": "13 novembre 2026",
+  "week_label": "Semaine du 23 au 29 novembre 2026",
+  "week_file_label": "semaine_23_29_nov_2026_mba_msch",
+  "updated_label": "20 novembre 2026",
   "is_new": true,
-  "published_at": "2026-11-13T14:30:00Z",
-  "week_message": "🎓 BONNE RENTRÉE 2026–2027 ! Bienvenue dans votre formation MBA Capital Humain (MSCH). Pensez à réaliser vos lectures préalables et vos quiz d'auto-évaluation sur Moodle avant chaque rencontre. Les plannings globaux de ces modules vous seront envoyés en semaine.",
+  "published_at": "2026-11-20T16:30:00Z",
+  "week_message": "📌 SEMAINE DU 23 AU 29 NOVEMBRE 2026 : Deux séances en direct programmées (mardi 24/11 et jeudi 26/11 de 18h00 à 20h30 GMT). Assurez-vous impérativement de vérifier les travaux donnés par les enseignants, de réaliser vos quiz d'auto-évaluation et de participer activement aux forums de discussion sur Moodle.",
   "information_blocks": [
     {
-      "title": "🎉 Bonne Rentrée 2026–2027 & Bienvenue dans votre parcours !",
-      "text": "La Direction des Programmes Executive et Campus Numériques et l'équipe pédagogique du CESAG vous souhaitent la plus chaleureuse bienvenue.\n\n📌 Recommandations et consignes importantes :\n• Lectures & Quizz préalables : Connectez-vous sur votre espace Moodle avant chaque séance pour consulter les supports obligatoires et effectuer vos quiz préparatoires.\n• Plannings globaux des modules : Les calendriers prévisionnels complets pour l'ensemble des modules du semestre vous seront envoyés par courriel en cours de semaine.\n• Ponctualité : Toutes les séances démarrent à 18h00 GMT précises en salle de classe virtuelle.",
+      "title": "📝 Consignes de la semaine : Travaux donnés, Quizz & Forums Moodle",
+      "text": "Chers auditeurs de MBA MSCH,\n\nPour préparer au mieux vos séances de cette semaine :\n• Travaux & Exercices : Assurez-vous de vérifier et finaliser les travaux donnés par vos professeurs sur vos espaces de cours Moodle.\n• Quiz d'auto-évaluation : Réalisez vos quiz préparatoires obligatoires avant chaque cours en direct.\n• Forums de discussion : Participez activement aux échanges et questions posées sur les forums de chaque module.\n• Horaires : Début des séances à 18h00 GMT précises en classe virtuelle.",
       "link": "https://formations.cesagonline.com/",
-      "link_label": "Accéder à Moodle CESAG"
+      "link_label": "Accéder à la plateforme Moodle CESAG"
     }
   ],
   "sessions": [
     {
-      "id": "mbamsch-2627-01",
-      "date": "2026-11-18",
-      "start": "18:00",
-      "end": "20:30",
-      "duration": "2h30",
-      "type": "Cours",
-      "title": "MBAMSCH 9.1.1 - Comptabilité générale 26-27",
-      "teacher": "DR MOUHAMADOU DIA",
-      "status": "confirmed",
-      "moodle": "https://formations.cesagonline.com/course/view.php?id=1841",
-      "room": "",
-      "notes": "Bonne rentrée ! Pensez à vos lectures préalables et quizz sur Moodle. Le planning global du module sera envoyé en semaine."
-    },
-    {
-      "id": "mbamsch-2627-02",
-      "date": "2026-11-19",
+      "id": "mbamsch-2627-w2-01",
+      "date": "2026-11-24",
       "start": "18:00",
       "end": "20:30",
       "duration": "2h30",
@@ -44,7 +30,49 @@
       "status": "confirmed",
       "moodle": "https://formations.cesagonline.com/course/view.php?id=1842",
       "room": "",
-      "notes": "Pensez à vos lectures et quizz préparatoires sur Moodle. Le planning global du module sera envoyé en semaine."
+      "notes": "Pensez à vérifier les travaux donnés, à réaliser vos lectures préalables, vos quiz et à intervenir sur le forum Moodle."
+    },
+    {
+      "id": "mbamsch-2627-w2-02",
+      "date": "2026-11-26",
+      "start": "18:00",
+      "end": "20:30",
+      "duration": "2h30",
+      "type": "Cours",
+      "title": "MBAMSCH 9.1.1 - Comptabilité générale 26-27",
+      "teacher": "DR MOUHAMADOU DIA",
+      "status": "confirmed",
+      "moodle": "https://formations.cesagonline.com/course/view.php?id=1841",
+      "room": "",
+      "notes": "Assurez-vous de vérifier les exercices et travaux donnés, de compléter vos quiz d'auto-évaluation et d'échanger sur le forum Moodle."
+    }
+  ],
+  "past_sessions": [
+    {
+      "week_label": "Semaine du 16 au 22 novembre 2026",
+      "id": "mbamsch-2627-01",
+      "date": "2026-11-18",
+      "start": "18:00",
+      "end": "20:30",
+      "duration": "2h30",
+      "type": "Cours",
+      "title": "MBAMSCH 9.1.1 - Comptabilité générale 26-27",
+      "teacher": "DR MOUHAMADOU DIA",
+      "status": "completed",
+      "moodle": "https://formations.cesagonline.com/course/view.php?id=1841"
+    },
+    {
+      "week_label": "Semaine du 16 au 22 novembre 2026",
+      "id": "mbamsch-2627-02",
+      "date": "2026-11-19",
+      "start": "18:00",
+      "end": "20:30",
+      "duration": "2h30",
+      "type": "Cours",
+      "title": "MBAMSCH 9.3.1 - Conventions internationales sur le travail 26-27",
+      "teacher": "M. BABA SOMA KONE",
+      "status": "completed",
+      "moodle": "https://formations.cesagonline.com/course/view.php?id=1842"
     }
   ],
   "upcoming_week_label": "",
