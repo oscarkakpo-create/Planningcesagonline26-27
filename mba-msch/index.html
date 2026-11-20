@@ -135,6 +135,71 @@
     .session:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(27,126,68,.08)}
     .session:before{content:"";position:absolute;left:0;top:0;bottom:0;width:5px;background:var(--cesag-green)}
     .session.exam:before{background:var(--red)}
+
+    /* Mise en avant spécifique de la semaine en cours */
+    .session.current-week{
+      border: 2px solid var(--cesag-orange) !important;
+      background: linear-gradient(180deg, #FFFFFF 0%, #FFF8F5 100%) !important;
+      box-shadow: 0 8px 26px rgba(241,91,46,.15) !important;
+    }
+    .session.current-week:before{
+      background: var(--cesag-orange) !important;
+      width: 8px !important;
+    }
+    .session.current-week .datebox{
+      background: #FFF1EB !important;
+      border-color: #FCD8CA !important;
+    }
+    .session.current-week .datebox .day{
+      color: var(--cesag-orange-dark) !important;
+    }
+    .tag-current-week{
+      background: var(--cesag-orange) !important;
+      color: #fff !important;
+      font-weight: 800 !important;
+      letter-spacing: .6px !important;
+      box-shadow: 0 2px 8px rgba(241,91,46,.35) !important;
+    }
+    .agenda-section-title{
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin: 22px 0 10px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid var(--line);
+      flex-wrap: wrap;
+    }
+    .agenda-section-title.current{
+      border-bottom-color: var(--cesag-orange);
+      margin-top: 6px;
+    }
+    .agenda-section-title h3{
+      margin: 0;
+      font-family: var(--serif);
+      font-size: 20px;
+      color: var(--cesag-green-dark);
+    }
+    .agenda-section-title.current h3{
+      color: var(--cesag-orange-dark);
+    }
+    .ast-pill{
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 4px 12px;
+      border-radius: 999px;
+      font-size: 11px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: .6px;
+      background: var(--cesag-orange);
+      color: #fff;
+      box-shadow: 0 2px 6px rgba(241,91,46,.3);
+    }
+    .ast-pill.secondary{
+      background: var(--cesag-green);
+      box-shadow: 0 2px 6px rgba(27,126,68,.25);
+    }
     .datebox{background:var(--paper);border:1px solid #E0EDE5;border-radius:15px;padding:14px;text-align:center}
     .datebox .day{font-size:30px;font-weight:800;color:var(--cesag-green);line-height:1}
     .datebox .month{font-size:11px;text-transform:uppercase;letter-spacing:1px;font-weight:800;color:var(--muted);margin-top:6px}
@@ -460,10 +525,11 @@ function card(s, index){
   const cancelled = st === "cancelled";
   const showLinks = !cancelled;
   const inIcs = icsIncluded(s);
+  const isCurrentWeek = (s.date >= "2026-11-23" && s.date <= "2026-11-29");
   const d = new Date(s.date + "T00:00:00Z");
 
   return `
-    <article class="session ${exam?'exam':''} ${cancelled?'is-cancelled':''}">
+    <article class="session ${exam?'exam':''} ${isCurrentWeek?'current-week':''} ${cancelled?'is-cancelled':''}">
       <div class="datebox">
         <div class="day">${String(d.getUTCDate()).padStart(2,"0")}</div>
         <div class="month">${months[d.getUTCMonth()]}</div>
@@ -471,6 +537,7 @@ function card(s, index){
       </div>
       <div>
         <div class="tags">
+          ${isCurrentWeek ? `<span class="tag tag-current-week">📍 CETTE SEMAINE</span>` : ''}
           <span class="tag ${exam?'tag-exam':'tag-course'}">${escHtml(s.type)}</span>
           <span class="tag tag-program">${escHtml(pageData.program_short)}</span>
           <span class="status-badge ${STATUS_CLASS[st]}">${STATUS_LABELS[st]}</span>
@@ -509,10 +576,46 @@ function renderAgenda(){
   if(!list.length){
     container.innerHTML = "";
     empty.style.display = "block";
-  } else {
-    empty.style.display = "none";
-    container.innerHTML = list.map(card).join("");
+    return;
   }
+  empty.style.display = "none";
+
+  const currentWeek = list.filter(s => s.date >= "2026-11-23" && s.date <= "2026-11-29");
+  const upcoming = list.filter(s => s.date > "2026-11-29");
+  const past = list.filter(s => s.date < "2026-11-23");
+
+  let html = "";
+  if(currentWeek.length){
+    html += `
+      <div class="agenda-section-title current">
+        <span class="ast-pill">📍 SEMAINE EN COURS</span>
+        <h3>Semaine du 23 au 29 novembre 2026 (Deuxièmes séances)</h3>
+      </div>
+      ${currentWeek.map(s => card(s, pageData.displaySessions.indexOf(s))).join("")}
+    `;
+  }
+
+  if(upcoming.length){
+    html += `
+      <div class="agenda-section-title upcoming" style="margin-top:34px">
+        <span class="ast-pill secondary">🗓️ CALENDRIER DES SEMAINES SUIVANTES</span>
+        <h3>Séances 3, 4 et 5 (du 1er au 17 décembre 2026)</h3>
+      </div>
+      ${upcoming.map(s => card(s, pageData.displaySessions.indexOf(s))).join("")}
+    `;
+  }
+
+  if(past.length){
+    html += `
+      <div class="agenda-section-title" style="margin-top:34px;opacity:.7">
+        <span class="ast-pill secondary" style="background:#64748b">📜 SÉANCES PASSÉES</span>
+        <h3>Séances antérieures</h3>
+      </div>
+      ${past.map(s => card(s, pageData.displaySessions.indexOf(s))).join("")}
+    `;
+  }
+
+  container.innerHTML = html;
 }
 
 async function load(){
@@ -520,9 +623,10 @@ async function load(){
   pageData = await res.json();
   pageData.displaySessions = (pageData.sessions||[]).sort((a,b)=>(a.date+a.start).localeCompare(b.date+b.start));
 
-  document.getElementById("weekLabel").textContent = pageData.week_label || "Semaine de rentrée";
-  document.getElementById("updatedLabel").textContent = `Mise à jour : ${pageData.updated_label || "13 novembre 2026"}`;
-  document.getElementById("countSessions").textContent = pageData.displaySessions.length;
+  const currentWeekSessions = pageData.displaySessions.filter(s => s.date >= "2026-11-23" && s.date <= "2026-11-29");
+  document.getElementById("weekLabel").textContent = "Semaine du 23 au 29 novembre 2026 (En cours)";
+  document.getElementById("updatedLabel").textContent = `Mise à jour : ${pageData.updated_label || "20 novembre 2026"}`;
+  document.getElementById("countSessions").textContent = `${currentWeekSessions.length} (cette semaine) / ${pageData.displaySessions.length} au total`;
   document.getElementById("countExams").textContent = pageData.displaySessions.filter(s=>String(s.type).toLowerCase()==="examen").length;
 
   if(pageData.week_message){
