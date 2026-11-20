@@ -144,6 +144,7 @@
     .tag{padding:4px 9px;border-radius:999px;font-size:10.5px;font-weight:800;text-transform:uppercase;letter-spacing:.5px}
     .tag-course{background:var(--cesag-green-soft);color:var(--cesag-green-dark)}
     .tag-exam{background:var(--redSoft);color:var(--red)}
+    .tag-tpe{background:#e0f2fe;color:#0284c7}
     .tag-program{background:var(--cesag-orange-soft);color:var(--cesag-orange-dark)}
     .status-badge{padding:4px 9px;border-radius:999px;font-size:10.5px;font-weight:800;text-transform:uppercase;letter-spacing:.5px;display:inline-flex;align-items:center;gap:6px}
     .status-badge::before{content:"";width:6px;height:6px;border-radius:50%;background:currentColor;flex:none}
@@ -457,6 +458,7 @@ function makeICS(items, filename){
 function card(s, index){
   const st = displayStatus(s);
   const exam = String(s.type).toLowerCase() === "examen";
+  const isTpe = String(s.type).toLowerCase() === "tpe";
   const cancelled = st === "cancelled";
   const showLinks = !cancelled;
   const inIcs = icsIncluded(s);
@@ -471,7 +473,7 @@ function card(s, index){
       </div>
       <div>
         <div class="tags">
-          <span class="tag ${exam?'tag-exam':'tag-course'}">${escHtml(s.type)}</span>
+          <span class="tag ${exam?'tag-exam':isTpe?'tag-tpe':'tag-course'}">${escHtml(s.type)}</span>
           <span class="tag tag-program">${escHtml(pageData.program_short)}</span>
           <span class="status-badge ${STATUS_CLASS[st]}">${STATUS_LABELS[st]}</span>
         </div>

@@ -1,0 +1,68 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//CESAG ONLINE//Direction des Programmes Executive et Campus Numeriques//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-TIMEZONE:UTC
+X-WR-CALNAME:CESAG ONLINE - MBA AG (2026-2027)
+X-WR-CALDESC:Agenda de la semaine du 23 au 29 novembre 2026 · MBA Administration et Gestion · Direction des Programmes Executive et Campus Numériques
+COLOR:#1B7E44
+X-APPLE-CALENDAR-COLOR:#1B7E44
+X-OUTLOOK-COLOR:#1B7E44
+BEGIN:VEVENT
+UID:mba-ag-2026-11-25-1800-mbaag-2627-w2-01@cesag-online.com
+DTSTAMP:20261120T163000Z
+DTSTART:20261125T180000Z
+DTEND:20261125T200000Z
+SUMMARY:COURS - MBAAG 9.3.1 - Comptabilité générale 26-27 (MBA AG)
+DESCRIPTION:Programme : MBA Administration et Gestion (Promotion 2026–2027)\nInstitution : CESAG ONLINE — Direction des Programmes Executive et Campus Numériques\nType : Cours\nEnseignant : DR MOUHAMADOU DIA\nDurée : 2h00\nMoodle : https://formations.cesagonline.com/course/view.php?id=1730\nRemarque : Séance de Comptabilité générale de 18h00 à 20h00 GMT. Pensez à vos lectures préalables et exercices sur Moodle.
+LOCATION:https://formations.cesagonline.com/course/view.php?id=1730
+URL:https://formations.cesagonline.com/course/view.php?id=1730
+CATEGORIES:CESAG ONLINE,2026-2027,MBA,AG
+COLOR:#1B7E44
+STATUS:CONFIRMED
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Rappel CESAG ONLINE - Cours dans 15 minutes : Comptabilité générale
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Rappel CESAG ONLINE - Cours dans 2 heures : Comptabilité générale
+END:VALARM
+BEGIN:VALARM
+TRIGGER;VALUE=DATE-TIME:20261124T200000Z
+ACTION:DISPLAY
+DESCRIPTION:Rappel CESAG ONLINE - Cours demain à 18:00 GMT : Comptabilité générale
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:mba-ag-2026-11-27-1800-mbaag-2627-w2-02@cesag-online.com
+DTSTAMP:20261120T163000Z
+DTSTART:20261127T180000Z
+DTEND:20261127T203000Z
+SUMMARY:TPE - MBAAG 10.1.2 - Anglais des affaires 26-27 (MBA AG)
+DESCRIPTION:Programme : MBA Administration et Gestion (Promotion 2026–2027)\nInstitution : CESAG ONLINE — Direction des Programmes Executive et Campus Numériques\nType : TPE (Travail Personnel de l'Étudiant)\nEnseignant : M. IGNACE KPATAKPANI\nDurée : 2h30\nMoodle : https://formations.cesagonline.com/course/view.php?id=1734\nRemarque : Séance sans la présence du prof, travail personnel de l'étudiant avancer sur les travaux donnés par le prof.
+LOCATION:https://formations.cesagonline.com/course/view.php?id=1734
+URL:https://formations.cesagonline.com/course/view.php?id=1734
+CATEGORIES:CESAG ONLINE,2026-2027,MBA,AG,TPE
+COLOR:#0284C7
+STATUS:CONFIRMED
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Rappel CESAG ONLINE - TPE dans 15 minutes : Anglais des affaires
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Rappel CESAG ONLINE - TPE dans 2 heures : Anglais des affaires
+END:VALARM
+BEGIN:VALARM
+TRIGGER;VALUE=DATE-TIME:20261126T200000Z
+ACTION:DISPLAY
+DESCRIPTION:Rappel CESAG ONLINE - TPE demain à 18:00 GMT : Anglais des affaires
+END:VALARM
+END:VEVENT
+END:VCALENDAR

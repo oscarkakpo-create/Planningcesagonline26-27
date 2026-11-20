@@ -3,22 +3,53 @@
   "program_name": "MBA Administration et Gestion",
   "program_short": "MBA AG",
   "cohort": "Promotion 2026–2027",
-  "week_label": "Semaine du 16 au 22 novembre 2026",
-  "week_file_label": "semaine_16_22_nov_2026_mba_ag",
-  "updated_label": "13 novembre 2026",
+  "week_label": "Semaine du 23 au 29 novembre 2026",
+  "week_file_label": "semaine_23_29_nov_2026_mba_ag",
+  "updated_label": "20 novembre 2026",
   "is_new": true,
-  "published_at": "2026-11-13T14:30:00Z",
-  "week_message": "🎓 BONNE RENTRÉE 2026–2027 ! Bienvenue dans votre formation MBA Administration et Gestion. Pensez à réaliser vos lectures préalables et vos quiz d'auto-évaluation sur Moodle avant chaque rencontre. Les plannings globaux de ces modules vous seront envoyés en semaine.",
+  "published_at": "2026-11-20T16:30:00Z",
+  "week_message": "📌 SEMAINE DU 23 AU 29 NOVEMBRE 2026 : Deux séances programmées (mercredi 25/11 de 18h00 à 20h00 GMT en Cours avec Dr Mouhamadou DIA, et vendredi 27/11 de 18h00 à 20h30 GMT en TPE - Travail Personnel de l'Étudiant sans la présence de l'enseignant pour avancer sur vos travaux).",
   "information_blocks": [
     {
-      "title": "🎉 Bonne Rentrée 2026–2027 & Bienvenue dans votre parcours !",
-      "text": "La Direction des Programmes Executive et Campus Numériques et l'équipe pédagogique du CESAG vous souhaitent la plus chaleureuse bienvenue.\n\n📌 Recommandations et consignes importantes :\n• Lectures & Quizz préalables : Connectez-vous sur votre espace Moodle avant chaque séance pour consulter les supports obligatoires et effectuer vos quiz préparatoires.\n• Plannings globaux des modules : Les calendriers prévisionnels complets pour l'ensemble des modules du semestre vous seront envoyés par courriel en cours de semaine.\n• Ponctualité : Toutes les séances démarrent à 18h00 GMT précises en salle de classe virtuelle.",
+      "title": "📌 Focus de la semaine : Cours & Séance de TPE (Travail Personnel)",
+      "text": "Chers auditeurs de MBA AG,\n\n• Mercredi 25/11 (18h00–20h00 GMT) : Cours magistral interactif de Comptabilité générale avec Dr Mouhamadou DIA.\n• Vendredi 27/11 (18h00–20h30 GMT) : Séance de Travail Personnel de l'Étudiant (TPE) en Anglais des affaires. Cette séance se déroule sans la présence du professeur : créneau réservé pour progresser et finaliser les travaux, exercices et lectures assignés par M. Ignace KPATAKPANI sur Moodle.\n• Ponctualité & Rigueur : Connectez-vous sur votre espace de cours Moodle pour récupérer tous les supports et consignes.",
       "link": "https://formations.cesagonline.com/",
       "link_label": "Accéder à Moodle CESAG"
     }
   ],
   "sessions": [
     {
+      "id": "mbaag-2627-w2-01",
+      "date": "2026-11-25",
+      "start": "18:00",
+      "end": "20:00",
+      "duration": "2h00",
+      "type": "Cours",
+      "title": "MBAAG 9.3.1 - Comptabilité générale 26-27",
+      "teacher": "DR MOUHAMADOU DIA",
+      "status": "confirmed",
+      "moodle": "https://formations.cesagonline.com/course/view.php?id=1730",
+      "room": "",
+      "notes": "Séance de Comptabilité générale de 18h00 à 20h00 GMT. Pensez à vos lectures préalables et exercices sur Moodle."
+    },
+    {
+      "id": "mbaag-2627-w2-02",
+      "date": "2026-11-27",
+      "start": "18:00",
+      "end": "20:30",
+      "duration": "2h30",
+      "type": "TPE",
+      "title": "MBAAG 10.1.2 - Anglais des affaires 26-27",
+      "teacher": "M. IGNACE KPATAKPANI",
+      "status": "confirmed",
+      "moodle": "https://formations.cesagonline.com/course/view.php?id=1734",
+      "room": "",
+      "notes": "Séance sans la présence du prof : travail personnel de l'étudiant (TPE) pour avancer sur les travaux donnés par le prof."
+    }
+  ],
+  "past_sessions": [
+    {
+      "week_label": "Semaine du 16 au 22 novembre 2026",
       "id": "mbaag-2627-01",
       "date": "2026-11-17",
       "start": "18:00",
@@ -27,12 +58,11 @@
       "type": "Cours",
       "title": "MBAAG 9.3.1 - Comptabilité générale 26-27",
       "teacher": "DR MOUHAMADOU DIA",
-      "status": "confirmed",
-      "moodle": "https://formations.cesagonline.com/course/view.php?id=1730",
-      "room": "",
-      "notes": "Bonne rentrée ! Pensez à vos lectures préalables et quizz sur Moodle. Le planning global du module sera envoyé en semaine."
+      "status": "completed",
+      "moodle": "https://formations.cesagonline.com/course/view.php?id=1730"
     },
     {
+      "week_label": "Semaine du 16 au 22 novembre 2026",
       "id": "mbaag-2627-02",
       "date": "2026-11-19",
       "start": "18:00",
@@ -41,12 +71,11 @@
       "type": "Cours",
       "title": "MBAAG 10.1.2 - Anglais des affaires 26-27",
       "teacher": "M. IGNACE KPATAKPANI",
-      "status": "confirmed",
-      "moodle": "https://formations.cesagonline.com/course/view.php?id=1734",
-      "room": "",
-      "notes": "Séance d'anglais maintenue pour MBA AG ce jeudi de 18h00 à 20h30 GMT."
+      "status": "completed",
+      "moodle": "https://formations.cesagonline.com/course/view.php?id=1734"
     },
     {
+      "week_label": "Semaine du 16 au 22 novembre 2026",
       "id": "mbaag-2627-03",
       "date": "2026-11-20",
       "start": "18:00",
@@ -55,10 +84,8 @@
       "type": "Cours",
       "title": "MBAAG 9.1.1 - Droit des affaires 26-27",
       "teacher": "DR PIERRE EDOH GABIAM",
-      "status": "confirmed",
-      "moodle": "https://formations.cesagonline.com/course/view.php?id=1719",
-      "room": "",
-      "notes": "Pensez à vos lectures et quizz préparatoires sur Moodle. Le planning global du module sera envoyé en semaine."
+      "status": "completed",
+      "moodle": "https://formations.cesagonline.com/course/view.php?id=1719"
     }
   ],
   "upcoming_week_label": "",
