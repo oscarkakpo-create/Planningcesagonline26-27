@@ -1,0 +1,180 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//CESAG ONLINE//Direction des Programmes Executive et Campus Numeriques//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-TIMEZONE:UTC
+X-WR-CALNAME:CESAG ONLINE - TOUS PROGRAMMES (2026-2027)
+X-WR-CALDESC:Agenda global consolidé de la semaine du 23 au 29 novembre 2026 · MBA AG, MBA GP, MBA MSCH · Direction des Programmes Executive et Campus Numériques
+COLOR:#1B7E44
+X-APPLE-CALENDAR-COLOR:#1B7E44
+X-OUTLOOK-COLOR:#1B7E44
+BEGIN:VEVENT
+UID:mba-ag-2026-11-25-1800-mbaag-2627-w2-01@cesag-online.com
+DTSTAMP:20261120T163000Z
+DTSTART:20261125T180000Z
+DTEND:20261125T200000Z
+SUMMARY:COURS - MBAAG 9.3.1 - Comptabilité générale 26-27 (MBA AG)
+DESCRIPTION:Programme : MBA Administration et Gestion (Promotion 2026–2027)\nInstitution : CESAG ONLINE — Direction des Programmes Executive et Campus Numériques\nType : Cours\nEnseignant : DR MOUHAMADOU DIA\nDurée : 2h00\nMoodle : https://formations.cesagonline.com/course/view.php?id=1730\nRemarque : Séance de Comptabilité générale de 18h00 à 20h00 GMT. Pensez à vos lectures préalables et exercices sur Moodle.
+LOCATION:https://formations.cesagonline.com/course/view.php?id=1730
+URL:https://formations.cesagonline.com/course/view.php?id=1730
+CATEGORIES:CESAG ONLINE,2026-2027,MBA,AG
+COLOR:#1B7E44
+STATUS:CONFIRMED
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Rappel CESAG ONLINE - Cours dans 15 minutes : Comptabilité générale
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Rappel CESAG ONLINE - Cours dans 2 heures : Comptabilité générale
+END:VALARM
+BEGIN:VALARM
+TRIGGER;VALUE=DATE-TIME:20261124T200000Z
+ACTION:DISPLAY
+DESCRIPTION:Rappel CESAG ONLINE - Cours demain à 18:00 GMT : Comptabilité générale
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:mba-ag-2026-11-27-1800-mbaag-2627-w2-02@cesag-online.com
+DTSTAMP:20261120T163000Z
+DTSTART:20261127T180000Z
+DTEND:20261127T203000Z
+SUMMARY:TPE - MBAAG 10.1.2 - Anglais des affaires 26-27 (MBA AG)
+DESCRIPTION:Programme : MBA Administration et Gestion (Promotion 2026–2027)\nInstitution : CESAG ONLINE — Direction des Programmes Executive et Campus Numériques\nType : TPE (Travail Personnel de l'Étudiant)\nEnseignant : M. IGNACE KPATAKPANI\nDurée : 2h30\nMoodle : https://formations.cesagonline.com/course/view.php?id=1734\nRemarque : Séance sans la présence du prof, travail personnel de l'étudiant avancer sur les travaux donnés par le prof.
+LOCATION:https://formations.cesagonline.com/course/view.php?id=1734
+URL:https://formations.cesagonline.com/course/view.php?id=1734
+CATEGORIES:CESAG ONLINE,2026-2027,MBA,AG,TPE
+COLOR:#0284C7
+STATUS:CONFIRMED
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Rappel CESAG ONLINE - TPE dans 15 minutes : Anglais des affaires
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Rappel CESAG ONLINE - TPE dans 2 heures : Anglais des affaires
+END:VALARM
+BEGIN:VALARM
+TRIGGER;VALUE=DATE-TIME:20261126T200000Z
+ACTION:DISPLAY
+DESCRIPTION:Rappel CESAG ONLINE - TPE demain à 18:00 GMT : Anglais des affaires
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:mba-gp-2026-11-26-1800-mbagp-2627-w2-01@cesag-online.com
+DTSTAMP:20261120T164500Z
+DTSTART:20261126T180000Z
+DTEND:20261126T203000Z
+SUMMARY:COURS - MBAGP 10.6.1 - Anglais de spécialité 26-27 (MBA GP)
+DESCRIPTION:Programme : MBA Gestion de Projets (Promotion 2026–2027)\nInstitution : CESAG ONLINE — Direction des Programmes Executive et Campus Numériques\nType : Cours\nEnseignant : M. IGNACE KPATAKPANI\nDurée : 2h30\nMoodle : https://formations.cesagonline.com/course/view.php?id=1734\nRemarque : Séance d'anglais de spécialité avec M. Ignace Kpatakpani. Pensez à vos lectures préalables, devoirs et quizz sur Moodle.
+LOCATION:https://formations.cesagonline.com/course/view.php?id=1734
+URL:https://formations.cesagonline.com/course/view.php?id=1734
+CATEGORIES:CESAG ONLINE,2026-2027,MBA,GP
+COLOR:#1D4ED8
+STATUS:CONFIRMED
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Rappel CESAG ONLINE - Cours dans 15 minutes : Anglais de spécialité
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Rappel CESAG ONLINE - Cours dans 2 heures : Anglais de spécialité
+END:VALARM
+BEGIN:VALARM
+TRIGGER;VALUE=DATE-TIME:20261125T200000Z
+ACTION:DISPLAY
+DESCRIPTION:Rappel CESAG ONLINE - Cours demain à 18:00 GMT : Anglais de spécialité
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:mba-gp-2026-11-27-1800-mbagp-2627-w2-02@cesag-online.com
+DTSTAMP:20261120T164500Z
+DTSTART:20261127T180000Z
+DTEND:20261127T203000Z
+SUMMARY:COURS - MBAGP 9.1.2 - Principes et enjeux de l'administration publique 26-27 (MBA GP)
+DESCRIPTION:Programme : MBA Gestion de Projets (Promotion 2026–2027)\nInstitution : CESAG ONLINE — Direction des Programmes Executive et Campus Numériques\nType : Cours\nEnseignant : M. JEROME DANDJINOU\nDurée : 2h30\nMoodle : https://formations.cesagonline.com/course/view.php?id=1778\nRemarque : Séance de Principes et enjeux de l'administration publique avec M. Jérôme Dandjinou. Assurez-vous de vérifier les supports et exercices sur Moodle.
+LOCATION:https://formations.cesagonline.com/course/view.php?id=1778
+URL:https://formations.cesagonline.com/course/view.php?id=1778
+CATEGORIES:CESAG ONLINE,2026-2027,MBA,GP
+COLOR:#1D4ED8
+STATUS:CONFIRMED
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Rappel CESAG ONLINE - Cours dans 15 minutes : Principes et enjeux de l'administration publique
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Rappel CESAG ONLINE - Cours dans 2 heures : Principes et enjeux de l'administration publique
+END:VALARM
+BEGIN:VALARM
+TRIGGER;VALUE=DATE-TIME:20261126T200000Z
+ACTION:DISPLAY
+DESCRIPTION:Rappel CESAG ONLINE - Cours demain à 18:00 GMT : Principes et enjeux de l'administration publique
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:mba-msch-2026-11-24-1800-mbamsch-2627-w2-01@cesag-online.com
+DTSTAMP:20261120T163000Z
+DTSTART:20261124T180000Z
+DTEND:20261124T203000Z
+SUMMARY:COURS - MBAMSCH 9.3.1 - Conventions internationales sur le travail 26-27 (MBA MSCH)
+DESCRIPTION:Programme : MBA Management Stratégique du Capital Humain (Promotion 2026–2027)\nInstitution : CESAG ONLINE — Direction des Programmes Executive et Campus Numériques\nType : Cours\nEnseignant : M. BABA SOMA KONE\nDurée : 2h30\nMoodle : https://formations.cesagonline.com/course/view.php?id=1842\nConsignes : Assurez-vous de vérifier les travaux donnés, de réaliser vos quiz d'auto-évaluation et de participer aux forums sur Moodle avant la séance.
+LOCATION:https://formations.cesagonline.com/course/view.php?id=1842
+URL:https://formations.cesagonline.com/course/view.php?id=1842
+CATEGORIES:CESAG ONLINE,2026-2027,MBA,MSCH
+COLOR:#1B7E44
+STATUS:CONFIRMED
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Rappel CESAG ONLINE - Cours dans 15 minutes : Conventions internationales sur le travail
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Rappel CESAG ONLINE - Cours dans 2 heures : Conventions internationales sur le travail
+END:VALARM
+BEGIN:VALARM
+TRIGGER;VALUE=DATE-TIME:20261123T200000Z
+ACTION:DISPLAY
+DESCRIPTION:Rappel CESAG ONLINE - Cours demain à 18:00 GMT : Conventions internationales sur le travail
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:mba-msch-2026-11-26-1800-mbamsch-2627-w2-02@cesag-online.com
+DTSTAMP:20261120T163000Z
+DTSTART:20261126T180000Z
+DTEND:20261126T203000Z
+SUMMARY:COURS - MBAMSCH 9.1.1 - Comptabilité générale 26-27 (MBA MSCH)
+DESCRIPTION:Programme : MBA Management Stratégique du Capital Humain (Promotion 2026–2027)\nInstitution : CESAG ONLINE — Direction des Programmes Executive et Campus Numériques\nType : Cours\nEnseignant : DR MOUHAMADOU DIA\nDurée : 2h30\nMoodle : https://formations.cesagonline.com/course/view.php?id=1841\nConsignes : Assurez-vous de vérifier les exercices et travaux donnés, d'effectuer vos lectures préalables, vos quiz et d'échanger sur le forum Moodle.
+LOCATION:https://formations.cesagonline.com/course/view.php?id=1841
+URL:https://formations.cesagonline.com/course/view.php?id=1841
+CATEGORIES:CESAG ONLINE,2026-2027,MBA,MSCH
+COLOR:#1B7E44
+STATUS:CONFIRMED
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Rappel CESAG ONLINE - Cours dans 15 minutes : Comptabilité générale
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Rappel CESAG ONLINE - Cours dans 2 heures : Comptabilité générale
+END:VALARM
+BEGIN:VALARM
+TRIGGER;VALUE=DATE-TIME:20261125T200000Z
+ACTION:DISPLAY
+DESCRIPTION:Rappel CESAG ONLINE - Cours demain à 18:00 GMT : Comptabilité générale
+END:VALARM
+END:VEVENT
+END:VCALENDAR

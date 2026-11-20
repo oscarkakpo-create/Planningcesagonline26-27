@@ -1,0 +1,68 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//CESAG ONLINE//Direction des Programmes Executive et Campus Numeriques//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-TIMEZONE:UTC
+X-WR-CALNAME:CESAG ONLINE - MBA GP (2026-2027)
+X-WR-CALDESC:Agenda de la semaine du 23 au 29 novembre 2026 · MBA Gestion de Projets · Direction des Programmes Executive et Campus Numériques
+COLOR:#1D4ED8
+X-APPLE-CALENDAR-COLOR:#1D4ED8
+X-OUTLOOK-COLOR:#1D4ED8
+BEGIN:VEVENT
+UID:mba-gp-2026-11-26-1800-mbagp-2627-w2-01@cesag-online.com
+DTSTAMP:20261120T164500Z
+DTSTART:20261126T180000Z
+DTEND:20261126T203000Z
+SUMMARY:COURS - MBAGP 10.6.1 - Anglais de spécialité 26-27 (MBA GP)
+DESCRIPTION:Programme : MBA Gestion de Projets (Promotion 2026–2027)\nInstitution : CESAG ONLINE — Direction des Programmes Executive et Campus Numériques\nType : Cours\nEnseignant : M. IGNACE KPATAKPANI\nDurée : 2h30\nMoodle : https://formations.cesagonline.com/course/view.php?id=1734\nRemarque : Séance d'anglais de spécialité avec M. Ignace Kpatakpani. Pensez à vos lectures préalables, devoirs et quizz sur Moodle.
+LOCATION:https://formations.cesagonline.com/course/view.php?id=1734
+URL:https://formations.cesagonline.com/course/view.php?id=1734
+CATEGORIES:CESAG ONLINE,2026-2027,MBA,GP
+COLOR:#1D4ED8
+STATUS:CONFIRMED
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Rappel CESAG ONLINE - Cours dans 15 minutes : Anglais de spécialité
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Rappel CESAG ONLINE - Cours dans 2 heures : Anglais de spécialité
+END:VALARM
+BEGIN:VALARM
+TRIGGER;VALUE=DATE-TIME:20261125T200000Z
+ACTION:DISPLAY
+DESCRIPTION:Rappel CESAG ONLINE - Cours demain à 18:00 GMT : Anglais de spécialité
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:mba-gp-2026-11-27-1800-mbagp-2627-w2-02@cesag-online.com
+DTSTAMP:20261120T164500Z
+DTSTART:20261127T180000Z
+DTEND:20261127T203000Z
+SUMMARY:COURS - MBAGP 9.1.2 - Principes et enjeux de l'administration publique 26-27 (MBA GP)
+DESCRIPTION:Programme : MBA Gestion de Projets (Promotion 2026–2027)\nInstitution : CESAG ONLINE — Direction des Programmes Executive et Campus Numériques\nType : Cours\nEnseignant : M. JEROME DANDJINOU\nDurée : 2h30\nMoodle : https://formations.cesagonline.com/course/view.php?id=1778\nRemarque : Séance de Principes et enjeux de l'administration publique avec M. Jérôme Dandjinou. Assurez-vous de vérifier les supports et exercices sur Moodle.
+LOCATION:https://formations.cesagonline.com/course/view.php?id=1778
+URL:https://formations.cesagonline.com/course/view.php?id=1778
+CATEGORIES:CESAG ONLINE,2026-2027,MBA,GP
+COLOR:#1D4ED8
+STATUS:CONFIRMED
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Rappel CESAG ONLINE - Cours dans 15 minutes : Principes et enjeux de l'administration publique
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Rappel CESAG ONLINE - Cours dans 2 heures : Principes et enjeux de l'administration publique
+END:VALARM
+BEGIN:VALARM
+TRIGGER;VALUE=DATE-TIME:20261126T200000Z
+ACTION:DISPLAY
+DESCRIPTION:Rappel CESAG ONLINE - Cours demain à 18:00 GMT : Principes et enjeux de l'administration publique
+END:VALARM
+END:VEVENT
+END:VCALENDAR

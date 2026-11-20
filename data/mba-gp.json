@@ -3,44 +3,38 @@
   "program_name": "MBA Gestion de Projets",
   "program_short": "MBA GP",
   "cohort": "Promotion 2026–2027",
-  "week_label": "Semaine du 16 au 22 novembre 2026",
-  "week_file_label": "semaine_16_22_nov_2026_mba_gp",
-  "updated_label": "18 novembre 2026",
+  "week_label": "Semaine du 23 au 29 novembre 2026",
+  "week_file_label": "semaine_23_29_nov_2026_mba_gp",
+  "updated_label": "20 novembre 2026",
   "is_new": true,
-  "published_at": "2026-11-18T12:15:00Z",
-  "week_message": "⚠️ MISE À JOUR : Le cours de Principes et enjeux de l'administration publique prévu ce mercredi 18/11 est reporté au jeudi 19/11 (18h00–20h30 GMT). Par conséquent, les auditeurs de MBA GP n'ont pas cours d'anglais cette semaine.",
+  "published_at": "2026-11-20T16:45:00Z",
+  "week_message": "📌 SEMAINE DU 23 AU 29 NOVEMBRE 2026 : Deux séances en direct programmées (jeudi 26/11 : Anglais de spécialité avec M. Ignace KPATAKPANI, et vendredi 27/11 : Principes et enjeux de l'administration publique avec M. Jérôme DANDJINOU de 18h00 à 20h30 GMT). Veillez à effectuer vos lectures, travaux et quiz sur Moodle.",
   "information_blocks": [
     {
-      "title": "⚠️ Report : Principes et enjeux de l'administration publique à Jeudi 19/11",
-      "text": "La séance de « Principes et enjeux de l'administration publique » avec M. JEROME DANDJINOU initialement prévue ce mercredi 18 novembre est reportée à demain jeudi 19 novembre 2026 de 18h00 à 20h30 GMT.\n\n👉 Par conséquent, les auditeurs de MBA GP n'auront pas cours d'anglais de spécialité cette semaine (séance remplacée par le cours d'Administration publique).",
-      "link": "https://formations.cesagonline.com/course/view.php?id=1778",
-      "link_label": "Accéder à l'espace du cours Moodle"
-    },
-    {
-      "title": "🎉 Bonne Rentrée 2026–2027 & Bienvenue dans votre parcours !",
-      "text": "La Direction des Programmes Executive et Campus Numériques et l'équipe pédagogique du CESAG vous souhaitent la plus chaleureuse bienvenue.\n\n📌 Recommandations et consignes importantes :\n• Lectures & Quizz préalables : Connectez-vous sur votre espace Moodle avant chaque séance pour consulter les supports obligatoires et effectuer vos quiz préparatoires.\n• Plannings globaux des modules : Les calendriers prévisionnels complets pour l'ensemble des modules du semestre vous seront envoyés par courriel en cours de semaine.\n• Ponctualité : Toutes les séances démarrent à 18h00 GMT précises en salle de classe virtuelle.",
+      "title": "📌 Focus de la semaine : Anglais de spécialité & Administration publique",
+      "text": "Chers auditeurs de MBA Gestion de Projets (GP),\n\n• Jeudi 26/11 (18h00–20h30 GMT) : Cours d'Anglais de spécialité avec M. Ignace KPATAKPANI.\n• Vendredi 27/11 (18h00–20h30 GMT) : Cours de Principes et enjeux de l'administration publique avec M. Jérôme DANDJINOU.\n• Consignes importantes : Connectez-vous sur votre espace de cours Moodle pour consulter les supports obligatoires, réaliser vos quiz d'auto-évaluation et préparer vos interventions pour les cours en direct.\n• Ponctualité : Début impératif des séances à 18h00 GMT précises.",
       "link": "https://formations.cesagonline.com/",
       "link_label": "Accéder à Moodle CESAG"
     }
   ],
   "sessions": [
     {
-      "id": "mbagp-2627-01-mercredi",
-      "date": "2026-11-18",
+      "id": "mbagp-2627-w2-01",
+      "date": "2026-11-26",
       "start": "18:00",
       "end": "20:30",
       "duration": "2h30",
       "type": "Cours",
-      "title": "MBAGP 9.1.2 - Principes et enjeux de l'administration publique 26-27",
-      "teacher": "M. JEROME DANDJINOU",
-      "status": "rescheduled",
-      "moodle": "https://formations.cesagonline.com/course/view.php?id=1778",
+      "title": "MBAGP 10.6.1 - Anglais de spécialité 26-27",
+      "teacher": "M. IGNACE KPATAKPANI",
+      "status": "confirmed",
+      "moodle": "https://formations.cesagonline.com/course/view.php?id=1734",
       "room": "",
-      "notes": "⚠️ SÉANCE REPORTÉE : Cours reporté à demain jeudi 19/11 de 18h00 à 20h30 GMT."
+      "notes": "Séance d'anglais de spécialité avec M. Ignace Kpatakpani. Pensez à vos lectures préalables, devoirs et quizz sur Moodle."
     },
     {
-      "id": "mbagp-2627-01-jeudi",
-      "date": "2026-11-19",
+      "id": "mbagp-2627-w2-02",
+      "date": "2026-11-27",
       "start": "18:00",
       "end": "20:30",
       "duration": "2h30",
@@ -50,9 +44,38 @@
       "status": "confirmed",
       "moodle": "https://formations.cesagonline.com/course/view.php?id=1778",
       "room": "",
-      "notes": "Séance reportée du mercredi 18/11. Cours maintenu ce jeudi de 18h00 à 20h30 GMT."
+      "notes": "Séance de Principes et enjeux de l'administration publique avec M. Jérôme Dandjinou. Assurez-vous de vérifier les supports et exercices sur Moodle."
+    }
+  ],
+  "past_sessions": [
+    {
+      "week_label": "Semaine du 16 au 22 novembre 2026",
+      "id": "mbagp-2627-01-mercredi",
+      "date": "2026-11-18",
+      "start": "18:00",
+      "end": "20:30",
+      "duration": "2h30",
+      "type": "Cours",
+      "title": "MBAGP 9.1.2 - Principes et enjeux de l'administration publique 26-27",
+      "teacher": "M. JEROME DANDJINOU",
+      "status": "rescheduled",
+      "moodle": "https://formations.cesagonline.com/course/view.php?id=1778"
     },
     {
+      "week_label": "Semaine du 16 au 22 novembre 2026",
+      "id": "mbagp-2627-01-jeudi",
+      "date": "2026-11-19",
+      "start": "18:00",
+      "end": "20:30",
+      "duration": "2h30",
+      "type": "Cours",
+      "title": "MBAGP 9.1.2 - Principes et enjeux de l'administration publique 26-27",
+      "teacher": "M. JEROME DANDJINOU",
+      "status": "completed",
+      "moodle": "https://formations.cesagonline.com/course/view.php?id=1778"
+    },
+    {
+      "week_label": "Semaine du 16 au 22 novembre 2026",
       "id": "mbagp-2627-02-anglais",
       "date": "2026-11-19",
       "start": "18:00",
@@ -62,9 +85,7 @@
       "title": "MBAGP 10.6.1 - Anglais de spécialité 26-27",
       "teacher": "M. IGNACE KPATAKPANI",
       "status": "cancelled",
-      "moodle": "https://formations.cesagonline.com/course/view.php?id=1734",
-      "room": "",
-      "notes": "⚠️ PAS DE COURS D'ANGLAIS POUR MBA GP : Séance annulée cette semaine pour MBA GP (remplacée par Principes et enjeux de l'administration publique)."
+      "moodle": "https://formations.cesagonline.com/course/view.php?id=1734"
     }
   ],
   "upcoming_week_label": "",
