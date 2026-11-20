@@ -214,26 +214,24 @@ DESCRIPTION:Rappel CESAG ONLINE - Comptabilité générale (Séance 5/5) dans 2 
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:mbamsch-conventions-2026-11-26-1800@cesag-online.com
+UID:mbamsch-management-formation-2026-11-26-1800@cesag-online.com
 DTSTAMP:20261120T171800Z
 DTSTART:20261126T180000Z
-DTEND:20261126T203000Z
-SUMMARY:COURS - MBAMSCH 9.3.1 - Conventions internationales sur le travail 26-27 (Séance 2/5)
-DESCRIPTION:Programme : MBA Management Stratégique du Capital Humain (Promotion 2026–2027)\nType : Cours (Séance 2 sur 5)\nEnseignant : M. BABA SOMA KONE\nDurée : 2h30\nHoraires : 18h00 - 20h30 GMT\nMoodle : https://formations.cesagonline.com/course/view.php?id=1842\nConsignes : Assurez-vous de vérifier les travaux donnés, de réaliser vos quiz d'auto-évaluation et de participer au forum Moodle.
-LOCATION:https://formations.cesagonline.com/course/view.php?id=1842
-URL:https://formations.cesagonline.com/course/view.php?id=1842
+DTEND:20261126T200000Z
+SUMMARY:COURS PROGRAMMÉ - Management de la formation (MBA MSCH)
+DESCRIPTION:Programme : MBA Management Stratégique du Capital Humain (Promotion 2026–2027)\nType : Cours\nEnseignant : M. Désiré Taho\nDurée : 2h\nHoraires : 18h00 - 20h00 GMT\nStatut : Programmé - confirmation automatique à 15h00 GMT le jour du cours.
 CATEGORIES:CESAG ONLINE,2026-2027,MBA,MSCH
 COLOR:#1B7E44
-STATUS:CONFIRMED
+STATUS:TENTATIVE
 BEGIN:VALARM
 TRIGGER:-PT15M
 ACTION:DISPLAY
-DESCRIPTION:Rappel CESAG ONLINE - Conventions du travail (Séance 2/5) dans 15 minutes
+DESCRIPTION:Rappel CESAG ONLINE - Management de la formation dans 15 minutes
 END:VALARM
 BEGIN:VALARM
 TRIGGER:-PT2H
 ACTION:DISPLAY
-DESCRIPTION:Rappel CESAG ONLINE - Conventions du travail (Séance 2/5) dans 2 heures
+DESCRIPTION:Rappel CESAG ONLINE - Management de la formation dans 2 heures
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
