@@ -3,12 +3,12 @@
   "program_name": "MBA Administration et Gestion",
   "program_short": "MBA AG",
   "cohort": "Promotion 2026–2027",
-  "week_label": "Semaine du 23 au 29 novembre 2026",
-  "week_file_label": "semaine_23_29_nov_2026_mba_ag",
-  "updated_label": "20 novembre 2026",
+  "week_label": "Semaine du 30 novembre au 6 décembre 2026",
+  "week_file_label": "semaine_30_06_dec_2026_mba_ag",
+  "updated_label": "27 novembre 2026",
   "is_new": true,
   "published_at": "2026-11-20T16:30:00Z",
-  "week_message": "📌 SEMAINE DU 23 AU 29 NOVEMBRE 2026 : Deux séances programmées (mercredi 25/11 de 18h00 à 20h00 GMT en Cours avec Dr Mouhamadou DIA, et vendredi 27/11 de 18h00 à 20h30 GMT en TPE - Travail Personnel de l'Étudiant sans la présence de l'enseignant pour avancer sur vos travaux).",
+  "week_message": "Trois séances prévues cette semaine.",
   "information_blocks": [
     {
       "title": "📌 Focus de la semaine : Cours & Séance de TPE (Travail Personnel)",
@@ -19,32 +19,46 @@
   ],
   "sessions": [
     {
-      "id": "mbaag-2627-w2-01",
-      "date": "2026-11-25",
-      "start": "18:00",
-      "end": "20:00",
-      "duration": "2h00",
-      "type": "Cours",
-      "title": "MBAAG 9.3.1 - Comptabilité générale 26-27",
-      "teacher": "DR MOUHAMADOU DIA",
-      "status": "confirmed",
-      "moodle": "https://formations.cesagonline.com/course/view.php?id=1730",
-      "room": "",
-      "notes": "Séance de Comptabilité générale de 18h00 à 20h00 GMT. Pensez à vos lectures préalables et exercices sur Moodle."
-    },
-    {
-      "id": "mbaag-2627-w2-02",
-      "date": "2026-11-27",
+      "id": "mbaag-2627-w3-01",
+      "date": "2026-12-02",
       "start": "18:00",
       "end": "20:30",
       "duration": "2h30",
-      "type": "TPE",
+      "type": "Cours",
+      "title": "MBAAG 9.3.1 - Comptabilité générale 26-27",
+      "teacher": "DR MOUHAMADOU DIA",
+      "status": "pending",
+      "moodle": "https://formations.cesagonline.com/course/view.php?id=1730",
+      "room": "",
+      "notes": "Accès à la salle virtuelle depuis l’espace Moodle."
+    },
+    {
+      "id": "mbaag-2627-w3-02",
+      "date": "2026-12-03",
+      "start": "18:00",
+      "end": "20:30",
+      "duration": "2h30",
+      "type": "Cours",
       "title": "MBAAG 10.1.2 - Anglais des affaires 26-27",
       "teacher": "M. IGNACE KPATAKPANI",
-      "status": "confirmed",
+      "status": "pending",
       "moodle": "https://formations.cesagonline.com/course/view.php?id=1734",
       "room": "",
-      "notes": "Séance sans la présence du prof : travail personnel de l'étudiant (TPE) pour avancer sur les travaux donnés par le prof."
+      "notes": "Séance jumelée avec MBA GP. Accès depuis l’espace Moodle."
+    },
+    {
+      "id": "mbaag-2627-w3-03",
+      "date": "2026-12-04",
+      "start": "18:00",
+      "end": "20:30",
+      "duration": "2h30",
+      "type": "Cours",
+      "title": "MBAAG 9.1.1 - Droit des affaires 26-27",
+      "teacher": "DR PIERRE EDOH GABIAM",
+      "status": "pending",
+      "moodle": "https://formations.cesagonline.com/course/view.php?id=1719",
+      "room": "",
+      "notes": "La séance pourrait être avancée entre lundi et mardi selon la disponibilité de l’enseignant."
     }
   ],
   "past_sessions": [
@@ -86,6 +100,34 @@
       "teacher": "DR PIERRE EDOH GABIAM",
       "status": "completed",
       "moodle": "https://formations.cesagonline.com/course/view.php?id=1719"
+    },
+    {
+      "id": "mbaag-2627-w2-01",
+      "date": "2026-11-25",
+      "start": "18:00",
+      "end": "20:00",
+      "duration": "2h00",
+      "type": "Cours",
+      "title": "MBAAG 9.3.1 - Comptabilité générale 26-27",
+      "teacher": "DR MOUHAMADOU DIA",
+      "status": "confirmed",
+      "moodle": "https://formations.cesagonline.com/course/view.php?id=1730",
+      "room": "",
+      "notes": "Séance de Comptabilité générale de 18h00 à 20h00 GMT. Pensez à vos lectures préalables et exercices sur Moodle."
+    },
+    {
+      "id": "mbaag-2627-w2-02",
+      "date": "2026-11-27",
+      "start": "18:00",
+      "end": "20:30",
+      "duration": "2h30",
+      "type": "TPE",
+      "title": "MBAAG 10.1.2 - Anglais des affaires 26-27",
+      "teacher": "M. IGNACE KPATAKPANI",
+      "status": "confirmed",
+      "moodle": "https://formations.cesagonline.com/course/view.php?id=1734",
+      "room": "",
+      "notes": "Séance sans la présence du prof : travail personnel de l'étudiant (TPE) pour avancer sur les travaux donnés par le prof."
     }
   ],
   "upcoming_week_label": "",

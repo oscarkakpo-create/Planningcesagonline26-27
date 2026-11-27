@@ -3,12 +3,12 @@
   "program_name": "MBA Management Stratégique du Capital Humain",
   "program_short": "MBA MSCH",
   "cohort": "Promotion 2026–2027",
-  "week_label": "Semaine du 23 au 29 nov. 2026 (Séances 2) & Planning des 4 prochaines semaines",
-  "week_file_label": "planning_4_prochaines_semaines_mba_msch",
-  "updated_label": "20 novembre 2026",
+  "week_label": "Semaine du 30 novembre au 6 décembre 2026",
+  "week_file_label": "semaine_30_06_dec_2026_mba_msch",
+  "updated_label": "27 novembre 2026",
   "is_new": true,
   "published_at": "2026-11-20T17:18:00Z",
-  "week_message": "📌 SEMAINE DU 23 AU 29 NOV. : mardi 24/11, Comptabilité générale avec Dr Mouhamadou DIA de 18h00 à 20h30 GMT. Jeudi 26/11, Management de la formation avec M. Désiré Taho de 18h00 à 20h00 GMT. Cette séance est programmée et sera automatiquement confirmée à 15h00 GMT le jour du cours.",
+  "week_message": "Deux séances prévues cette semaine. L’accès aux salles se fait depuis l’espace Moodle de chaque cours.",
   "information_blocks": [
     {
       "title": "📌 Rythme officiel des 4 prochaines semaines (Séances 2, 3, 4 et 5)",
@@ -18,6 +18,64 @@
     }
   ],
   "sessions": [
+    {
+      "id": "mbamsch-2627-w3-01",
+      "date": "2026-12-01",
+      "start": "18:00",
+      "end": "20:30",
+      "duration": "2h30",
+      "type": "Cours",
+      "title": "MBAMSCH 9.1.1 - Comptabilité générale 26-27",
+      "teacher": "DR MOUHAMADOU DIA",
+      "status": "pending",
+      "moodle": "https://formations.cesagonline.com/course/view.php?id=1841",
+      "room": "",
+      "notes": "Accès à la salle virtuelle depuis l’espace Moodle."
+    },
+    {
+      "id": "mbamsch-2627-w3-02",
+      "date": "2026-12-03",
+      "start": "18:00",
+      "end": "20:30",
+      "duration": "2h30",
+      "type": "Cours",
+      "title": "MBAMSCH 9.3.1 - Conventions internationales sur le travail 26-27",
+      "teacher": "M. BABA SOMA KONE",
+      "status": "pending",
+      "moodle": "https://formations.cesagonline.com/course/view.php?id=1842",
+      "room": "",
+      "notes": "Accès à la salle virtuelle depuis l’espace Moodle."
+    }
+  ],
+  "past_sessions": [
+    {
+      "week_label": "Semaine du 16 au 22 novembre 2026",
+      "id": "mbamsch-2627-01",
+      "date": "2026-11-18",
+      "start": "18:00",
+      "end": "20:30",
+      "duration": "2h30",
+      "type": "Cours",
+      "title": "MBAMSCH 9.1.1 - Comptabilité générale 26-27",
+      "teacher": "DR MOUHAMADOU DIA",
+      "status": "completed",
+      "moodle": "https://formations.cesagonline.com/course/view.php?id=1841",
+      "notes": "Première séance (Séance 1/5)"
+    },
+    {
+      "week_label": "Semaine du 16 au 22 novembre 2026",
+      "id": "mbamsch-2627-02",
+      "date": "2026-11-19",
+      "start": "18:00",
+      "end": "20:30",
+      "duration": "2h30",
+      "type": "Cours",
+      "title": "MBAMSCH 9.3.1 - Conventions internationales sur le travail 26-27",
+      "teacher": "M. BABA SOMA KONE",
+      "status": "completed",
+      "moodle": "https://formations.cesagonline.com/course/view.php?id=1842",
+      "notes": "Première séance (Séance 1/5)"
+    },
     {
       "id": "mbamsch-2627-w2-mardi",
       "date": "2026-11-24",
@@ -129,36 +187,6 @@
       "moodle": "https://formations.cesagonline.com/course/view.php?id=1842",
       "room": "",
       "notes": "Cinquième et dernière séance (Séance 5/5). Clôture du module."
-    }
-  ],
-  "past_sessions": [
-    {
-      "week_label": "Semaine du 16 au 22 novembre 2026",
-      "id": "mbamsch-2627-01",
-      "date": "2026-11-18",
-      "start": "18:00",
-      "end": "20:30",
-      "duration": "2h30",
-      "type": "Cours",
-      "title": "MBAMSCH 9.1.1 - Comptabilité générale 26-27",
-      "teacher": "DR MOUHAMADOU DIA",
-      "status": "completed",
-      "moodle": "https://formations.cesagonline.com/course/view.php?id=1841",
-      "notes": "Première séance (Séance 1/5)"
-    },
-    {
-      "week_label": "Semaine du 16 au 22 novembre 2026",
-      "id": "mbamsch-2627-02",
-      "date": "2026-11-19",
-      "start": "18:00",
-      "end": "20:30",
-      "duration": "2h30",
-      "type": "Cours",
-      "title": "MBAMSCH 9.3.1 - Conventions internationales sur le travail 26-27",
-      "teacher": "M. BABA SOMA KONE",
-      "status": "completed",
-      "moodle": "https://formations.cesagonline.com/course/view.php?id=1842",
-      "notes": "Première séance (Séance 1/5)"
     }
   ],
   "upcoming_week_label": "",

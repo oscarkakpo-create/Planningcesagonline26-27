@@ -3,12 +3,12 @@
   "program_name": "MBA Gestion de Projets",
   "program_short": "MBA GP",
   "cohort": "Promotion 2026–2027",
-  "week_label": "Semaine du 23 au 29 novembre 2026",
-  "week_file_label": "semaine_23_29_nov_2026_mba_gp",
-  "updated_label": "20 novembre 2026",
+  "week_label": "Semaine du 30 novembre au 6 décembre 2026",
+  "week_file_label": "semaine_30_06_dec_2026_mba_gp",
+  "updated_label": "27 novembre 2026",
   "is_new": true,
   "published_at": "2026-11-20T16:45:00Z",
-  "week_message": "📌 SEMAINE DU 23 AU 29 NOVEMBRE 2026 : Deux séances en direct programmées (jeudi 26/11 : Anglais de spécialité avec M. Ignace KPATAKPANI, et vendredi 27/11 : Principes et enjeux de l'administration publique avec M. Jérôme DANDJINOU de 18h00 à 20h30 GMT). Veillez à effectuer vos lectures, travaux et quiz sur Moodle.",
+  "week_message": "Deux séances prévues cette semaine. Le module avec M. Désiré Taho reste en attente.",
   "information_blocks": [
     {
       "title": "📌 Focus de la semaine : Anglais de spécialité & Administration publique",
@@ -19,32 +19,32 @@
   ],
   "sessions": [
     {
-      "id": "mbagp-2627-w2-01",
-      "date": "2026-11-26",
+      "id": "mbagp-2627-w3-01",
+      "date": "2026-12-03",
       "start": "18:00",
       "end": "20:30",
       "duration": "2h30",
       "type": "Cours",
       "title": "MBAGP 10.6.1 - Anglais de spécialité 26-27",
       "teacher": "M. IGNACE KPATAKPANI",
-      "status": "confirmed",
+      "status": "pending",
       "moodle": "https://formations.cesagonline.com/course/view.php?id=1734",
       "room": "",
-      "notes": "Séance d'anglais de spécialité avec M. Ignace Kpatakpani. Pensez à vos lectures préalables, devoirs et quizz sur Moodle."
+      "notes": "Séance jumelée avec MBA AG. Accès depuis l’espace Moodle."
     },
     {
-      "id": "mbagp-2627-w2-02",
-      "date": "2026-11-27",
+      "id": "mbagp-2627-w3-02",
+      "date": "2026-12-04",
       "start": "18:00",
       "end": "20:30",
       "duration": "2h30",
       "type": "Cours",
-      "title": "MBAGP 9.1.2 - Principes et enjeux de l'administration publique 26-27",
-      "teacher": "M. JEROME DANDJINOU",
-      "status": "confirmed",
-      "moodle": "https://formations.cesagonline.com/course/view.php?id=1778",
+      "title": "MBAGP 9.1.1 - Enjeux et défis du développement 26-27",
+      "teacher": "PROF. MALIK SANE",
+      "status": "pending",
+      "moodle": "https://formations.cesagonline.com/course/view.php?id=1779",
       "room": "",
-      "notes": "Séance de Principes et enjeux de l'administration publique avec M. Jérôme Dandjinou. Assurez-vous de vérifier les supports et exercices sur Moodle."
+      "notes": "Accès à la salle virtuelle depuis l’espace Moodle."
     }
   ],
   "past_sessions": [
@@ -86,6 +86,34 @@
       "teacher": "M. IGNACE KPATAKPANI",
       "status": "cancelled",
       "moodle": "https://formations.cesagonline.com/course/view.php?id=1734"
+    },
+    {
+      "id": "mbagp-2627-w2-01",
+      "date": "2026-11-26",
+      "start": "18:00",
+      "end": "20:30",
+      "duration": "2h30",
+      "type": "Cours",
+      "title": "MBAGP 10.6.1 - Anglais de spécialité 26-27",
+      "teacher": "M. IGNACE KPATAKPANI",
+      "status": "confirmed",
+      "moodle": "https://formations.cesagonline.com/course/view.php?id=1734",
+      "room": "",
+      "notes": "Séance d'anglais de spécialité avec M. Ignace Kpatakpani. Pensez à vos lectures préalables, devoirs et quizz sur Moodle."
+    },
+    {
+      "id": "mbagp-2627-w2-02",
+      "date": "2026-11-27",
+      "start": "18:00",
+      "end": "20:30",
+      "duration": "2h30",
+      "type": "Cours",
+      "title": "MBAGP 9.1.2 - Principes et enjeux de l'administration publique 26-27",
+      "teacher": "M. JEROME DANDJINOU",
+      "status": "confirmed",
+      "moodle": "https://formations.cesagonline.com/course/view.php?id=1778",
+      "room": "",
+      "notes": "Séance de Principes et enjeux de l'administration publique avec M. Jérôme Dandjinou. Assurez-vous de vérifier les supports et exercices sur Moodle."
     }
   ],
   "upcoming_week_label": "",
